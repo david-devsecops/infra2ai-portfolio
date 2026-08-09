@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">Reconstructed cloud failure-boundary map</title>
+  <description id="description">A generic flow from external users and partner networks through ingress, security inspection, service and data boundaries, with an operations plane observing every layer.</description>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#67c7d8" />
+    </marker>
+    <style>
+      .panel { fill: #172334; stroke: #49627a; stroke-width: 2; }
+      .node { fill: #213247; stroke: #67c7d8; stroke-width: 2; }
+      .ops { fill: #2b3042; stroke: #d7b760; stroke-width: 2; }
+      .label { fill: #f2f6fa; font: 600 24px system-ui, sans-serif; }
+      .small { fill: #b8c7d6; font: 17px system-ui, sans-serif; }
+      .caption { fill: #8fa5b8; font: 15px system-ui, sans-serif; }
+      .flow { fill: none; stroke: #67c7d8; stroke-width: 3; marker-end: url(#arrow); }
+      .observe { fill: none; stroke: #d7b760; stroke-width: 2; stroke-dasharray: 7 7; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="620" rx="20" fill="#101a28" />
+  <text x="56" y="58" class="label">Cloud service path — public reconstruction</text>
+  <text x="56" y="88" class="caption">Boundaries and counts are intentionally simplified; no original topology or values are used.</text>
+
+  <rect x="48" y="130" width="200" height="260" rx="14" class="panel" />
+  <text x="72" y="174" class="label">Sources</text>
+  <rect x="72" y="205" width="152" height="62" rx="9" class="node" />
+  <text x="148" y="242" text-anchor="middle" class="small">External users</text>
+  <rect x="72" y="292" width="152" height="62" rx="9" class="node" />
+  <text x="148" y="318" text-anchor="middle" class="small">Partner</text>
+  <text x="148" y="340" text-anchor="middle" class="small">networks</text>
+
+  <rect x="292" y="130" width="190" height="260" rx="14" class="panel" />
+  <text x="316" y="174" class="label">Ingress</text>
+  <rect x="316" y="205" width="142" height="62" rx="9" class="node" />
+  <text x="387" y="242" text-anchor="middle" class="small">Transit edge</text>
+  <rect x="316" y="292" width="142" height="62" rx="9" class="node" />
+  <text x="387" y="318" text-anchor="middle" class="small">Private</text>
+  <text x="387" y="340" text-anchor="middle" class="small">gateway</text>
+
+  <rect x="526" y="130" width="190" height="260" rx="14" class="panel" />
+  <text x="550" y="174" class="label">Inspection</text>
+  <rect x="550" y="205" width="142" height="62" rx="9" class="node" />
+  <text x="621" y="242" text-anchor="middle" class="small">Policy control</text>
+  <rect x="550" y="292" width="142" height="62" rx="9" class="node" />
+  <text x="621" y="318" text-anchor="middle" class="small">Traffic</text>
+  <text x="621" y="340" text-anchor="middle" class="small">inspection</text>
+
+  <rect x="760" y="130" width="190" height="260" rx="14" class="panel" />
+  <text x="784" y="174" class="label">Service</text>
+  <rect x="784" y="205" width="142" height="62" rx="9" class="node" />
+  <text x="855" y="242" text-anchor="middle" class="small">Load balancer</text>
+  <rect x="784" y="292" width="142" height="62" rx="9" class="node" />
+  <text x="855" y="329" text-anchor="middle" class="small">Compute</text>
+
+  <rect x="994" y="130" width="158" height="260" rx="14" class="panel" />
+  <text x="1018" y="174" class="label">Data</text>
+  <rect x="1018" y="205" width="110" height="62" rx="9" class="node" />
+  <text x="1073" y="242" text-anchor="middle" class="small">Database</text>
+  <rect x="1018" y="292" width="110" height="62" rx="9" class="node" />
+  <text x="1073" y="318" text-anchor="middle" class="small">Cache &amp;</text>
+  <text x="1073" y="340" text-anchor="middle" class="small">stream</text>
+
+  <path d="M 224 236 H 316" class="flow" />
+  <path d="M 224 323 H 316" class="flow" />
+  <path d="M 458 236 H 550" class="flow" />
+  <path d="M 458 323 H 550" class="flow" />
+  <path d="M 692 236 H 784" class="flow" />
+  <path d="M 926 236 H 1018" class="flow" />
+
+  <rect x="292" y="448" width="658" height="112" rx="14" class="ops" />
+  <text x="322" y="489" class="label">Operations plane</text>
+  <text x="322" y="524" class="small">Metrics · logs · traces · change records · backup · recovery tests</text>
+  <path d="M 387 448 V 390" class="observe" />
+  <path d="M 621 448 V 390" class="observe" />
+  <path d="M 855 448 V 390" class="observe" />
+  <path d="M 1073 448 V 390" class="observe" />
+</svg>
