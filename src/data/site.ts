@@ -4,14 +4,16 @@
  */
 
 export const siteConfig = {
-  name: "Infrastructure & Cloud Engineer",
-  role: "INFRASTRUCTURE & CLOUD ENGINEER",
-  headline: "From enterprise systems to cloud automation",
+  name: "Cloud & Infrastructure Architect",
+  role: "CLOUD & INFRASTRUCTURE ARCHITECT",
+  headline: "Connecting cloud delivery and operations",
   subline: "Solaris · x86 · Storage · Oracle · Terraform · Cloud · Security Solution Operations",
   positioning:
     "Production operations across UNIX, x86, storage and Oracle — extended into Terraform and cloud architecture with the same focus on recovery and verification.",
   links: {
     github: "https://github.com/david-devsecops",
+    linkedin: "https://www.linkedin.com/in/sang-jun-park-52553591/",
+    companyContact: "https://elfirst.org/ko.html#contact",
     resume: "", // TODO: put resume.pdf in /public and set to "/resume.pdf"
     email: "", // optional: "mailto:you@example.com"
   },

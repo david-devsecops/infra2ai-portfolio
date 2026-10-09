@@ -73,6 +73,9 @@ export type Project = {
   areas?: string[];
   client?: string;
   period?: string;
+  periodLabel?: LocalizedText;
+  affiliation?: LocalizedText;
+  relatedBlog?: string;
   role?: LocalizedText;
   group: ProjectGroup;
   detailLevel: ProjectDetailLevel;

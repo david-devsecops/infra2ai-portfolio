@@ -6,7 +6,7 @@ import { localizeProject, pageCopy } from "@/data/localization";
 import { projectGroups, projectsByGroup } from "@/data/projects";
 import { useDocumentTitle, useLanguage } from "@/lib/language";
 
-const title = "프로젝트 — AI 플랫폼 엔지니어링";
+const title = "프로젝트 — 클라우드·인프라 아키텍트";
 const description =
   "Terraform·Cloud 프로젝트, 검토가 끝난 프로덕션 사례와 계획 단계의 AI 플랫폼 학습 프로젝트를 실제 상태와 함께 소개합니다.";
 
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/projects/")({
 
 function ProjectsPage() {
   const { language } = useLanguage();
-  useDocumentTitle(language === "ko" ? title : "Projects — AI Platform Engineering");
+  useDocumentTitle(language === "ko" ? title : "Projects — Cloud & Infrastructure Architect");
   const copy = pageCopy[language].projects;
 
   return (

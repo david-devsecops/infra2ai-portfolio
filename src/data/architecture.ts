@@ -52,9 +52,9 @@ export const architectureAreas: ArchitectureArea[] = [
   {
     id: "ai-ml-platform",
     title: "AI / ML Platform",
-    status: "In Progress",
+    status: "Planned",
     description:
-      "Running ML and AI workloads on Kubernetes: model registry, pipeline structure and the operational contract around a model version.",
+      "Research and design for ML and AI workloads on Kubernetes: model registries, pipelines and model-version operations.",
     practices: [
       "Model registry as the source of truth for deployable versions",
       "Deployment and rollback as one platform mechanism",
@@ -65,9 +65,9 @@ export const architectureAreas: ArchitectureArea[] = [
   {
     id: "model-serving",
     title: "Model Serving",
-    status: "In Progress",
+    status: "Planned",
     description:
-      "Exposing models as APIs with versioning, routing and resource boundaries, including LLM inference.",
+      "Planned research into model APIs with versioning, routing and resource boundaries, including LLM inference.",
     practices: [
       "Versioned endpoints with explicit rollout and rollback",
       "Model routing behind a single API surface (planned)",
@@ -83,7 +83,7 @@ export const architectureAreas: ArchitectureArea[] = [
       "Metrics, logs and traces used to answer specific operational questions rather than to fill dashboards.",
     practices: [
       "Correlating logs, captures and component state on one timeline",
-      "Prometheus and Grafana for platform and model-serving signals (in progress)",
+      "Cross-account CloudWatch delivery experience; Prometheus and Grafana for AI platforms remain research and planned work",
       "Defining the questions a dashboard must answer before building it",
     ],
     relatedProjects: ["self-service-ai-platform", "llm-inference-platform"],
@@ -100,7 +100,7 @@ export const architectureAreas: ArchitectureArea[] = [
       "Reviewed changes with explicit variables and outputs",
       "Operational scripting for repeatable checks",
     ],
-    relatedCaseStudies: ["enterprise-middleware-operations"],
+    relatedProjects: ["skt-tdeal-terraform-infrastructure"],
   },
   {
     id: "security-access",

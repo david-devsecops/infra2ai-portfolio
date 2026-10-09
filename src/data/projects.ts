@@ -15,7 +15,6 @@ export const platformProjects: Project[] = [
     detailLevel: "planned",
     title: "Self-Service AI Platform",
     status: "Planned",
-    featured: true,
     summary:
       "Kubernetes 기반 AI Platform. 데이터 사이언티스트가 모델을 등록하고 배포하고 상태를 확인하고 이전 버전으로 롤백할 수 있게 하는 것이 목표입니다.",
     technologiesLabel: "Planned technologies",
@@ -66,7 +65,6 @@ export const platformProjects: Project[] = [
     detailLevel: "planned",
     title: "LLM Inference Platform",
     status: "Planned",
-    featured: true,
     summary:
       "LLM 모델을 API 형태로 제공하고 인증, 요청 제어, 모델 라우팅, 성능 모니터링과 GPU 자원 관리를 수행하는 추론 플랫폼.",
     technologiesLabel: "Planned technologies",
@@ -103,7 +101,6 @@ export const platformProjects: Project[] = [
     detailLevel: "compact",
     title: "Production Engineering Case Studies",
     status: "In Progress",
-    featured: true,
     summary:
       "실제 Production 환경에서 수행한 Cloud Migration, WAF/Load Balancer 통신 분석, VPN과 Routing 문제 해결 사례를 공개 검토 후 정리한 Case Study 모음.",
     technologiesLabel: "Domains",
@@ -133,7 +130,7 @@ export const projectGroups = [
     en: "Oracle · Database · Data Protection",
   },
   { id: "unix-storage", ko: "UNIX · Storage · Migration", en: "UNIX · Storage · Migration" },
-  { id: "platform", ko: "Platform Lab", en: "Platform Lab" },
+  { id: "platform", ko: "연구·계획 및 기술 기록", en: "Research, plans and technical records" },
 ] as const;
 
 export const careerProjects: Project[] = [
@@ -148,7 +145,11 @@ export function projectsByGroup(group: ProjectGroup) {
   return projects.filter((project) => project.group === group);
 }
 
-export const featuredProjects = projects.filter((p) => p.featured);
+export const featuredProjects = [
+  "bok-cbdc-usability-test",
+  "amorepacific-aws-migration",
+  "skt-tdeal-terraform-infrastructure",
+].map((slug) => projects.find((project) => project.slug === slug)!);
 
 export function getProject(slug: string) {
   return projects.find((p) => p.slug === slug);

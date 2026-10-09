@@ -17,8 +17,16 @@ export function useLanguage() {
   return context;
 }
 
-export function useDocumentTitle(title: string) {
+export function useDocumentTitle(title: string, description?: string) {
   useEffect(() => {
     document.title = title;
-  }, [title]);
+    document
+      .querySelectorAll('meta[property="og:title"]')
+      .forEach((meta) => meta.setAttribute("content", title));
+    if (description) {
+      document
+        .querySelectorAll('meta[name="description"], meta[property="og:description"]')
+        .forEach((meta) => meta.setAttribute("content", description));
+    }
+  }, [title, description]);
 }

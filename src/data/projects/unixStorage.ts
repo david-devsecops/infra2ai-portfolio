@@ -47,6 +47,11 @@ const knccsOperations = deepCareerProject({
   },
   client: "해군 C4I(KNCCS)",
   period: "2010.12–2013.08",
+  periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+  affiliation: {
+    ko: "쌍용정보기술 · 기술지원부 과장 팀장",
+    en: "쌍용정보기술 · Technical Support Manager / Team Lead",
+  },
   role: { en: "Technical Lead", ko: "기술 PL" },
   group: "unix-storage",
   technologies: [
@@ -163,6 +168,8 @@ export const unixStorageProjects = [
     },
     client: "외환선물",
     period: "2013.08–2014.11",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "해오름기술 · 기술지원팀", en: "해오름기술 · Technical Support Team" },
     role: { en: "UNIX Migration Engineer", ko: "UNIX Migration Engineer" },
     technologies: ["Solaris", "SF4800", "T5-2", "Migration"],
     scope: {
@@ -188,6 +195,8 @@ export const unixStorageProjects = [
     },
     client: "외환선물",
     period: "2013.08–2014.11",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "해오름기술 · 기술지원팀", en: "해오름기술 · Technical Support Team" },
     role: { en: "UNIX Migration Engineer", ko: "UNIX Migration Engineer" },
     technologies: ["Solaris", "SF4900", "M10-4", "Migration"],
     scope: {
@@ -213,6 +222,8 @@ export const unixStorageProjects = [
     },
     client: "외환선물",
     period: "2013.08–2014.11",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "해오름기술 · 기술지원팀", en: "해오름기술 · Technical Support Team" },
     role: { en: "UNIX and Storage Migration Engineer", ko: "UNIX·Storage Migration Engineer" },
     technologies: ["EMC DMX3-950", "VMAX 10K", "DR", "Volume Migration"],
     scope: {

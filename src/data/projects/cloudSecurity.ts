@@ -33,6 +33,12 @@ const cbdcInfrastructure = deepCareerProject({
   },
   client: "한국은행·기업은행",
   period: "2026.04–2026.12",
+  periodLabel: { ko: "프로젝트 예정 범위", en: "Planned project scope" },
+  affiliation: {
+    ko: "엘퍼스트 · 프리랜서 TA · 2026.04–현재",
+    en: "엘퍼스트 · Freelance TA · 2026.04–present",
+  },
+  relatedBlog: "ibk-ncp-terraform-vpc-boundaries",
   role: { en: "Technical Architect", ko: "TA" },
   group: "cloud-security",
   status: "In Progress",
@@ -41,11 +47,13 @@ const cbdcInfrastructure = deepCareerProject({
     overview: {
       en: [
         "The current scope connects NCP network and security services, third-party controls, DaaS and institution VPN paths under one operational architecture.",
-        "The project is in progress; this page describes the confirmed scope and current operating model, not a completed outcome.",
+        "The project is in progress; December 2026 is a planned boundary, not a confirmed completion date.",
+        "I am designing operational knowledge structures connecting incident records, network configurations, security policies and runbooks. This is design work, not a completed AI or RAG deployment or a measured response-time improvement.",
       ],
       ko: [
         "현재 NCP 네트워크·보안 서비스, 3rd-party 보안 솔루션, DaaS와 기관 VPN 경로를 하나의 운영 아키텍처로 연결하고 있습니다.",
-        "진행 중인 프로젝트이므로 완료 성과가 아니라 확인된 범위와 현재 적용 중인 운영 기준을 설명합니다.",
+        "진행 중인 프로젝트이며 2026.12는 예정 범위이지 확정 완료일이 아닙니다.",
+        "장애 대응 기록, 네트워크 구성, 보안 정책과 Runbook을 연결하는 운영 지식화 체계를 설계하고 있습니다. AI·RAG 구축 완료나 대응 시간 단축 성과를 의미하지 않습니다.",
       ],
     },
     problem: {
@@ -155,14 +163,19 @@ const cbdcUsabilityTest = deepCareerProject({
   slug: "bok-cbdc-usability-test",
   title: {
     en: "Bank of Korea CBDC Usability-Test Infrastructure",
-    ko: "한국은행 CBDC 활용성 테스트 인프라",
+    ko: "한국은행 CBDC 활용성 테스트 인프라 구축",
   },
   summary: {
-    en: "Technical architecture for NCP infrastructure and network/security integration during the CBDC usability test.",
-    ko: "CBDC 활용성 테스트에서 NCP 인프라와 네트워크·보안 연계를 기술 아키텍처 관점에서 담당했습니다.",
+    en: "Built and operated SSL offloading using NCP Transit VPC and SFC, security solutions, inter-institution VPN and network-segregated DaaS for the CBDC usability test.",
+    ko: "NCP Transit VPC와 SFC를 활용한 SSL Offloading, 보안 솔루션, 기관 간 VPN과 망분리 DaaS의 구축·운영을 담당했습니다.",
   },
   client: "한국은행·기업은행",
   period: "2024.08–2025.07",
+  affiliation: {
+    ko: "엘퍼스트 · 프리랜서 TA · 소속기간 2024.09–2025.07",
+    en: "엘퍼스트 · Freelance TA · engagement 2024.09–2025.07",
+  },
+  relatedBlog: "ibk-ncp-terraform-vpc-boundaries",
   role: { en: "Technical Architect", ko: "TA" },
   group: "cloud-security",
   technologies: ["NCP", "Transit VPC", "SFC", "SSL Offloading", "IPSec VPN", "DaaS"],
@@ -170,9 +183,11 @@ const cbdcUsabilityTest = deepCareerProject({
     overview: {
       en: [
         "The work covered NCP usability-test infrastructure and the integration boundaries between transit, security inspection, services, DaaS and institution connectivity.",
+        "Completed participation in July 2025. Project dates: 2024.08–2025.07; freelance TA engagement with 엘퍼스트: 2024.09–2025.07.",
       ],
       ko: [
         "NCP 활용성 테스트 인프라와 transit, 보안 검사, service, DaaS, 기관 연결 사이의 연계 경계를 담당했습니다.",
+        "2025.07까지 활용성 테스트 인프라 구축·운영에 참여했습니다. 프로젝트 기간은 2024.08–2025.07, 엘퍼스트 프리랜서 TA 소속기간은 2024.09–2025.07입니다.",
       ],
     },
     problem: {
@@ -201,9 +216,13 @@ const cbdcUsabilityTest = deepCareerProject({
     },
     implementation: {
       en: [
+        "Built and operated Transit VPC/SFC SSL offloading and Hiware, DBSafer, FW, IPS, RedCastle, CDC and Gabia DaaS integrations.",
+        "Built and supported segregated DaaS for IBK and configured and operated IPSec VPN connections to the Bank of Korea and partner institutions.",
         "Coordinate NCP network and security integration, SSL offloading, VPN and DaaS interfaces through reviewed change and test sequences.",
       ],
       ko: [
+        "Transit VPC·SFC 기반 SSL Offloading과 Hiware, DBSafer, FW, IPS, RedCastle, CDC, Gabia DaaS의 구축·운영을 담당했습니다.",
+        "기업은행 망분리 DaaS 구축·지원과 한국은행 및 연계 기관 간 IPSec VPN 구성·운영을 수행했습니다.",
         "NCP 네트워크·보안 연계, SSL offloading, VPN과 DaaS interface를 검토된 변경·테스트 순서로 조정했습니다.",
       ],
     },
@@ -254,21 +273,29 @@ export const cloudSecurityProjects = [
   cbdcUsabilityTest,
   cloudCompact({
     slug: "amorepacific-aws-migration",
-    title: { en: "Amorepacific AWS Migration", ko: "아모레퍼시픽 AWS Migration" },
+    title: { en: "Amorepacific AWS Migration", ko: "아모레퍼시픽 AWS 전환" },
     summary: {
-      en: "Supported the infrastructure transition from on-premises systems to AWS, including dependency review and cutover scope.",
-      ko: "온프레미스 시스템을 AWS로 전환하며 인프라 의존성 검토와 cutover 범위를 담당했습니다.",
+      en: "Served as SA for the completed on-premises-to-AWS migration, followed by AWS operations SA work.",
+      ko: "온프레미스에서 AWS로 이관하는 프로젝트의 SA로 참여해 이관 구축을 완료했습니다. 이후 AWS 운영 SA 업무를 수행했습니다.",
     },
     client: "아모레퍼시픽",
-    period: "2023.01–2023.10",
+    period: "2023.01.04–2023.10.31",
+    affiliation: {
+      ko: "우나프론트 · 초기 차장·SA 근무 후 개인사업자 프리랜서 용역계약 · 전체 참여 2023.01–2025.04",
+      en: "우나프론트 · initial employment as Deputy General Manager / SA, then freelance services contract as a sole proprietor · overall engagement 2023.01–2025.04",
+    },
     role: { en: "Solutions Architect", ko: "SA" },
     technologies: ["AWS", "Migration", "Network", "Compute"],
     scope: {
       en: [
+        "Completed migration delivery by 2023.10.31. Subsequent AWS operations ran from 2023.11.01 to 2025.04.",
+        "The overall engagement began as an employee of 우나프론트 and continued under a freelance services contract; the transition month is unconfirmed.",
         "Review on-premises dependencies and AWS target boundaries.",
         "Define cutover and rollback checkpoints for the migration.",
       ],
       ko: [
+        "2023.10.31까지 이관 구축을 완료했습니다. 후속 AWS 운영은 2023.11.01–2025.04 수행 후 종료했습니다.",
+        "우나프론트 소속 근무 후 개인사업자 프리랜서 용역계약으로 업무를 이어 갔으며, 관계 전환 월은 확정하지 않습니다.",
         "온프레미스 의존성과 AWS target 경계를 검토했습니다.",
         "Migration cutover와 rollback 점검 지점을 정의했습니다.",
       ],
@@ -282,7 +309,11 @@ export const cloudSecurityProjects = [
       ko: "변경 검토, 모니터링과 서비스 상태 확인을 기준으로 AWS 인프라를 운영했습니다.",
     },
     client: "아모레퍼시픽",
-    period: "2023.11–2025.04",
+    period: "2023.11.01–2025.04",
+    affiliation: {
+      ko: "우나프론트 · 초기 차장·SA 근무 후 개인사업자 프리랜서 용역계약 · 전체 참여 2023.01–2025.04",
+      en: "우나프론트 · initial employment as Deputy General Manager / SA, then freelance services contract as a sole proprietor · overall engagement 2023.01–2025.04",
+    },
     role: { en: "Operations Solutions Architect", ko: "운영 SA" },
     technologies: ["AWS", "Operations", "Monitoring"],
     scope: {
@@ -305,6 +336,11 @@ export const cloudSecurityProjects = [
     },
     client: "MOIM",
     period: "2022.01–2023.01",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "그리드 · DevOps 차장 팀장",
+      en: "그리드 · DevOps Deputy General Manager / Team Lead",
+    },
     role: { en: "DevOps Team Lead", ko: "DevOps 차장 팀장" },
     technologies: ["DevOps", "Cloud", "CI/CD"],
     scope: {
@@ -327,6 +363,11 @@ export const cloudSecurityProjects = [
     },
     client: "SKT",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Cloud Infrastructure Engineer", ko: "Cloud Infrastructure Engineer" },
     technologies: ["AWS", "Operations"],
     scope: {
@@ -342,21 +383,35 @@ export const cloudSecurityProjects = [
   }),
   cloudCompact({
     slug: "skt-tdeal-terraform-infrastructure",
-    title: { en: "SKT T deal Terraform Infrastructure", ko: "SKT T deal Terraform 인프라 구축" },
+    title: {
+      en: "SKT Tdeal Terraform Infrastructure and Monitoring",
+      ko: "SKT Tdeal Terraform 인프라와 모니터링",
+    },
     summary: {
-      en: "Built T deal service infrastructure with Terraform-based, reviewable infrastructure definitions.",
-      ko: "Terraform 기반의 검토 가능한 인프라 정의로 T deal 서비스 인프라를 구축했습니다.",
+      en: "Built AWS infrastructure with Terraform and cross-account CloudWatch monitoring for SKT Tdeal. Also tested EMR and Athena as part of an AWS Glue cost review.",
+      ko: "Terraform 기반 AWS 인프라 구축과 교차 계정 CloudWatch 모니터링을 수행했습니다. AWS Glue 비용 검토를 위한 EMR·Athena 테스트에도 참여했습니다.",
     },
     client: "SKT",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Cloud Infrastructure Engineer", ko: "Cloud Infrastructure Engineer" },
-    technologies: ["AWS", "Terraform", "IaC"],
+    technologies: ["AWS", "Terraform", "CloudWatch", "EMR", "Athena"],
     scope: {
       en: [
+        "Built cross-account CloudWatch monitoring while maintaining service infrastructure.",
+        "Tested EMR with Spark and Zeppelin, and Athena, to explore AWS Glue cost alternatives; no measured cost reduction is claimed.",
+        "The listed dates are the employer tenure, not confirmed start and end dates of each delivery task.",
         "Express service infrastructure as reviewed Terraform changes.",
         "Separate plan review, apply order and post-change verification.",
       ],
       ko: [
+        "교차 계정 CloudWatch 모니터링을 구성하고 서비스 인프라 유지보수를 수행했습니다.",
+        "AWS Glue 비용 검토를 위해 EMR의 Spark·Zeppelin 환경과 Athena를 테스트했습니다. 비용 절감 달성 수치를 의미하지 않습니다.",
+        "위 기간은 아이와이씨앤씨(주) 재직기간이며, 개별 구축 작업의 시작·종료월을 의미하지 않습니다.",
         "서비스 인프라를 검토 가능한 Terraform 변경으로 표현했습니다.",
         "Plan 검토, apply 순서와 변경 후 검증을 분리했습니다.",
       ],
@@ -371,6 +426,11 @@ export const cloudSecurityProjects = [
     },
     client: "SKT",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Cloud Infrastructure Engineer", ko: "Cloud Infrastructure Engineer" },
     technologies: ["AWS Glue", "EMR", "Spark", "Zeppelin", "Athena"],
     scope: {
@@ -396,6 +456,11 @@ export const cloudSecurityProjects = [
     },
     client: "SKT",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Cloud Infrastructure Engineer", ko: "Cloud Infrastructure Engineer" },
     technologies: ["AWS", "CloudWatch", "Multi-Account"],
     scope: {
@@ -418,6 +483,11 @@ export const cloudSecurityProjects = [
     },
     client: "메타넷 에자일",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Cloud Infrastructure Engineer", ko: "Cloud Infrastructure Engineer" },
     technologies: ["AWS", "Migration"],
     scope: {
@@ -440,6 +510,11 @@ export const cloudSecurityProjects = [
     },
     client: "SK C&C",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Cloud Infrastructure Engineer", ko: "Cloud Infrastructure Engineer" },
     technologies: ["GCP", "Cloud Infrastructure"],
     scope: {
@@ -462,6 +537,11 @@ export const cloudSecurityProjects = [
     },
     client: "SK건설",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Cloud Infrastructure Engineer", ko: "Cloud Infrastructure Engineer" },
     technologies: ["GCP", "Landing Zone", "IoT"],
     scope: {
@@ -484,6 +564,11 @@ export const cloudSecurityProjects = [
     },
     client: "SK이노베이션",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Cloud Infrastructure Engineer", ko: "Cloud Infrastructure Engineer" },
     technologies: ["Azure", "BaaS", "Pipeline"],
     scope: {

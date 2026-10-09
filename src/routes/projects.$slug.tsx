@@ -20,7 +20,7 @@ export const Route = createFileRoute("/projects/$slug")({
       };
     }
     const project = localizeProject(loaderData.project, "ko");
-    const title = `${project.title} — AI 플랫폼 엔지니어링 프로젝트`;
+    const title = `${project.title} — 클라우드·인프라 프로젝트`;
     return {
       meta: [
         { title },
@@ -40,8 +40,9 @@ function ProjectDetail() {
   const copy = pageCopy[language].projects;
   useDocumentTitle(
     language === "ko"
-      ? `${project.title} — AI 플랫폼 엔지니어링 프로젝트`
-      : `${project.title} — AI Platform Engineering Project`,
+      ? `${project.title} — 클라우드·인프라 프로젝트`
+      : `${project.title} — Cloud & Infrastructure Project`,
+    project.summary,
   );
 
   return (
@@ -74,7 +75,10 @@ function ProjectDetail() {
               ) : null}
               {sourceProject.period ? (
                 <div>
-                  <dt className="eyebrow">{language === "ko" ? "기간" : "Period"}</dt>
+                  <dt className="eyebrow">
+                    {sourceProject.periodLabel?.[language] ??
+                      (language === "ko" ? "프로젝트 기간" : "Project period")}
+                  </dt>
                   <dd className="mt-1 text-muted-foreground">{sourceProject.period}</dd>
                 </div>
               ) : null}
@@ -82,6 +86,16 @@ function ProjectDetail() {
                 <div>
                   <dt className="eyebrow">{language === "ko" ? "역할" : "Role"}</dt>
                   <dd className="mt-1 text-muted-foreground">{sourceProject.role[language]}</dd>
+                </div>
+              ) : null}
+              {sourceProject.affiliation ? (
+                <div className="sm:col-span-3">
+                  <dt className="eyebrow">
+                    {language === "ko" ? "소속·계약 관계" : "Affiliation / contract"}
+                  </dt>
+                  <dd className="mt-1 text-muted-foreground">
+                    {sourceProject.affiliation[language]}
+                  </dd>
                 </div>
               ) : null}
             </dl>
@@ -95,6 +109,43 @@ function ProjectDetail() {
       <div className="mx-auto grid w-full max-w-6xl gap-12 px-5 py-14 md:px-8 md:py-16 lg:grid-cols-[1fr_14rem]">
         <article>
           <DetailSections sections={project.sections} language={language} />
+          {sourceProject.relatedBlog ? (
+            <p className="mt-8">
+              <Link
+                to="/blog/$slug"
+                params={{ slug: sourceProject.relatedBlog }}
+                className="text-primary hover:underline"
+              >
+                {language === "ko"
+                  ? "관련 기술 글: NCP VPC별 Terraform 변경 범위와 운영 기준"
+                  : "Related article: Terraform change boundaries across NCP VPCs (Korean)"}
+              </Link>
+            </p>
+          ) : null}
+          {sourceProject.slug === "amorepacific-aws-migration" ? (
+            <p className="mt-6">
+              <Link
+                to="/projects/$slug"
+                params={{ slug: "amorepacific-aws-operations" }}
+                className="text-primary hover:underline"
+              >
+                {language === "ko"
+                  ? "후속 AWS 운영: 2023.11.01–2025.04"
+                  : "Follow-up AWS operations: 2023.11.01–2025.04"}
+              </Link>
+            </p>
+          ) : null}
+          {sourceProject.slug === "skt-tdeal-terraform-infrastructure" ? (
+            <p className="mt-6">
+              <Link
+                to="/projects/$slug"
+                params={{ slug: "skt-tdeal-cross-account-monitoring" }}
+                className="text-primary hover:underline"
+              >
+                {language === "ko" ? "교차 계정 모니터링 상세" : "Cross-account monitoring details"}
+              </Link>
+            </p>
+          ) : null}
         </article>
         <aside className="lg:sticky lg:top-24 lg:self-start">
           <SectionNav sections={project.sections} language={language} />

@@ -9,8 +9,8 @@ import {
 
 export const commonCopy = {
   ko: {
-    role: "인프라·클라우드 엔지니어",
-    brandSubtitle: "엔터프라이즈 시스템에서 클라우드 자동화까지",
+    role: "클라우드·인프라 아키텍트",
+    brandSubtitle: "클라우드 전환과 운영 안정화",
     nav: {
       "/": "홈",
       "/projects": "프로젝트",
@@ -37,8 +37,8 @@ export const commonCopy = {
       "고객사와 프로젝트명은 검토 후 공개할 수 있습니다. 인명, 네트워크, 계정, 호스트 및 실제 구성값은 공개용 값으로 재구성합니다.",
   },
   en: {
-    role: "INFRASTRUCTURE & CLOUD ENGINEER",
-    brandSubtitle: "From enterprise systems to cloud automation",
+    role: "CLOUD & INFRASTRUCTURE ARCHITECT",
+    brandSubtitle: "Cloud migration and operations",
     nav: {
       "/": "Home",
       "/projects": "Projects",
@@ -68,25 +68,25 @@ export const commonCopy = {
 
 export const homeCopy = {
   ko: {
-    role: "인프라·클라우드 엔지니어",
-    headline: "엔터프라이즈 시스템에서 클라우드 자동화까지",
+    role: "클라우드·인프라 아키텍트",
+    headline: "클라우드 구축과 운영을 연결하는 인프라 아키텍트",
     subline: "Solaris · x86 · Storage · Oracle · Terraform · Cloud · 보안 솔루션 운영",
     positioning:
-      "UNIX·x86·Storage·Oracle 운영에서 쌓은 장애 분리와 복구 검증 원칙을 Terraform과 클라우드 아키텍처로 확장하고 있습니다.",
-    viewProjects: "프로젝트 보기",
+      "금융권과 기업 서비스의 클라우드 전환, 네트워크·보안 연계, 운영 안정화를 수행합니다. Oracle·Unix·스토리지에서 쌓은 경험을 AWS·NCP와 클라우드 자동화 업무로 넓혀 왔습니다.",
+    viewProjects: "대표 프로젝트 보기",
     viewExperience: "경험 보기",
     careerEyebrow: "경력 확장",
-    careerTitle: "프로덕션 인프라에서 AI 플랫폼 엔지니어링까지",
+    careerTitle: "인프라 운영에서 클라우드 구축과 자동화까지",
     careerDescription:
-      "ML 초심자로 다시 시작하는 것이 아니라, 이전 단계에서 쌓은 운영 경험을 기반으로 다음 영역으로 확장합니다. 완료되지 않은 단계는 현재 상태를 명확히 표시합니다.",
+      "서버·데이터베이스·스토리지 운영에서 클라우드 전환과 자동화로 경험을 넓혀 왔습니다. AI 플랫폼은 연구·계획 영역으로 구분합니다.",
     projectsEyebrow: "주요 프로젝트",
-    projectsTitle: "플랫폼 프로젝트",
+    projectsTitle: "완료한 대표 프로젝트",
     projectsDescription:
-      "프로젝트 상태를 명확하게 표시하며, 구축하고 검증하기 전에는 완료된 결과로 소개하지 않습니다.",
+      "금융권 NCP 인프라, AWS 이관, Terraform 구축과 모니터링에서 직접 맡은 범위를 소개합니다.",
     experienceEyebrow: "프로덕션 엔지니어링 경험",
-    experienceTitle: "플랫폼 엔지니어링의 기반",
+    experienceTitle: "시스템과 클라우드를 함께 다룬 경험",
     experienceDescription:
-      "엔터프라이즈 운영, 클라우드 및 네트워크 경험은 ML·AI 워크로드를 안정적으로 운영하기 위한 기반입니다.",
+      "서버·스토리지·데이터베이스부터 클라우드 네트워크까지, 서비스 경로와 복구 기준을 함께 다룹니다.",
     readCaseStudies: "사례 보기",
     areasEyebrow: "핵심 엔지니어링 영역",
     areasTitle: "점수가 아닌 엔지니어링 영역",
@@ -94,31 +94,31 @@ export const homeCopy = {
       "각 영역을 관련 프로젝트와 사례에 연결합니다. 백분율이나 별점으로 역량을 표현하지 않습니다.",
     viewArchitecture: "아키텍처 및 플랫폼 영역 보기",
     contactEyebrow: "연락처",
-    contactTitle: "AI 플랫폼 엔지니어링 역할에 열려 있습니다",
+    contactTitle: "클라우드 전환과 인프라 구축·운영 협업",
     contactDescription:
-      "프로덕션 인프라와 클라우드 경험을 기반으로 AI 플랫폼 영역을 학습하고 있습니다. 완료 경험과 계획 프로젝트를 명확히 구분합니다.",
+      "클라우드 전환, 인프라 구축 또는 운영 안정화에 관한 협업을 논의하고 싶으시면 LinkedIn으로 연락해 주세요. 회사 서비스 문의는 ELFIRST에서 확인하실 수 있습니다.",
     about: "소개",
   },
   en: {
-    role: "INFRASTRUCTURE & CLOUD ENGINEER",
-    headline: "From enterprise systems to cloud automation",
+    role: "CLOUD & INFRASTRUCTURE ARCHITECT",
+    headline: "Connecting cloud delivery and operations",
     subline: "Solaris · x86 · Storage · Oracle · Terraform · Cloud · Security Solution Operations",
     positioning:
-      "Extending the failure isolation and recovery practices learned across UNIX, x86, storage and Oracle into Terraform and cloud architecture.",
-    viewProjects: "View Projects",
+      "I work on cloud migration, network and security integration, and reliable operations for financial institutions and enterprise services. My work has grown from Oracle, Unix and storage into AWS, NCP and cloud automation.",
+    viewProjects: "View selected projects",
     viewExperience: "View Experience",
     careerEyebrow: "Career transition",
-    careerTitle: "From Production Infrastructure to AI Platform Engineering",
+    careerTitle: "From infrastructure operations to cloud delivery and automation",
     careerDescription:
-      "Not a restart as an ML beginner. Each stage builds on the operational experience of the previous one; stages that are not finished are marked as such.",
+      "My experience spans servers, databases and storage through cloud migration and automation. AI platform work remains a separate research and planning track.",
     projectsEyebrow: "Featured projects",
-    projectsTitle: "Platform projects",
+    projectsTitle: "Selected completed projects",
     projectsDescription:
-      "Project status is stated explicitly. Nothing is presented as delivered before it is built and verified.",
+      "My delivery scope across financial NCP infrastructure, AWS migration, Terraform provisioning and monitoring.",
     experienceEyebrow: "Production engineering experience",
-    experienceTitle: "What the platform work is built on",
+    experienceTitle: "Experience across systems and cloud",
     experienceDescription:
-      "Enterprise production, cloud and network operations — the basis for running ML and AI workloads reliably.",
+      "From servers, storage and databases to cloud networks, I work with service paths and recovery requirements together.",
     readCaseStudies: "Read the case studies",
     areasEyebrow: "Core engineering areas",
     areasTitle: "Engineering areas, not skill scores",
@@ -126,9 +126,9 @@ export const homeCopy = {
       "Each area links to the projects and case studies behind it. No percentages, no star ratings.",
     viewArchitecture: "Architecture and platform areas",
     contactEyebrow: "Contact",
-    contactTitle: "Open to AI Platform Engineering roles",
+    contactTitle: "Cloud migration, infrastructure and operations",
     contactDescription:
-      "Building on production infrastructure and cloud experience while learning AI platform engineering. Delivered work and planned projects are kept clearly separate.",
+      "Contact me on LinkedIn to discuss cloud migration, infrastructure delivery or operations. For company services, visit ELFIRST.",
     about: "About",
   },
 } as const satisfies Record<Language, object>;
@@ -239,7 +239,7 @@ export const koreanArchitectureAreas: Record<
   },
   "model-serving": {
     title: "모델 서빙",
-    description: "LLM 추론을 포함해 버전 관리, 라우팅 및 자원 경계를 적용한 모델 API 제공.",
+    description: "LLM 추론을 포함한 모델 API의 버전 관리·라우팅·자원 경계를 연구하는 계획 영역.",
     practices: [
       "명확한 롤아웃·롤백 절차를 가진 버전별 엔드포인트",
       "단일 API 진입점 뒤에서 모델 라우팅 구성 예정",
@@ -252,7 +252,7 @@ export const koreanArchitectureAreas: Record<
       "대시보드를 채우는 것이 아니라 구체적인 운영 질문에 답하기 위한 메트릭, 로그 및 추적.",
     practices: [
       "로그, 패킷 캡처 및 컴포넌트 상태를 하나의 타임라인으로 연결",
-      "플랫폼과 모델 서빙 신호를 위한 Prometheus·Grafana 구성 진행",
+      "교차 계정 CloudWatch 모니터링 구축 경험; AI 플랫폼용 Prometheus·Grafana는 연구·계획",
       "대시보드가 답해야 할 질문을 먼저 정의한 뒤 구현",
     ],
   },
@@ -322,9 +322,8 @@ export const pageCopy = {
     },
     about: {
       eyebrow: "소개",
-      title: "엔터프라이즈 운영 경험을 갖춘 인프라·클라우드 엔지니어",
-      description:
-        "Solaris·x86·Storage·Oracle 운영 경험을 Terraform과 클라우드 아키텍처로 확장하고, AI 플랫폼은 학습·목표 영역으로 구분합니다.",
+      title: "박상준 | 클라우드·인프라 아키텍트",
+      description: "금융권과 기업 서비스의 클라우드 전환, 인프라 구축, 운영 안정화를 수행합니다.",
     },
     details: {
       sections: "섹션",
@@ -376,9 +375,9 @@ export const pageCopy = {
     },
     about: {
       eyebrow: "About",
-      title: "Infrastructure and cloud engineer with an enterprise production background",
+      title: "Sang jun (David) park | Cloud & Infrastructure Architect",
       description:
-        "Extending Solaris, x86, storage and Oracle operations into Terraform and cloud architecture, with AI platform engineering clearly marked as a learning goal.",
+        "Cloud migration, infrastructure delivery and operations for financial institutions and enterprise services.",
     },
     details: {
       sections: "Sections",
@@ -430,6 +429,55 @@ type AboutSectionCopy = {
 export const aboutSections: Record<Language, AboutSectionCopy[]> = {
   ko: [
     {
+      title: "소개",
+      paragraphs: [
+        "박상준입니다. 서버와 데이터베이스 운영을 기반으로 클라우드 인프라의 구축과 운영을 담당해 왔습니다. 서비스가 사용하는 네트워크, 보안 솔루션, 데이터베이스와 인프라를 함께 이해하며 업무를 수행합니다.",
+        "한국은행 CBDC 프로젝트의 NCP 인프라, 아모레퍼시픽 AWS 전환, SKT Tdeal의 Terraform 구축과 모니터링이 주요 경험입니다. 초기 경력에서는 Oracle RAC, Solaris, 스토리지, 백업과 DR 환경을 다뤘습니다.",
+        "이 사이트에는 프로젝트별 소속과 역할, 구현한 내용을 정리합니다. 현재는 운영 기록과 Runbook을 활용한 지식화 체계를 설계하며, AI·빅데이터 학습을 바탕으로 AI 업무 도구의 활용 가능성을 탐구하고 있습니다.",
+      ],
+      bullets: [],
+    },
+    {
+      title: "기술 역량",
+      paragraphs: [],
+      bullets: [
+        "클라우드 구축과 전환: AWS·NCP를 중심으로 GCP·Azure 인프라 프로젝트 경험",
+        "네트워크와 보안 연계: Transit VPC, SFC, SSL Offloading, IPSec VPN, 망분리 DaaS",
+        "자동화와 관측: Terraform 인프라 구축, 교차 계정 CloudWatch 모니터링",
+        "시스템과 데이터: Oracle RAC·ZDLRA, Unix·Solaris, 스토리지·백업·DR",
+        "운영 문서화: 장애 대응 기록, 네트워크 구성, 보안 정책, Runbook의 지식화 설계",
+      ],
+    },
+    {
+      title: "소속·계약 관계와 경력",
+      paragraphs: [
+        "고객 프로젝트 기간과 소속·계약 기간을 구분합니다. 우나프론트 전체 참여기간은 초기 근무와 이후 개인사업자 프리랜서 용역계약을 포함하며, 전환 월은 확정하지 않습니다.",
+      ],
+      bullets: [
+        "엘퍼스트 · 프리랜서 TA · 2026.04–현재 (현재 CBDC 프로젝트 예정 범위 2026.04–2026.12)",
+        "엘퍼스트 · 프리랜서 TA · 2024.09–2025.07 (CBDC 활용성 테스트 프로젝트 2024.08–2025.07)",
+        "우나프론트 · 초기 차장·SA 근무 후 개인사업자 프리랜서 용역계약 · 전체 참여 2023.01–2025.04",
+        "그리드 · DevOps 차장 팀장 · 2022.01–2023.01",
+        "아이와이씨앤씨(주) · 오라클팀 차장 · 2018.12–2021.09",
+        "화인S&C · 기술지원팀 · 2016.09–2017.12",
+        "테크데이타 · OTS 팀원 · 2015.01–2015.12",
+        "해오름기술 · 기술지원팀 · 2013.08–2014.11",
+        "쌍용정보기술 · 기술지원부 과장 팀장 · 2010.12–2013.08",
+      ],
+    },
+    {
+      title: "학력과 자격 취득 이력",
+      paragraphs: [
+        "서울과학종합대학원대학교 AI빅데이터학과 석사과정 · 2024.03 입학 · 휴학 중. 학위 취득 또는 졸업 예정일을 의미하지 않습니다.",
+        "아래 자격은 취득 이력입니다. 표시된 만료일 이후 갱신은 확인되지 않았습니다.",
+      ],
+      bullets: [
+        "AWS Solutions Architect – Associate · 2023.05 취득 · 표시 만료 2026.05",
+        "AWS Database – Specialty · 2023.04 취득 · 표시 만료 2026.04",
+        "Google Cloud Professional Cloud Architect · 2020.09 취득 · 표시 만료 2022.09",
+      ],
+    },
+    {
       title: "엔터프라이즈 프로덕션 환경",
       paragraphs: [
         "Solaris·Linux·AIX·x86 시스템과 Storage·Oracle을 사용하는 엔터프라이즈 프로덕션 환경에서 업무를 시작했습니다. 모든 변경이 검토되고 롤백 경로를 가지며 사후 검증되는 환경이었습니다. 이 경험은 인프라를 설계할 때 단순히 동작 여부뿐 아니라 일부가 실패했을 때의 동작과 복구 방법까지 고려하게 합니다.",
@@ -477,6 +525,55 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     },
   ],
   en: [
+    {
+      title: "About me",
+      paragraphs: [
+        "I am Sang jun (David) park, a cloud and infrastructure architect with a background in server and database operations. I work across the networks, security solutions, databases and infrastructure that support a service.",
+        "My main projects include NCP infrastructure for Bank of Korea CBDC projects, Amorepacific's AWS migration, and Terraform provisioning and monitoring for SKT Tdeal. Earlier work covered Oracle RAC, Solaris, storage, backup and disaster recovery.",
+        "This site records my affiliation, role and implementation scope for each project. I am currently designing an operational knowledge structure around incident records and runbooks, and exploring AI workflow tools through AI and big data studies.",
+      ],
+      bullets: [],
+    },
+    {
+      title: "Technical capabilities",
+      paragraphs: [],
+      bullets: [
+        "Cloud delivery and migration: AWS and NCP, with infrastructure projects on GCP and Azure",
+        "Network and security integration: Transit VPC, SFC, SSL offloading, IPSec VPN and segregated DaaS",
+        "Automation and observability: Terraform infrastructure and cross-account CloudWatch monitoring",
+        "Systems and data: Oracle RAC and ZDLRA, Unix and Solaris, storage, backup and disaster recovery",
+        "Operational documentation: designing knowledge structures for incident records, networks, security policies and runbooks",
+      ],
+    },
+    {
+      title: "Affiliations and engagements",
+      paragraphs: [
+        "Customer project dates are distinct from employment and contract dates. The overall 우나프론트 engagement includes initial employment followed by a freelance services contract as a sole proprietor; the transition month is unconfirmed.",
+      ],
+      bullets: [
+        "엘퍼스트 · Freelance TA · 2026.04–present (current CBDC project planned scope: 2026.04–2026.12)",
+        "엘퍼스트 · Freelance TA · 2024.09–2025.07 (CBDC usability-test project: 2024.08–2025.07)",
+        "우나프론트 · Initially Deputy General Manager / SA, then freelance services contractor · overall engagement 2023.01–2025.04",
+        "그리드 · DevOps Deputy General Manager / Team Lead · 2022.01–2023.01",
+        "아이와이씨앤씨(주) · Oracle Team Deputy General Manager · 2018.12–2021.09",
+        "화인S&C · Technical Support Team · 2016.09–2017.12",
+        "테크데이타 · OTS Team Member · 2015.01–2015.12",
+        "해오름기술 · Technical Support Team · 2013.08–2014.11",
+        "쌍용정보기술 · Technical Support Manager / Team Lead · 2010.12–2013.08",
+      ],
+    },
+    {
+      title: "Education and certification history",
+      paragraphs: [
+        "서울과학종합대학원대학교 · AI and Big Data master's program · enrolled 2024.03 · on leave. No completed degree or confirmed graduation date is claimed.",
+        "These are previously earned certifications. Renewal after the listed expiry dates has not been confirmed.",
+      ],
+      bullets: [
+        "AWS Solutions Architect – Associate · earned 2023.05 · listed expiry 2026.05",
+        "AWS Database – Specialty · earned 2023.04 · listed expiry 2026.04",
+        "Google Cloud Professional Cloud Architect · earned 2020.09 · listed expiry 2022.09",
+      ],
+    },
     {
       title: "Enterprise production environments",
       paragraphs: [

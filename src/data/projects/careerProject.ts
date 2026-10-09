@@ -19,6 +19,9 @@ type CareerProjectBase = {
   summary: LocalizedText;
   client: string;
   period: string;
+  periodLabel?: LocalizedText;
+  affiliation?: LocalizedText;
+  relatedBlog?: string;
   role: LocalizedText;
   group: Exclude<ProjectGroup, "platform">;
   technologies: string[];
@@ -66,6 +69,9 @@ function projectBase(
     technologies: input.technologies,
     client: input.client,
     period: input.period,
+    ...(input.periodLabel ? { periodLabel: input.periodLabel } : {}),
+    ...(input.affiliation ? { affiliation: input.affiliation } : {}),
+    ...(input.relatedBlog ? { relatedBlog: input.relatedBlog } : {}),
     role: input.role,
     group: input.group,
     detailLevel,

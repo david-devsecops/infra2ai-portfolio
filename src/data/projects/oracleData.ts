@@ -29,6 +29,11 @@ export const oracleDataProjects = [
     },
     client: "신한DS",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Oracle Data Protection Engineer", ko: "Oracle·Data Protection Engineer" },
     technologies: ["Oracle", "ZDLRA"],
     scope: {
@@ -51,6 +56,11 @@ export const oracleDataProjects = [
     },
     client: "KB카드",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Oracle Data Protection Engineer", ko: "Oracle·Data Protection Engineer" },
     technologies: ["Oracle", "ZDLRA"],
     scope: {
@@ -70,6 +80,11 @@ export const oracleDataProjects = [
     },
     client: "국민연금 경영·기금",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Oracle Data Protection Engineer", ko: "Oracle·Data Protection Engineer" },
     technologies: ["Oracle", "ZDLRA"],
     scope: {
@@ -92,6 +107,11 @@ export const oracleDataProjects = [
     },
     client: "우리FIS",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Oracle Data Protection Engineer", ko: "Oracle·Data Protection Engineer" },
     technologies: ["Oracle", "ZDLRA"],
     scope: {
@@ -114,6 +134,11 @@ export const oracleDataProjects = [
     },
     client: "수협",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Oracle Data Protection Engineer", ko: "Oracle·Data Protection Engineer" },
     technologies: ["Oracle", "ZDLRA"],
     scope: {
@@ -136,6 +161,11 @@ export const oracleDataProjects = [
     },
     client: "광주은행",
     period: "2018.12–2021.09",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: {
+      ko: "아이와이씨앤씨(주) · 오라클팀 차장",
+      en: "아이와이씨앤씨(주) · Oracle Team Deputy General Manager",
+    },
     role: { en: "Oracle Data Protection Engineer", ko: "Oracle·Data Protection Engineer" },
     technologies: ["Oracle", "ZDLRA"],
     scope: {
@@ -161,6 +191,8 @@ export const oracleDataProjects = [
     },
     client: "국방통합데이터센터",
     period: "2016.09–2017.12",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "화인S&C · 기술지원팀", en: "화인S&C · Technical Support Team" },
     role: { en: "Oracle Hardware Technical Support", ko: "Oracle Hardware Technical Support" },
     technologies: ["Oracle Server", "Hardware"],
     scope: {
@@ -183,6 +215,8 @@ export const oracleDataProjects = [
     },
     client: "금호그룹",
     period: "2015.01–2015.12",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "테크데이타 · OTS 팀원", en: "테크데이타 · OTS Team Member" },
     role: { en: "Database Engineer", ko: "Database Engineer" },
     technologies: ["Oracle Database", "TORE", "Performance Analysis"],
     scope: {
@@ -205,6 +239,8 @@ export const oracleDataProjects = [
     },
     client: "경찰청",
     period: "2015.01–2015.12",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "테크데이타 · OTS 팀원", en: "테크데이타 · OTS Team Member" },
     role: { en: "Database Engineer", ko: "Database Engineer" },
     technologies: ["Oracle", "OGG", "Operations"],
     scope: {
@@ -227,6 +263,8 @@ export const oracleDataProjects = [
     },
     client: "삼육대학교",
     period: "2015.01–2015.12",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "테크데이타 · OTS 팀원", en: "테크데이타 · OTS Team Member" },
     role: { en: "Database Engineer", ko: "Database Engineer" },
     technologies: ["Oracle", "Tuning", "Monitoring"],
     scope: {
@@ -249,6 +287,8 @@ export const oracleDataProjects = [
     },
     client: "병원 시스템",
     period: "2015.01–2015.12",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "테크데이타 · OTS 팀원", en: "테크데이타 · OTS Team Member" },
     role: { en: "Database Engineer", ko: "Database Engineer" },
     technologies: ["Oracle RAC"],
     scope: {
@@ -271,6 +311,8 @@ export const oracleDataProjects = [
     },
     client: "ATOMY",
     period: "2015.01–2015.12",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "테크데이타 · OTS 팀원", en: "테크데이타 · OTS Team Member" },
     role: { en: "Database Engineer", ko: "Database Engineer" },
     technologies: ["Oracle RAC", "ESXi"],
     scope: {
@@ -296,6 +338,8 @@ export const oracleDataProjects = [
     },
     client: "LSG",
     period: "2015.01–2015.12",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "테크데이타 · OTS 팀원", en: "테크데이타 · OTS Team Member" },
     role: { en: "Database Engineer", ko: "Database Engineer" },
     technologies: ["Oracle", "DB Migration", "Cluster"],
     scope: {
@@ -318,6 +362,8 @@ export const oracleDataProjects = [
     },
     client: "금호그룹 항공",
     period: "2015.01–2015.12",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "테크데이타 · OTS 팀원", en: "테크데이타 · OTS Team Member" },
     role: { en: "Database Engineer", ko: "Database Engineer" },
     technologies: ["Oracle RAC", "ASM"],
     scope: {
@@ -340,6 +386,8 @@ export const oracleDataProjects = [
     },
     client: "라이나생명",
     period: "2015.01–2015.12",
+    periodLabel: { ko: "소속 재직기간", en: "Employment period" },
+    affiliation: { ko: "테크데이타 · OTS 팀원", en: "테크데이타 · OTS Team Member" },
     role: { en: "Database Engineer", ko: "Database Engineer" },
     technologies: ["Oracle 12c", "Single Instance", "ASM"],
     scope: {

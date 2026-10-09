@@ -23,7 +23,19 @@ export function ProjectCard({
       </div>
       {project.client || project.period ? (
         <p className="mt-3 font-mono text-xs text-muted-foreground">
-          {[project.client, project.period].filter(Boolean).join(" · ")}
+          {[
+            project.client,
+            project.period
+              ? `${project.periodLabel?.[language] ?? (language === "ko" ? "프로젝트 기간" : "Project period")}: ${project.period}`
+              : null,
+          ]
+            .filter(Boolean)
+            .join(" · ")}
+        </p>
+      ) : null}
+      {project.affiliation ? (
+        <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+          {project.affiliation[language]}
         </p>
       ) : null}
       <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{project.summary}</p>

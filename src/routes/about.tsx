@@ -5,9 +5,9 @@ import { BulletList } from "@/components/site/Cards";
 import { aboutSections, pageCopy } from "@/data/localization";
 import { useDocumentTitle, useLanguage } from "@/lib/language";
 
-const title = "소개 — 프로덕션 인프라에서 AI 플랫폼 엔지니어링까지";
+const title = "소개 — 박상준 | 클라우드·인프라 아키텍트";
 const description =
-  "Solaris·x86·Storage·Oracle 프로덕션 경험을 Terraform·Cloud와 AI 플랫폼 목표로 확장하는 접근 방식을 소개합니다.";
+  "금융권 NCP 인프라, AWS 전환, Terraform 구축과 운영 경험을 소개합니다. 클라우드·인프라 아키텍트 박상준의 프로젝트와 기술 기록입니다.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -24,7 +24,10 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   const { language } = useLanguage();
   useDocumentTitle(
-    language === "ko" ? title : "About — From Production Infrastructure to AI Platform Engineering",
+    language === "ko" ? title : "About — Sang jun (David) park | Cloud & Infrastructure Architect",
+    language === "ko"
+      ? description
+      : "Financial NCP infrastructure, AWS migration, Terraform delivery and operations. Projects and technical writing by Sang jun (David) park, Cloud & Infrastructure Architect.",
   );
   const copy = pageCopy[language].about;
 

@@ -5,7 +5,7 @@ import { Section } from "@/components/site/Layout";
 import { CareerFlow } from "@/components/site/CareerFlow";
 import { ProjectCard } from "@/components/site/Cards";
 import { StatusBadge } from "@/components/site/Badges";
-import { featuredProjects } from "@/data/projects";
+import { featuredProjects, platformProjects, getProject } from "@/data/projects";
 import { architectureAreas } from "@/data/architecture";
 import { productionExperienceHighlights, siteConfig } from "@/data/site";
 import {
@@ -17,9 +17,9 @@ import {
 } from "@/data/localization";
 import { useDocumentTitle, useLanguage } from "@/lib/language";
 
-const title = "AI 플랫폼 엔지니어 — AI 워크로드를 위한 신뢰할 수 있는 플랫폼";
+const title = "박상준 | 클라우드·인프라 아키텍트";
 const description =
-  "Solaris·x86·Storage·Oracle 운영 경험을 Terraform과 AWS·NCP 클라우드 아키텍처로 확장한 엔지니어링 포트폴리오입니다.";
+  "금융권 NCP 인프라, AWS 전환, Terraform 구축과 운영 경험을 소개합니다. 클라우드·인프라 아키텍트 박상준의 프로젝트와 기술 기록입니다.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,9 +36,10 @@ export const Route = createFileRoute("/")({
 function Home() {
   const { language } = useLanguage();
   useDocumentTitle(
+    language === "ko" ? title : "Sang jun (David) park | Cloud & Infrastructure Architect",
     language === "ko"
-      ? title
-      : "AI Platform Engineer — Building reliable platforms for AI workloads",
+      ? description
+      : "Financial NCP infrastructure, AWS migration, Terraform delivery and operations. Projects and technical writing by Sang jun (David) park, Cloud & Infrastructure Architect.",
   );
   const copy = homeCopy[language];
   const common = commonCopy[language];
@@ -55,7 +56,7 @@ function Home() {
           <p className="font-mono text-xs tracking-[0.28em] text-primary uppercase md:text-sm">
             {copy.role}
           </p>
-          <h1 className="mt-5 max-w-3xl text-3xl leading-tight font-semibold tracking-tight text-foreground md:text-5xl">
+          <h1 className="mt-5 max-w-3xl text-3xl leading-tight font-semibold tracking-tight break-keep text-foreground md:text-5xl">
             {copy.headline}
           </h1>
           <p className="mt-4 font-mono text-sm text-muted-foreground md:text-base">
@@ -72,19 +73,13 @@ function Home() {
               {copy.viewProjects}
               <ArrowRight aria-hidden="true" className="size-4" />
             </Link>
-            <Link
-              to="/experience"
-              className="inline-flex items-center gap-2 rounded-md border border-border-strong px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
-            >
-              {copy.viewExperience}
-            </Link>
             <a
-              href={siteConfig.links.github}
+              href={siteConfig.links.linkedin}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              GitHub
+              {language === "ko" ? "LinkedIn으로 연락하기" : "Contact on LinkedIn"}
               <ExternalLink aria-hidden="true" className="size-3.5" />
             </a>
           </div>
@@ -108,6 +103,51 @@ function Home() {
           {projects.map((project) => (
             <ProjectCard key={project.slug} project={project} language={language} />
           ))}
+        </div>
+      </Section>
+
+      <Section
+        eyebrow={language === "ko" ? "진행 중" : "In progress"}
+        title={
+          language === "ko" ? "현재 CBDC 인프라 프로젝트" : "Current CBDC infrastructure project"
+        }
+      >
+        <div className="max-w-2xl">
+          <ProjectCard
+            project={localizeProject(getProject("bok-cbdc-ncp-infrastructure")!, language)}
+            language={language}
+          />
+        </div>
+        <Link
+          to="/blog/$slug"
+          params={{ slug: "ibk-ncp-terraform-vpc-boundaries" }}
+          className="mt-6 inline-flex text-sm text-primary hover:underline"
+        >
+          {language === "ko"
+            ? "기술 글: NCP VPC별 Terraform 변경 범위와 운영 기준"
+            : "Technical article: Terraform change boundaries across NCP VPCs (Korean)"}
+        </Link>
+      </Section>
+
+      <Section
+        eyebrow={language === "ko" ? "연구·계획" : "Research and plans"}
+        title={language === "ko" ? "AI와 플랫폼 연구" : "AI and platform research"}
+        description={
+          language === "ko"
+            ? "인프라 운영 경험을 바탕으로 AI 업무 도구와 플랫폼 운영을 탐구합니다. 셀프서비스 AI 플랫폼과 LLM 추론 플랫폼은 계획 단계입니다."
+            : "Exploring AI workflow tools and platform operations from an infrastructure background. The self-service AI and LLM inference platforms are planned projects."
+        }
+      >
+        <div className="grid gap-6 md:grid-cols-2">
+          {platformProjects
+            .filter((project) => project.status === "Planned")
+            .map((project) => (
+              <ProjectCard
+                key={project.slug}
+                project={localizeProject(project, language)}
+                language={language}
+              />
+            ))}
         </div>
       </Section>
 
@@ -166,13 +206,21 @@ function Home() {
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a
-            href={siteConfig.links.github}
+            href={siteConfig.links.linkedin}
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
-            GitHub
+            {language === "ko" ? "LinkedIn으로 연락하기" : "Contact on LinkedIn"}
             <ExternalLink aria-hidden="true" className="size-3.5" />
+          </a>
+          <a
+            href={siteConfig.links.companyContact}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center rounded-md border border-border px-5 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground"
+          >
+            {language === "ko" ? "ELFIRST 회사 서비스 문의" : "ELFIRST company services"}
           </a>
           {siteConfig.links.resume ? (
             <a
