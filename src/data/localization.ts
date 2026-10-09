@@ -154,8 +154,8 @@ export const koreanCareerTransition = [
   },
   {
     stage: "MLOps / ML 플랫폼",
-    state: "In Progress",
-    stateLabel: "진행 중",
+    state: "Research",
+    stateLabel: "연구 중",
     detail: "모델 등록, 서빙, 배포 및 롤백 흐름을 위한 학습·설계 프로젝트.",
   },
   {

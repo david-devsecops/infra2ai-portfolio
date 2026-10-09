@@ -48,7 +48,7 @@ export const careerTransition = [
   },
   {
     stage: "MLOps / ML Platform",
-    state: "In Progress",
+    state: "Research",
     detail: "Lab and design work for model registry, serving, deployment and rollback flows.",
   },
   {

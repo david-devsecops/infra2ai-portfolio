@@ -5,7 +5,7 @@ import type { Language } from "@/lib/language";
 const stateStyle: Record<string, string> = {
   Foundation: "text-status-done border-status-done/40",
   Current: "text-status-done border-status-done/40",
-  "In Progress": "text-status-progress border-status-progress/40",
+  Research: "text-status-progress border-status-progress/40",
   Target: "text-status-planned border-status-planned/40",
 };
 
