@@ -18,13 +18,13 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-3 md:px-8">
         <Link to="/" className="group flex flex-col leading-tight" onClick={() => setOpen(false)}>
-          <span className="font-mono text-[0.7rem] tracking-[0.18em] text-primary uppercase">
-            {copy.role}
+          <span className="text-xs font-medium tracking-wide text-foreground">{copy.role}</span>
+          <span className="hidden text-sm text-muted-foreground sm:block">
+            {copy.brandSubtitle}
           </span>
-          <span className="text-sm text-muted-foreground">{copy.brandSubtitle}</span>
         </Link>
 
-        <nav aria-label={copy.mainNavLabel} className="hidden items-center gap-1 lg:flex">
+        <nav aria-label={copy.mainNavLabel} className="hidden items-center gap-1 xl:flex">
           {nav.map((item) => (
             <Link
               key={item.to}
@@ -38,25 +38,25 @@ export function SiteHeader() {
           ))}
           <ResumeLink />
           <a
-            href={siteConfig.links.github}
+            href={siteConfig.links.linkedin}
             target="_blank"
             rel="noreferrer noopener"
-            className="ml-1 inline-flex items-center gap-1.5 rounded border border-border px-3 py-2 text-sm text-foreground transition-colors hover:border-border-strong hover:bg-secondary"
+            className="ml-1 inline-flex min-h-11 items-center gap-1.5 rounded-md bg-primary px-3 py-2 text-sm font-medium text-primary-foreground hover:opacity-90"
           >
-            GitHub
+            {copy.contact}
             <ExternalLink aria-hidden="true" className="size-3.5" />
           </a>
           <LanguageToggle />
         </nav>
 
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="flex items-center gap-2 xl:hidden">
           <button
             type="button"
             aria-expanded={open}
             aria-controls="mobile-nav"
             aria-label={open ? copy.closeMenu : copy.openMenu}
             onClick={() => setOpen((v) => !v)}
-            className="inline-flex items-center justify-center rounded border border-border p-2 text-foreground"
+            className="inline-flex size-11 items-center justify-center rounded border border-border-strong text-foreground hover:bg-secondary"
           >
             {open ? (
               <X aria-hidden="true" className="size-5" />
@@ -72,7 +72,7 @@ export function SiteHeader() {
         <nav
           id="mobile-nav"
           aria-label={copy.mainNavLabel}
-          className="border-t border-border bg-surface lg:hidden"
+          className="border-t border-border bg-surface xl:hidden"
         >
           <ul className="mx-auto flex w-full max-w-6xl flex-col px-5 py-2 md:px-8">
             {nav.map((item) => (
@@ -88,19 +88,22 @@ export function SiteHeader() {
                 </Link>
               </li>
             ))}
-            <li>
-              <span className="block border-b border-border/60 py-3">
-                <ResumeLink mobile />
-              </span>
-            </li>
+            {siteConfig.links.resume ? (
+              <li>
+                <span className="block border-b border-border/60 py-3">
+                  <ResumeLink mobile />
+                </span>
+              </li>
+            ) : null}
             <li>
               <a
-                href={siteConfig.links.github}
+                href={siteConfig.links.linkedin}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="block py-3 text-sm text-foreground"
+                onClick={() => setOpen(false)}
+                className="my-2 flex min-h-11 items-center justify-center rounded-md bg-primary px-3 py-3 text-sm font-medium text-primary-foreground hover:opacity-90"
               >
-                GitHub
+                {copy.contact}
               </a>
             </li>
           </ul>
@@ -115,13 +118,7 @@ function ResumeLink({ mobile }: { mobile?: boolean }) {
   const copy = commonCopy[language];
   const cls = mobile ? "text-sm text-muted-foreground" : linkBase;
 
-  if (!siteConfig.links.resume) {
-    return (
-      <span className={cls} title={copy.resumeNote}>
-        {copy.resume} <span className="font-mono text-[0.65rem] uppercase">({copy.soon})</span>
-      </span>
-    );
-  }
+  if (!siteConfig.links.resume) return null;
 
   return (
     <a href={siteConfig.links.resume} target="_blank" rel="noreferrer noopener" className={cls}>
@@ -145,9 +142,9 @@ function LanguageToggle() {
         aria-label={copy.korean}
         aria-pressed={language === "ko"}
         onClick={() => setLanguage("ko")}
-        className={`rounded px-2 py-1 font-mono text-xs transition-colors ${
+        className={`min-h-11 min-w-11 rounded px-2 py-1 font-mono text-xs transition-colors ${
           language === "ko"
-            ? "bg-primary text-primary-foreground"
+            ? "bg-secondary text-secondary-foreground font-bold"
             : "text-muted-foreground hover:text-foreground"
         }`}
       >
@@ -158,9 +155,9 @@ function LanguageToggle() {
         aria-label={copy.english}
         aria-pressed={language === "en"}
         onClick={() => setLanguage("en")}
-        className={`rounded px-2 py-1 font-mono text-xs transition-colors ${
+        className={`min-h-11 min-w-11 rounded px-2 py-1 font-mono text-xs transition-colors ${
           language === "en"
-            ? "bg-primary text-primary-foreground"
+            ? "bg-secondary text-secondary-foreground font-bold"
             : "text-muted-foreground hover:text-foreground"
         }`}
       >

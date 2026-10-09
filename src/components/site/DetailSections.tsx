@@ -26,7 +26,7 @@ export function DetailSections({
             >
               {labels[key]}
             </h2>
-            <div className="mt-4 space-y-4 text-sm leading-relaxed text-muted-foreground">
+            <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               {content?.paragraphs?.map((p) => (
                 <p key={p}>{p}</p>
               ))}
@@ -56,7 +56,10 @@ export function SectionNav({
       <ul className="mt-3 space-y-1.5">
         {sectionKeys.map((key) => (
           <li key={key}>
-            <a href={`#${key}`} className="text-xs text-muted-foreground hover:text-foreground">
+            <a
+              href={`#${key}`}
+              className="text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
+            >
               {labels[key]}
             </a>
           </li>

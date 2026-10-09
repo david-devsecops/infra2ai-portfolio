@@ -21,18 +21,18 @@ export function Section({
   as?: "section" | "div";
 }) {
   return (
-    <As id={id} className={cn("border-t border-border py-16 md:py-20", className)}>
+    <As id={id} className={cn("scroll-mt-24 border-t border-border py-12 md:py-16", className)}>
       <div className="mx-auto w-full max-w-6xl px-5 md:px-8">
         {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
         {title ? (
           <h2 className="mt-3 text-2xl font-semibold text-foreground md:text-3xl">{title}</h2>
         ) : null}
         {description ? (
-          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
             {description}
           </p>
         ) : null}
-        {children ? <div className={cn(title || eyebrow ? "mt-10" : "")}>{children}</div> : null}
+        {children ? <div className={cn(title || eyebrow ? "mt-8" : "")}>{children}</div> : null}
       </div>
     </As>
   );
@@ -57,7 +57,7 @@ export function PageHeader({
           {title}
         </h1>
         {description ? (
-          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
             {description}
           </p>
         ) : null}

@@ -44,8 +44,7 @@
   --font-sans:
     ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
     "Noto Sans KR", sans-serif;
-  --font-mono:
-    ui-monospace, "SFMono-Regular", "JetBrains Mono", "Menlo", "Consolas", monospace;
+  --font-mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", "Menlo", "Consolas", monospace;
 }
 
 :root {
@@ -100,7 +99,7 @@
   --input: oklch(0.89 0.005 250);
   --ring: oklch(0.45 0.08 225);
   --status-done: oklch(0.5 0.11 158);
-  --status-progress: oklch(0.55 0.12 70);
+  --status-progress: oklch(0.52 0.11 70);
   --status-planned: oklch(0.5 0.02 252);
   --status-case: oklch(0.45 0.09 235);
 }
@@ -127,6 +126,11 @@
     letter-spacing: -0.02em;
   }
 
+  :lang(ko) :is(h1, h2, h3, p) {
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
   :focus-visible {
     outline: 2px solid var(--color-ring);
     outline-offset: 2px;
@@ -135,8 +139,8 @@
 
 @utility eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-muted-foreground);
 }

@@ -11,6 +11,7 @@ export const commonCopy = {
   ko: {
     role: "클라우드·인프라 아키텍트",
     brandSubtitle: "클라우드 전환과 운영 안정화",
+    contact: "채용·프로젝트 문의",
     nav: {
       "/": "홈",
       "/projects": "프로젝트",
@@ -39,6 +40,7 @@ export const commonCopy = {
   en: {
     role: "CLOUD & INFRASTRUCTURE ARCHITECT",
     brandSubtitle: "Cloud migration and operations",
+    contact: "Discuss a role or project",
     nav: {
       "/": "Home",
       "/projects": "Projects",
@@ -69,7 +71,8 @@ export const commonCopy = {
 export const homeCopy = {
   ko: {
     role: "클라우드·인프라 아키텍트",
-    headline: "클라우드 구축과 운영을 연결하는 인프라 아키텍트",
+    identity: "박상준 · 13년 이상 엔터프라이즈 인프라 경험",
+    headline: "클라우드 전환부터 안정적인 운영까지",
     subline: "Solaris · x86 · Storage · Oracle · Terraform · Cloud · 보안 솔루션 운영",
     positioning:
       "금융권과 기업 서비스의 클라우드 전환, 네트워크·보안 연계, 운영 안정화를 수행합니다. Oracle·Unix·스토리지에서 쌓은 경험을 AWS·NCP와 클라우드 자동화 업무로 넓혀 왔습니다.",
@@ -89,19 +92,20 @@ export const homeCopy = {
       "서버·스토리지·데이터베이스부터 클라우드 네트워크까지, 서비스 경로와 복구 기준을 함께 다룹니다.",
     readCaseStudies: "사례 보기",
     areasEyebrow: "핵심 엔지니어링 영역",
-    areasTitle: "점수가 아닌 엔지니어링 영역",
+    areasTitle: "실무로 연결되는 핵심 역량",
     areasDescription:
-      "각 영역을 관련 프로젝트와 사례에 연결합니다. 백분율이나 별점으로 역량을 표현하지 않습니다.",
+      "클라우드 구축, 네트워크·보안 연계, 자동화와 운영 경험을 관련 사례로 확인하세요. 연구·계획 영역은 상태를 구분해 표시합니다.",
     viewArchitecture: "아키텍처 및 플랫폼 영역 보기",
     contactEyebrow: "연락처",
     contactTitle: "클라우드 전환과 인프라 구축·운영 협업",
     contactDescription:
-      "클라우드 전환, 인프라 구축 또는 운영 안정화에 관한 협업을 논의하고 싶으시면 LinkedIn으로 연락해 주세요. 회사 서비스 문의는 ELFIRST에서 확인하실 수 있습니다.",
+      "채용은 역할과 근무 형태를, 프로젝트는 현재 환경·해결할 문제·희망 일정을 LinkedIn으로 알려주세요. 초기 문의에는 계정 정보나 내부 구성 자료를 포함하지 않아도 됩니다.",
     about: "소개",
   },
   en: {
     role: "CLOUD & INFRASTRUCTURE ARCHITECT",
-    headline: "Connecting cloud delivery and operations",
+    identity: "Sang jun (David) park · 13+ years in enterprise infrastructure",
+    headline: "From cloud migration to reliable operations",
     subline: "Solaris · x86 · Storage · Oracle · Terraform · Cloud · Security Solution Operations",
     positioning:
       "I work on cloud migration, network and security integration, and reliable operations for financial institutions and enterprise services. My work has grown from Oracle, Unix and storage into AWS, NCP and cloud automation.",
@@ -121,14 +125,14 @@ export const homeCopy = {
       "From servers, storage and databases to cloud networks, I work with service paths and recovery requirements together.",
     readCaseStudies: "Read the case studies",
     areasEyebrow: "Core engineering areas",
-    areasTitle: "Engineering areas, not skill scores",
+    areasTitle: "Capabilities grounded in practice",
     areasDescription:
-      "Each area links to the projects and case studies behind it. No percentages, no star ratings.",
+      "Explore the projects behind my cloud delivery, network and security integration, automation and operations work. Research and planned areas are clearly labelled.",
     viewArchitecture: "Architecture and platform areas",
     contactEyebrow: "Contact",
     contactTitle: "Cloud migration, infrastructure and operations",
     contactDescription:
-      "Contact me on LinkedIn to discuss cloud migration, infrastructure delivery or operations. For company services, visit ELFIRST.",
+      "For a role, share the responsibilities and working arrangements. For a project, share your current environment, the problem to solve and your preferred timeline on LinkedIn. Account details and internal configuration documents are not needed for an initial conversation.",
     about: "About",
   },
 } as const satisfies Record<Language, object>;

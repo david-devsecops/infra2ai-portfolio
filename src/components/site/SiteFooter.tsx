@@ -13,9 +13,7 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-surface/40">
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-12 md:grid-cols-3 md:px-8">
         <div>
-          <p className="font-mono text-[0.7rem] tracking-[0.18em] text-primary uppercase">
-            {copy.role}
-          </p>
+          <p className="text-xs font-medium tracking-wide text-foreground">{copy.role}</p>
           <p className="mt-2 text-sm text-muted-foreground">{home.headline}</p>
           <p className="mt-1 text-sm text-muted-foreground">{home.subline}</p>
         </div>
@@ -40,6 +38,16 @@ export function SiteFooter() {
         <div>
           <h2 className="eyebrow">{copy.links}</h2>
           <ul className="mt-3 space-y-2 text-sm">
+            <li>
+              <a
+                href={siteConfig.links.linkedin}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex min-h-11 items-center text-primary underline underline-offset-4"
+              >
+                {copy.contact}
+              </a>
+            </li>
             <li>
               <a
                 href={siteConfig.links.github}

@@ -52,23 +52,21 @@ function Home() {
     <>
       <section className="relative overflow-hidden border-b border-border">
         <div aria-hidden="true" className="rule-grid absolute inset-0" />
-        <div className="relative mx-auto w-full max-w-6xl px-5 py-20 md:px-8 md:py-28">
-          <p className="font-mono text-xs tracking-[0.28em] text-primary uppercase md:text-sm">
-            {copy.role}
-          </p>
+        <div className="relative mx-auto w-full max-w-6xl px-5 py-14 md:px-8 md:py-20">
+          <p className="text-sm font-medium tracking-wide text-muted-foreground">{copy.role}</p>
+          <p className="mt-3 text-sm font-medium text-foreground md:text-base">{copy.identity}</p>
           <h1 className="mt-5 max-w-3xl text-3xl leading-tight font-semibold tracking-tight break-keep text-foreground md:text-5xl">
             {copy.headline}
           </h1>
-          <p className="mt-4 font-mono text-sm text-muted-foreground md:text-base">
-            {copy.subline}
-          </p>
-          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{copy.subline}</p>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground/90">
             {copy.positioning}
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <Link
-              to="/projects"
-              className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              to="/"
+              hash="selected-projects"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
               {copy.viewProjects}
               <ArrowRight aria-hidden="true" className="size-4" />
@@ -77,9 +75,9 @@ function Home() {
               href={siteConfig.links.linkedin}
               target="_blank"
               rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-border-strong bg-surface px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
             >
-              {language === "ko" ? "LinkedIn으로 연락하기" : "Contact on LinkedIn"}
+              {common.contact}
               <ExternalLink aria-hidden="true" className="size-3.5" />
             </a>
           </div>
@@ -87,14 +85,7 @@ function Home() {
       </section>
 
       <Section
-        eyebrow={copy.careerEyebrow}
-        title={copy.careerTitle}
-        description={copy.careerDescription}
-      >
-        <CareerFlow language={language} />
-      </Section>
-
-      <Section
+        id="selected-projects"
         eyebrow={copy.projectsEyebrow}
         title={copy.projectsTitle}
         description={copy.projectsDescription}
@@ -121,11 +112,68 @@ function Home() {
         <Link
           to="/blog/$slug"
           params={{ slug: "ibk-ncp-terraform-vpc-boundaries" }}
-          className="mt-6 inline-flex text-sm text-primary hover:underline"
+          className="mt-6 inline-flex text-sm text-primary underline underline-offset-4 hover:decoration-2"
         >
           {language === "ko"
             ? "기술 글: NCP VPC별 Terraform 변경 범위와 운영 기준"
             : "Technical article: Terraform change boundaries across NCP VPCs (Korean)"}
+        </Link>
+      </Section>
+
+      <Section
+        eyebrow={copy.careerEyebrow}
+        title={copy.careerTitle}
+        description={copy.careerDescription}
+      >
+        <CareerFlow language={language} />
+      </Section>
+
+      <Section
+        eyebrow={copy.experienceEyebrow}
+        title={copy.experienceTitle}
+        description={copy.experienceDescription}
+      >
+        <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {highlights.map((item) => (
+            <li key={item.title} className="border-l-2 border-primary/50 pl-4">
+              <h3 className="text-sm font-semibold text-foreground">{item.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.detail}</p>
+            </li>
+          ))}
+        </ul>
+        <Link
+          to="/experience"
+          className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-primary underline underline-offset-4 hover:decoration-2"
+        >
+          {copy.readCaseStudies}
+          <ArrowRight aria-hidden="true" className="size-4" />
+        </Link>
+      </Section>
+
+      <Section
+        eyebrow={copy.areasEyebrow}
+        title={copy.areasTitle}
+        description={copy.areasDescription}
+      >
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {areas.map((area) => (
+            <li key={area.id} className="rounded-lg border border-border bg-card p-5">
+              <div className="flex items-start justify-between gap-2">
+                <h3 className="text-sm font-semibold text-card-foreground">{area.title}</h3>
+              </div>
+              <StatusBadge status={area.status} className="mt-2" language={language} />
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                {area.description}
+              </p>
+            </li>
+          ))}
+        </ul>
+        <Link
+          to="/architecture"
+          className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-primary underline underline-offset-4 hover:decoration-2"
+        >
+          {copy.viewArchitecture}
+          <ArrowRight aria-hidden="true" className="size-4" />
         </Link>
       </Section>
 
@@ -151,57 +199,8 @@ function Home() {
         </div>
       </Section>
 
-      <Section
-        eyebrow={copy.experienceEyebrow}
-        title={copy.experienceTitle}
-        description={copy.experienceDescription}
-      >
-        <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {highlights.map((item) => (
-            <li key={item.title} className="border-l-2 border-primary/50 pl-4">
-              <h3 className="text-sm font-semibold text-foreground">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.detail}</p>
-            </li>
-          ))}
-        </ul>
-        <Link
-          to="/experience"
-          className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
-        >
-          {copy.readCaseStudies}
-          <ArrowRight aria-hidden="true" className="size-4" />
-        </Link>
-      </Section>
-
-      <Section
-        eyebrow={copy.areasEyebrow}
-        title={copy.areasTitle}
-        description={copy.areasDescription}
-      >
-        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {areas.map((area) => (
-            <li key={area.id} className="rounded-lg border border-border bg-card p-5">
-              <div className="flex items-start justify-between gap-2">
-                <h3 className="text-sm font-semibold text-card-foreground">{area.title}</h3>
-              </div>
-              <StatusBadge status={area.status} className="mt-2" language={language} />
-              <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-                {area.description}
-              </p>
-            </li>
-          ))}
-        </ul>
-        <Link
-          to="/architecture"
-          className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
-        >
-          {copy.viewArchitecture}
-          <ArrowRight aria-hidden="true" className="size-4" />
-        </Link>
-      </Section>
-
-      <Section eyebrow={copy.contactEyebrow} title={copy.contactTitle}>
-        <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
+      <Section id="contact" eyebrow={copy.contactEyebrow} title={copy.contactTitle}>
+        <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">
           {copy.contactDescription}
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
@@ -209,16 +208,16 @@ function Home() {
             href={siteConfig.links.linkedin}
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
-            {language === "ko" ? "LinkedIn으로 연락하기" : "Contact on LinkedIn"}
+            {common.contact}
             <ExternalLink aria-hidden="true" className="size-3.5" />
           </a>
           <a
             href={siteConfig.links.companyContact}
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-center rounded-md border border-border px-5 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground"
+            className="inline-flex min-h-11 items-center px-2 py-2.5 text-sm font-medium text-muted-foreground underline underline-offset-4 hover:text-foreground"
           >
             {language === "ko" ? "ELFIRST 회사 서비스 문의" : "ELFIRST company services"}
           </a>
@@ -231,14 +230,10 @@ function Home() {
             >
               {common.resumePdf}
             </a>
-          ) : (
-            <span className="inline-flex items-center rounded-md border border-dashed border-border px-5 py-2.5 text-sm text-muted-foreground">
-              {common.resumePlaceholder}
-            </span>
-          )}
+          ) : null}
           <Link
             to="/about"
-            className="inline-flex items-center rounded-md border border-border px-5 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground"
+            className="inline-flex min-h-11 items-center px-2 py-2.5 text-sm font-medium text-muted-foreground underline underline-offset-4 hover:text-foreground"
           >
             {copy.about}
           </Link>

@@ -16,7 +16,7 @@ export function CareerFlow({ language = "en" }: { language?: Language }) {
       : careerTransition.map((step) => ({ ...step, stateLabel: step.state }));
 
   return (
-    <ol className="grid gap-4 md:grid-cols-5">
+    <ol className="grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
       {steps.map((step, index) => (
         <li
           key={step.stage}
@@ -27,17 +27,17 @@ export function CareerFlow({ language = "en" }: { language?: Language }) {
           </span>
           <h3 className="mt-2 text-sm font-semibold text-card-foreground">{step.stage}</h3>
           <span
-            className={`mt-2 inline-flex w-fit rounded-full border px-2 py-0.5 font-mono text-[0.65rem] tracking-wider uppercase ${
+            className={`mt-2 inline-flex w-fit rounded-full border px-2 py-0.5 font-mono text-xs tracking-wider uppercase ${
               stateStyle[step.state] ?? "text-muted-foreground border-border"
             }`}
           >
             {step.stateLabel}
           </span>
-          <p className="mt-3 text-xs leading-relaxed text-muted-foreground">{step.detail}</p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{step.detail}</p>
           {index < steps.length - 1 ? (
             <span
               aria-hidden="true"
-              className="absolute top-1/2 -right-2.5 hidden font-mono text-border-strong md:block"
+              className="absolute top-1/2 -right-2.5 hidden font-mono text-border-strong xl:block"
             >
               →
             </span>

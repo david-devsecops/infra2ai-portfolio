@@ -22,7 +22,7 @@ export function ProjectCard({
         <StatusBadge status={project.status} language={language} />
       </div>
       {project.client || project.period ? (
-        <p className="mt-3 font-mono text-xs text-muted-foreground">
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {[
             project.client,
             project.period
@@ -34,18 +34,20 @@ export function ProjectCard({
         </p>
       ) : null}
       {project.affiliation ? (
-        <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {project.affiliation[language]}
         </p>
       ) : null}
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{project.summary}</p>
+      <p className="mt-3 flex-1 text-base leading-relaxed text-muted-foreground">
+        {project.summary}
+      </p>
       <div className="mt-5">
         <TagList items={project.technologies} label={technologiesLabel} />
       </div>
       <Link
         to="/projects/$slug"
         params={{ slug: project.slug }}
-        className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+        className="mt-6 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-primary underline underline-offset-4 hover:decoration-2"
       >
         {language === "ko" ? "프로젝트 상세" : "Project detail"}
         <ArrowRight aria-hidden="true" className="size-4" />
@@ -90,7 +92,7 @@ export function CaseStudyCard({
       <Link
         to="/experience/$slug"
         params={{ slug: study.slug }}
-        className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+        className="mt-6 inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-primary underline underline-offset-4 hover:decoration-2"
       >
         {copy.detail}
         <ArrowRight aria-hidden="true" className="size-4" />
