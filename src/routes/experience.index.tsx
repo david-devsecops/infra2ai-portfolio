@@ -6,7 +6,7 @@ import { caseStudies, caseStudyCategories } from "@/data/caseStudies";
 import { koreanCategoryLabels, localizeCaseStudy, pageCopy } from "@/data/localization";
 import { useDocumentTitle, useLanguage } from "@/lib/language";
 
-const title = "경험 — 프로덕션 엔지니어링 사례";
+const title = "경력 — 프로덕션 엔지니어링 사례";
 const description =
   "서버·스토리지·Oracle 운영, 클라우드 이관과 네트워크 분석에서 만났던 문제와 해결 과정을 정리했습니다.";
 
@@ -24,7 +24,12 @@ export const Route = createFileRoute("/experience/")({
 
 function ExperiencePage() {
   const { language } = useLanguage();
-  useDocumentTitle(language === "ko" ? title : "Experience — Production Engineering Case Studies");
+  useDocumentTitle(
+    language === "ko" ? title : "Experience — Production Engineering Case Studies",
+    language === "ko"
+      ? description
+      : "Problems I encountered and how I approached them in server, storage and Oracle operations, cloud migration and network analysis.",
+  );
   const copy = pageCopy[language].experience;
   const localizedStudies = caseStudies.map((study) => localizeCaseStudy(study, language));
 

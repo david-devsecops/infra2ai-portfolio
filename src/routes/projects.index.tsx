@@ -24,7 +24,12 @@ export const Route = createFileRoute("/projects/")({
 
 function ProjectsPage() {
   const { language } = useLanguage();
-  useDocumentTitle(language === "ko" ? title : "Projects — Cloud & Infrastructure Architect");
+  useDocumentTitle(
+    language === "ko" ? title : "Projects — Cloud & Infrastructure Architect",
+    language === "ko"
+      ? description
+      : "Cloud and infrastructure projects I have worked on, alongside AI platform projects I am studying or planning.",
+  );
   const copy = pageCopy[language].projects;
 
   return (

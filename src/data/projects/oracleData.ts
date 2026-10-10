@@ -38,8 +38,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle", "ZDLRA"],
     scope: {
       en: [
-        "Support ZDLRA maintenance and operating checks.",
-        "Separate appliance state, protected-database state and recovery readiness.",
+        "I supported ZDLRA maintenance and operating checks.",
+        "I separated appliance state, protected-database state and recovery readiness.",
       ],
       ko: [
         "ZDLRA 유지보수와 운영 점검을 지원했습니다.",
@@ -65,8 +65,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle", "ZDLRA"],
     scope: {
       en: [
-        "Build the ZDLRA platform boundary.",
-        "Define protected-database integration and verification points.",
+        "I built the ZDLRA platform boundary.",
+        "I defined protected-database integration and verification points.",
       ],
       ko: ["ZDLRA 플랫폼 경계를 구축했습니다.", "보호 DB 연계와 검증 지점을 정의했습니다."],
     },
@@ -89,8 +89,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle", "ZDLRA"],
     scope: {
       en: [
-        "Build the recovery-appliance foundation for separate database domains.",
-        "Define the scope of integration and validation.",
+        "I built the recovery-appliance foundation for separate database domains.",
+        "I defined the scope of integration and validation.",
       ],
       ko: [
         "분리된 DB 영역을 위한 복구 어플라이언스 기반을 구축했습니다.",
@@ -116,8 +116,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle", "ZDLRA"],
     scope: {
       en: [
-        "Support appliance and protection-flow maintenance.",
-        "Keep backup collection status separate from recoverability checks.",
+        "I supported appliance and protection-flow maintenance.",
+        "I kept backup collection status separate from recoverability checks.",
       ],
       ko: [
         "Appliance와 보호 흐름의 유지보수를 지원했습니다.",
@@ -143,8 +143,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle", "ZDLRA"],
     scope: {
       en: [
-        "Build the ZDLRA platform and protected-database interfaces.",
-        "Carry the build validation model into maintenance checks.",
+        "I built the ZDLRA platform and protected-database interfaces.",
+        "I carried the build validation model into maintenance checks.",
       ],
       ko: [
         "ZDLRA 플랫폼과 보호 DB 인터페이스를 구축했습니다.",
@@ -170,8 +170,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle", "ZDLRA"],
     scope: {
       en: [
-        "Support ZDLRA operating checks and maintenance changes.",
-        "Verify the protection flow at appliance and database boundaries.",
+        "I supported ZDLRA operating checks and maintenance changes.",
+        "I verified the protection flow at appliance and database boundaries.",
       ],
       ko: [
         "ZDLRA 운영 점검과 유지보수 변경을 지원했습니다.",
@@ -197,8 +197,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle Server", "Hardware"],
     scope: {
       en: [
-        "Support server-hardware maintenance under controlled change.",
-        "Preserve system evidence and verify service dependencies after work.",
+        "I supported server-hardware maintenance under controlled change.",
+        "I preserved system evidence and verified service dependencies after work.",
       ],
       ko: [
         "통제된 변경 절차로 서버 하드웨어 유지보수를 지원했습니다.",
@@ -221,8 +221,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle Database", "TORE", "Performance Analysis"],
     scope: {
       en: [
-        "Review Oracle performance evidence across related resource layers.",
-        "Separate observation, hypothesis and recommended change.",
+        "I reviewed Oracle performance evidence across related resource layers.",
+        "I separated observation, hypothesis and recommended change.",
       ],
       ko: [
         "연관 자원 계층의 Oracle 성능 증거를 검토했습니다.",
@@ -245,8 +245,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle", "OGG", "Operations"],
     scope: {
       en: [
-        "Maintain Oracle database services and OGG dependencies.",
-        "Check source, replication process and target state as separate boundaries.",
+        "I maintained Oracle database services and OGG dependencies.",
+        "I checked source, replication process and target state as separate boundaries.",
       ],
       ko: [
         "Oracle DB 서비스와 OGG 의존성을 유지보수했습니다.",
@@ -269,8 +269,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle", "Tuning", "Monitoring"],
     scope: {
       en: [
-        "Observe database signals during the registration workload.",
-        "Link SQL and instance observations to the affected business path.",
+        "I observed database signals during the registration workload.",
+        "I linked SQL and instance observations to the affected business path.",
       ],
       ko: [
         "수강신청 워크로드 시간대의 DB 신호를 관측했습니다.",
@@ -293,8 +293,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle RAC"],
     scope: {
       en: [
-        "Build the RAC cluster and database service boundary.",
-        "Verify node, listener, service and shared-storage visibility.",
+        "I built the RAC cluster and database service boundary.",
+        "I verified node, listener, service and shared-storage visibility.",
       ],
       ko: [
         "RAC 클러스터와 DB 서비스 경계를 구축했습니다.",
@@ -317,8 +317,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle RAC", "ESXi"],
     scope: {
       en: [
-        "Build RAC across virtual-machine and database boundaries.",
-        "Verify virtual networking, shared storage, cluster and service state separately.",
+        "I built RAC across virtual-machine and database boundaries.",
+        "I verified virtual networking, shared storage, cluster and service state separately.",
       ],
       ko: [
         "VM과 DB 경계를 연결해 RAC를 구축했습니다.",
@@ -344,8 +344,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle", "DB Migration", "Cluster"],
     scope: {
       en: [
-        "Sequence database migration and cluster registration.",
-        "Verify database state, cluster resource and representative service connectivity.",
+        "I sequenced database migration and cluster registration.",
+        "I verified database state, cluster resource and representative service connectivity.",
       ],
       ko: [
         "DB 이관과 클러스터 등록 순서를 구성했습니다.",
@@ -368,8 +368,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle RAC", "ASM"],
     scope: {
       en: [
-        "Rebuild the RAC and ASM layers in a controlled sequence.",
-        "Verify disk-group visibility, cluster state and database service readiness.",
+        "I rebuilt the RAC and ASM layers in a controlled sequence.",
+        "I verified disk-group visibility, cluster state and database service readiness.",
       ],
       ko: [
         "RAC와 ASM 계층을 통제된 순서로 재구축했습니다.",
@@ -392,8 +392,8 @@ export const oracleDataProjects = [
     technologies: ["Oracle 12c", "Single Instance", "ASM"],
     scope: {
       en: [
-        "Build the Oracle 12c instance and ASM storage boundary.",
-        "Verify disk-group, listener, database and representative service state.",
+        "I built the Oracle 12c instance and ASM storage boundary.",
+        "I verified disk-group, listener, database and representative service state.",
       ],
       ko: [
         "Oracle 12c 인스턴스와 ASM 스토리지 경계를 구축했습니다.",

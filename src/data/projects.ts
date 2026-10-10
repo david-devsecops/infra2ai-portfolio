@@ -54,7 +54,7 @@ export const platformProjects: Project[] = [
       },
       currentStatus: {
         paragraphs: [
-          "Still planned. I will add implementation results after completing the Kubernetes lab work.",
+          "This project is in the planning stage. I plan to start with Kubernetes lab exercises.",
         ],
       },
     },
@@ -91,7 +91,7 @@ export const platformProjects: Project[] = [
         ],
       },
       currentStatus: {
-        paragraphs: ["Planned. No implementation, benchmark or measurement exists yet."],
+        paragraphs: ["This project is planned; implementation has not started."],
       },
     },
   },
@@ -114,7 +114,7 @@ export const platformProjects: Project[] = [
       },
       currentStatus: {
         paragraphs: [
-          "I am still writing these up and adding finished articles to the Experience page.",
+          "The Experience page contains six cases covering cloud migration, network analysis and system operations.",
         ],
       },
     },

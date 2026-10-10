@@ -198,7 +198,7 @@ const cbdcUsabilityTest = deepCareerProject({
     },
     architecture: {
       en: [
-        "Model transit, inspection, load-balancing, service and data dependencies as separate failure domains joined by explicit interfaces.",
+        "I modelled transit, inspection, load-balancing, service and data dependencies as separate failure domains joined by explicit interfaces.",
       ],
       ko: [
         "Transit, 보안 검사, 부하 분산, 서비스와 데이터 의존성을 명시적인 인터페이스로 연결된 별도 장애 도메인으로 구성했습니다.",
@@ -206,7 +206,7 @@ const cbdcUsabilityTest = deepCareerProject({
     },
     designDecisions: {
       en: [
-        "Separate shared-path verification from service-specific checks so a common dependency does not hide behind application symptoms.",
+        "I separated shared-path verification from service-specific checks so a common dependency does not hide behind application symptoms.",
       ],
       ko: [
         "공통 경로 검증과 서비스별 점검을 분리해 공통 의존성이 애플리케이션 증상 뒤에 숨지 않도록 했습니다.",
@@ -216,7 +216,7 @@ const cbdcUsabilityTest = deepCareerProject({
       en: [
         "Built and operated Transit VPC/SFC SSL offloading and Hiware, DBSafer, FW, IPS, RedCastle, CDC and Gabia DaaS integrations.",
         "Built and supported segregated DaaS for IBK and configured and operated IPSec VPN connections to the Bank of Korea and partner institutions.",
-        "Coordinate NCP network and security integration, SSL offloading, VPN and DaaS interfaces through reviewed change and test sequences.",
+        "I coordinated NCP network and security integration, SSL offloading, VPN and DaaS interfaces through reviewed change and test sequences.",
       ],
       ko: [
         "Transit VPC·SFC 기반 SSL Offloading과 Hiware, DBSafer, FW, IPS, RedCastle, CDC, Gabia DaaS의 구축·운영을 담당했습니다.",
@@ -226,7 +226,7 @@ const cbdcUsabilityTest = deepCareerProject({
     },
     deployment: {
       en: [
-        "Validate shared dependencies first, then service reachability, representative transactions and the return path.",
+        "I validated shared dependencies first, then service reachability, representative transactions and the return path.",
       ],
       ko: [
         "공통 의존성을 먼저 확인한 뒤 서비스 연결, 대표 트랜잭션과 응답 경로 순서로 검증했습니다.",
@@ -234,7 +234,7 @@ const cbdcUsabilityTest = deepCareerProject({
     },
     observability: {
       en: [
-        "Align network state, security events, load-balancer health and application checks to the same test window.",
+        "I aligned network state, security events, load-balancer health and application checks to the same test window.",
       ],
       ko: [
         "네트워크 상태, 보안 이벤트, 로드 밸런서 상태와 애플리케이션 점검을 같은 테스트 시간대에 맞췄습니다.",
@@ -242,7 +242,7 @@ const cbdcUsabilityTest = deepCareerProject({
     },
     failureScenarios: {
       en: [
-        "Distinguish reachability, inspection, SSL, load-balancing, application-readiness and return-path failures.",
+        "I distinguished reachability, inspection, SSL, load-balancing, application-readiness and return-path failures.",
       ],
       ko: [
         "연결, 보안 검사, SSL, 부하 분산, 애플리케이션 준비 상태와 응답 경로 장애를 구분했습니다.",
@@ -250,7 +250,7 @@ const cbdcUsabilityTest = deepCareerProject({
     },
     troubleshooting: {
       en: [
-        "Reproduce one request and move hop by hop using evidence from both sides of every interface.",
+        "I reproduced one request and moved hop by hop using evidence from both sides of every interface.",
       ],
       ko: [
         "하나의 요청을 재현하고 모든 인터페이스 양쪽의 증거를 비교하며 구간 단위로 이동했습니다.",
@@ -290,8 +290,8 @@ export const cloudSecurityProjects = [
       en: [
         "Completed migration delivery by 2023.10.31. Subsequent AWS operations ran from 2023.11.01 to 2025.04.",
         "I initially worked as an employee of 우나프론트, then continued under a freelance services contract as a sole proprietor.",
-        "Review on-premises dependencies and AWS target boundaries.",
-        "Define cutover and rollback checkpoints for the migration.",
+        "I reviewed on-premises dependencies and AWS target boundaries.",
+        "I defined cutover and rollback checkpoints for the migration.",
       ],
       ko: [
         "2023.10.31까지 이관 구축을 완료했습니다. 후속 AWS 운영은 2023.11.01–2025.04 수행 후 종료했습니다.",
@@ -318,8 +318,8 @@ export const cloudSecurityProjects = [
     technologies: ["AWS", "Operations", "Monitoring"],
     scope: {
       en: [
-        "Operate AWS infrastructure through reviewed changes.",
-        "Connect monitoring signals to representative service checks.",
+        "I operated AWS infrastructure through reviewed changes.",
+        "I connected monitoring signals to representative service checks.",
       ],
       ko: [
         "검토된 변경 절차로 AWS 인프라를 운영했습니다.",
@@ -345,8 +345,8 @@ export const cloudSecurityProjects = [
     technologies: ["DevOps", "Cloud", "CI/CD"],
     scope: {
       en: [
-        "Coordinate DevOps delivery and operational hand-off.",
-        "Keep deployment, monitoring and rollback responsibilities explicit.",
+        "I coordinated DevOps delivery and operational hand-off.",
+        "I kept deployment, monitoring and rollback responsibilities explicit.",
       ],
       ko: [
         "DevOps 구축과 운영 인계를 조정했습니다.",
@@ -372,8 +372,8 @@ export const cloudSecurityProjects = [
     technologies: ["AWS", "Operations"],
     scope: {
       en: [
-        "Maintain service infrastructure and operational dependencies.",
-        "Verify component health and representative service paths after change.",
+        "I maintained service infrastructure and operational dependencies.",
+        "I verified component health and representative service paths after change.",
       ],
       ko: [
         "서비스 인프라와 운영 의존성을 유지보수했습니다.",
@@ -404,14 +404,14 @@ export const cloudSecurityProjects = [
       en: [
         "Built cross-account CloudWatch monitoring while maintaining service infrastructure.",
         "I tested EMR with Spark and Zeppelin, and Athena, as possible cost alternatives to AWS Glue.",
-        "I did this work while employed by 아이와이씨앤씨(주). The dates shown are my employment period.",
-        "Express service infrastructure as reviewed Terraform changes.",
-        "Separate plan review, apply order and post-change verification.",
+        "I did this work during my employment at 아이와이씨앤씨(주) from December 2018 to September 2021.",
+        "I expressed service infrastructure as reviewed Terraform changes.",
+        "I separated plan review, apply order and post-change verification.",
       ],
       ko: [
         "교차 계정 CloudWatch 모니터링을 구성하고 서비스 인프라 유지보수를 수행했습니다.",
         "AWS Glue의 비용 대안을 검토하면서 EMR의 Spark·Zeppelin 환경과 Athena를 테스트했습니다.",
-        "아이와이씨앤씨(주) 재직 중 맡았던 업무입니다. 표시된 기간은 회사 재직기간입니다.",
+        "2018.12–2021.09 아이와이씨앤씨(주) 재직 중 맡았던 업무입니다.",
         "서비스 인프라를 검토 가능한 Terraform 변경으로 표현했습니다.",
         "Plan 검토, apply 순서와 변경 후 검증을 분리했습니다.",
       ],
@@ -435,8 +435,8 @@ export const cloudSecurityProjects = [
     technologies: ["AWS Glue", "EMR", "Spark", "Zeppelin", "Athena"],
     scope: {
       en: [
-        "Compare EMR and Athena operating models for the target workload.",
-        "Review service boundaries that influence execution and cost.",
+        "I compared EMR and Athena operating models for the target workload.",
+        "I reviewed service boundaries that influence execution and cost.",
       ],
       ko: [
         "대상 워크로드에서 EMR과 Athena 운영 방식을 비교했습니다.",
@@ -465,8 +465,8 @@ export const cloudSecurityProjects = [
     technologies: ["AWS", "CloudWatch", "Multi-Account"],
     scope: {
       en: [
-        "Define monitoring visibility across account boundaries.",
-        "Keep source-account ownership and central observation responsibilities separate.",
+        "I defined monitoring visibility across account boundaries.",
+        "I kept source-account ownership and central observation responsibilities separate.",
       ],
       ko: [
         "계정 경계를 넘는 모니터링 가시성을 정의했습니다.",
@@ -492,8 +492,8 @@ export const cloudSecurityProjects = [
     technologies: ["AWS", "Migration"],
     scope: {
       en: [
-        "Review source and AWS target infrastructure dependencies.",
-        "Support migration sequencing and post-cutover checks.",
+        "I reviewed source and AWS target infrastructure dependencies.",
+        "I supported migration sequencing and post-cutover checks.",
       ],
       ko: [
         "원본과 AWS 대상 인프라 의존성을 검토했습니다.",
@@ -519,8 +519,8 @@ export const cloudSecurityProjects = [
     technologies: ["GCP", "Cloud Infrastructure"],
     scope: {
       en: [
-        "Define the GCP infrastructure boundary for WDP.",
-        "Verify connectivity and service readiness after provisioning.",
+        "I defined the GCP infrastructure boundary for WDP.",
+        "I verified connectivity and service readiness after provisioning.",
       ],
       ko: [
         "WDP의 GCP 인프라 경계를 정의했습니다.",
@@ -546,8 +546,8 @@ export const cloudSecurityProjects = [
     technologies: ["GCP", "Landing Zone", "IoT"],
     scope: {
       en: [
-        "Define the landing-zone account, network and operational boundaries.",
-        "Prepare the shared foundation for the IoT workload.",
+        "I defined the landing-zone account, network and operational boundaries.",
+        "I prepared the shared foundation for the IoT workload.",
       ],
       ko: [
         "Landing zone의 계정, 네트워크와 운영 경계를 정의했습니다.",
@@ -573,8 +573,8 @@ export const cloudSecurityProjects = [
     technologies: ["Azure", "BaaS", "Pipeline"],
     scope: {
       en: [
-        "Build the platform infrastructure boundary on Azure.",
-        "Connect pipeline stages to controlled deployment and verification steps.",
+        "I built the platform infrastructure boundary on Azure.",
+        "I connected pipeline stages to controlled deployment and verification steps.",
       ],
       ko: [
         "Azure에서 플랫폼 인프라 경계를 구축했습니다.",

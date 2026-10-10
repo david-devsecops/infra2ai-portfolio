@@ -5,7 +5,7 @@ import { BulletList } from "@/components/site/Cards";
 import { aboutSections, mentoringCopy, pageCopy } from "@/data/localization";
 import { useDocumentTitle, useLanguage } from "@/lib/language";
 
-const title = "소개 — 박상준 | 클라우드·인프라 아키텍트";
+const title = "프로필 — 박상준 | 클라우드·인프라 아키텍트";
 const description =
   "클라우드·인프라 아키텍트 박상준입니다. NCP 인프라, AWS 전환, Terraform 구축과 운영 경험, 윈터뷰 멘토링 활동을 소개합니다.";
 
@@ -24,7 +24,9 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   const { language } = useLanguage();
   useDocumentTitle(
-    language === "ko" ? title : "About — Sang jun (David) park | Cloud & Infrastructure Architect",
+    language === "ko"
+      ? title
+      : "Profile — Sang jun (David) park | Cloud & Infrastructure Architect",
     language === "ko"
       ? description
       : "I am Sang jun (David) park, a cloud and infrastructure architect. Read about my NCP, AWS and Terraform work and Winterview mentoring.",

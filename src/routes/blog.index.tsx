@@ -41,7 +41,7 @@ function BlogIndexPage() {
   const { language } = useLanguage();
   const currentCopy = copy[language];
   const posts = [...blogPosts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
-  useDocumentTitle(language === "ko" ? title : "Blog — Legacy to Cloud | infra2ai.dev");
+  useDocumentTitle(title, currentCopy.description);
 
   return (
     <>

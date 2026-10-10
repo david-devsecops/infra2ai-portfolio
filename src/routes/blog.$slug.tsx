@@ -34,7 +34,7 @@ export const Route = createFileRoute("/blog/$slug")({
 function BlogDetailPage() {
   const { post } = Route.useLoaderData();
   const { language } = useLanguage();
-  useDocumentTitle(`${post.title[language]} — infra2ai.dev`);
+  useDocumentTitle(`${post.title[language]} — infra2ai.dev`, post.summary[language]);
 
   return <BlogArticle post={post} language={language} />;
 }

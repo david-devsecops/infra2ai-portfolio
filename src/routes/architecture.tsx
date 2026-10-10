@@ -16,7 +16,7 @@ import { useDocumentTitle, useLanguage } from "@/lib/language";
 
 const title = "아키텍처 — 플랫폼 엔지니어링 영역";
 const description =
-  "엔터프라이즈 인프라, 클라우드, 네트워크, IaC와 목표 단계의 AI/ML 플랫폼을 완료·진행·계획 상태로 구분해 설명합니다.";
+  "실무에서 다룬 인프라·클라우드·네트워크·IaC와 현재 공부하거나 계획 중인 Kubernetes·AI 플랫폼을 소개합니다.";
 
 export const Route = createFileRoute("/architecture")({
   head: () => ({
@@ -32,7 +32,12 @@ export const Route = createFileRoute("/architecture")({
 
 function ArchitecturePage() {
   const { language } = useLanguage();
-  useDocumentTitle(language === "ko" ? title : "Architecture — Platform Engineering Areas");
+  useDocumentTitle(
+    language === "ko" ? title : "Architecture — Platform Engineering Areas",
+    language === "ko"
+      ? description
+      : "Infrastructure, cloud, network and IaC technologies I have worked with, alongside Kubernetes and AI platforms I am studying or planning.",
+  );
   const copy = pageCopy[language].architecture;
   const localizedAreas = architectureAreas.map((area) => localizeArchitectureArea(area, language));
   const localizedProjects = projects.map((project) => localizeProject(project, language));

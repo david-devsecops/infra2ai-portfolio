@@ -84,8 +84,8 @@ const knccsOperations = deepCareerProject({
     },
     architecture: {
       en: [
-        "Use the boundary sequence Filesystem → Volume → Multipath → HBA → SAN Fabric → Array, then connect database, middleware and backup dependencies to the same map.",
-        "Treat the tape and NetBackup path as a recovery system, not an isolated job scheduler.",
+        "I used the boundary sequence Filesystem → Volume → Multipath → HBA → SAN Fabric → Array, then connected database, middleware and backup dependencies to the same map.",
+        "I treated the tape and NetBackup path as a recovery system, not an isolated job scheduler.",
       ],
       ko: [
         "파일시스템 → 볼륨 → Multipath → HBA → SAN Fabric → 스토리지 장비 순서로 경계를 나누고 DB, 미들웨어와 백업 의존성을 같은 지도에 연결했습니다.",
@@ -94,8 +94,8 @@ const knccsOperations = deepCareerProject({
     },
     implementation: {
       en: [
-        "Operate Solaris, Oracle RAC, storage and JEUS changes through reviewed procedures with explicit pre-check, stop, rollback and post-check stages.",
-        "Use VxVM and multipath evidence to identify whether a visible disk issue belongs to the host, path, fabric or array boundary.",
+        "I carried out Solaris, Oracle RAC, storage and JEUS changes through reviewed procedures with explicit pre-check, stop, rollback and post-check stages.",
+        "I used VxVM and multipath evidence to identify whether a visible disk issue belongs to the host, path, fabric or array boundary.",
       ],
       ko: [
         "Solaris, Oracle RAC, 스토리지와 JEUS 변경을 사전 점검, 중단, 롤백과 사후 점검 단계가 있는 검토 절차로 수행했습니다.",
@@ -104,8 +104,8 @@ const knccsOperations = deepCareerProject({
     },
     observability: {
       en: [
-        "Align host logs, volume state, path state, fabric and array events, database state and backup results on the same incident window.",
-        "Record what each healthy signal proves and what it cannot prove.",
+        "I aligned host logs, volume state, path state, fabric and array events, database state and backup results on the same incident window.",
+        "I recorded what each healthy signal proves and what it cannot prove.",
       ],
       ko: [
         "호스트 로그, 볼륨 상태, 경로 상태, fabric·스토리지 장비 이벤트, DB 상태와 백업 결과를 같은 장애 시간대에 맞췄습니다.",
@@ -126,8 +126,8 @@ const knccsOperations = deepCareerProject({
     },
     troubleshooting: {
       en: [
-        "Preserve evidence before replacement, isolate the smallest failed boundary and make one reversible change at a time.",
-        "After hardware or path work, validate redundancy and service behaviour rather than stopping at device visibility.",
+        "I preserved evidence before replacement, isolated the smallest failed boundary and made one reversible change at a time.",
+        "After hardware or path work, I validated redundancy and service behaviour rather than stopping at device visibility.",
       ],
       ko: [
         "교체 전에 증거를 보존하고 가장 작은 장애 경계를 찾은 뒤 한 번에 하나의 복구 가능한 변경만 수행했습니다.",
@@ -136,7 +136,7 @@ const knccsOperations = deepCareerProject({
     },
     productionConsiderations: {
       en: [
-        "Keep console access, spare-path state, backup dependencies and a tested rollback procedure available before maintenance.",
+        "I kept console access, spare-path state, backup dependencies and a tested rollback procedure available before maintenance.",
       ],
       ko: [
         "유지보수 전에 콘솔 접근, 예비 경로 상태, 백업 의존성과 검증된 롤백 절차를 준비했습니다.",
@@ -172,8 +172,8 @@ export const unixStorageProjects = [
     technologies: ["Solaris", "SF4800", "T5-2", "Migration"],
     scope: {
       en: [
-        "Sequence UNIX system, storage visibility and service transition checks.",
-        "Preserve a rollback route until information-system acceptance.",
+        "I sequenced UNIX system, storage visibility and service transition checks.",
+        "I preserved a rollback route until information-system acceptance.",
       ],
       ko: [
         "UNIX 시스템, 스토리지 가시성과 서비스 전환 점검 순서를 구성했습니다.",
@@ -199,8 +199,8 @@ export const unixStorageProjects = [
     technologies: ["Solaris", "SF4900", "M10-4", "Migration"],
     scope: {
       en: [
-        "Coordinate system migration and business-service cutover boundaries.",
-        "Validate the target from console and I/O path through representative service checks.",
+        "I coordinated system migration and business-service cutover boundaries.",
+        "I validated the target from console and I/O path through representative service checks.",
       ],
       ko: [
         "시스템 이관과 업무 서비스 전환 경계를 조정했습니다.",
@@ -226,8 +226,8 @@ export const unixStorageProjects = [
     technologies: ["EMC DMX3-950", "VMAX 10K", "DR", "Volume Migration"],
     scope: {
       en: [
-        "Build the DR storage target and volume-migration sequence.",
-        "Verify host visibility, path redundancy, volume state and service readiness.",
+        "I built the DR storage target and volume-migration sequence.",
+        "I verified host visibility, path redundancy, volume state and service readiness.",
       ],
       ko: [
         "DR 스토리지 대상과 볼륨 이관 순서를 구성했습니다.",

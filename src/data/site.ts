@@ -17,8 +17,7 @@ export const siteConfig = {
     resume: "", // TODO: put resume.pdf in /public and set to "/resume.pdf"
     email: "", // optional: "mailto:you@example.com"
   },
-  resumeNote:
-    "Resume link placeholder. Add resume.pdf to the public directory and set links.resume in src/data/site.ts.",
+  resumeNote: "The resume link will be enabled when the PDF is ready.",
 };
 
 export const nav = [

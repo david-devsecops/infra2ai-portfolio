@@ -41,6 +41,7 @@ function CaseStudyDetail() {
     language === "ko"
       ? `${study.title} — 프로덕션 엔지니어링 사례`
       : `${study.title} — Production Engineering Case Study`,
+    study.context,
   );
 
   return (
@@ -90,11 +91,7 @@ function CaseStudyDetail() {
           <div className="mt-16">
             <DetailSections sections={study.sections} language={language} />
           </div>
-        ) : (
-          <p className="mt-12 rounded-md border border-dashed border-border bg-surface/30 px-4 py-3 text-sm text-muted-foreground">
-            {copy.deeper}
-          </p>
-        )}
+        ) : null}
       </div>
     </>
   );

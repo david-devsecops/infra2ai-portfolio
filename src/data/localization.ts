@@ -100,7 +100,7 @@ export const homeCopy = {
     contactTitle: "클라우드 전환과 인프라 구축·운영 협업",
     contactDescription:
       "채용이나 프로젝트 협업은 LinkedIn으로 연락 주세요. 맡길 역할이나 해결하고 싶은 문제, 희망 일정을 함께 알려주시면 좋겠습니다.",
-    about: "소개",
+    about: "프로필",
   },
   en: {
     role: "CLOUD & INFRASTRUCTURE ARCHITECT",
@@ -133,7 +133,7 @@ export const homeCopy = {
     contactTitle: "Cloud migration, infrastructure and operations",
     contactDescription:
       "You can reach me on LinkedIn about a role or project. Please share the responsibilities or problem you have in mind, along with your preferred timeline.",
-    about: "About",
+    about: "Profile",
   },
 } as const satisfies Record<Language, object>;
 
@@ -297,7 +297,7 @@ export const pageCopy = {
       stack: "기술 스택",
     },
     experience: {
-      eyebrow: "경험",
+      eyebrow: "경력",
       title: "프로덕션 엔지니어링 사례",
       description:
         "클라우드 이관, 네트워크 분석과 시스템 운영 중에 만났던 문제를 정리했습니다. 당시 상황과 제가 맡은 일, 해결 과정을 소개합니다.",
@@ -308,7 +308,6 @@ export const pageCopy = {
       constraints: "제약 사항",
       keyActions: "주요 수행 내용",
       result: "결과",
-      deeper: "관련 구성과 분석 과정은 정리를 마치는 대로 추가하겠습니다.",
       detail: "사례 상세",
     },
     architecture: {
@@ -321,7 +320,7 @@ export const pageCopy = {
       relatedCaseStudies: "관련 사례",
     },
     about: {
-      eyebrow: "소개",
+      eyebrow: "프로필",
       title: "박상준 | 클라우드·인프라 아키텍트",
       description: "금융권과 기업 서비스의 클라우드 전환과 인프라 운영을 해왔습니다.",
     },
@@ -360,7 +359,6 @@ export const pageCopy = {
       constraints: "Constraints",
       keyActions: "Key actions",
       result: "Result",
-      deeper: "I will add more detail on the architecture and analysis as I finish the write-ups.",
       detail: "Case study detail",
     },
     architecture: {
@@ -373,7 +371,7 @@ export const pageCopy = {
       relatedCaseStudies: "Related case studies",
     },
     about: {
-      eyebrow: "About",
+      eyebrow: "Profile",
       title: "Sang jun (David) park | Cloud & Infrastructure Architect",
       description:
         "I work on cloud migration and infrastructure operations for financial institutions and enterprise services.",
@@ -468,12 +466,12 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
       title: "학력과 자격 취득 이력",
       paragraphs: [
         "2024.03 서울과학종합대학원대학교 AI빅데이터학과 석사과정에 입학했습니다. 현재 휴학 중입니다.",
-        "그동안 취득한 자격입니다. 취득일과 표시된 만료일을 함께 적었습니다. 갱신 여부는 아직 확인 전입니다.",
+        "주요 자격 취득 이력입니다.",
       ],
       bullets: [
-        "AWS Solutions Architect – Associate · 2023.05 취득 · 표시 만료 2026.05",
-        "AWS Database – Specialty · 2023.04 취득 · 표시 만료 2026.04",
-        "Google Cloud Professional Cloud Architect · 2020.09 취득 · 표시 만료 2022.09",
+        "AWS Solutions Architect – Associate · 2023.05 취득 · 만료 2026.05",
+        "AWS Database – Specialty · 2023.04 취득 · 만료 2026.04",
+        "Google Cloud Professional Cloud Architect · 2020.09 취득 · 만료 2022.09",
       ],
     },
     {
@@ -565,12 +563,12 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
       title: "Education and certification history",
       paragraphs: [
         "I enrolled in the AI and Big Data master's program at 서울과학종합대학원대학교 in 2024.03. I am currently on leave.",
-        "These are certifications I have earned, with their issue and listed expiry dates. Renewal status has not yet been confirmed.",
+        "These are the main certifications I have earned.",
       ],
       bullets: [
-        "AWS Solutions Architect – Associate · earned 2023.05 · listed expiry 2026.05",
-        "AWS Database – Specialty · earned 2023.04 · listed expiry 2026.04",
-        "Google Cloud Professional Cloud Architect · earned 2020.09 · listed expiry 2022.09",
+        "AWS Solutions Architect – Associate · earned 2023.05 · expired 2026.05",
+        "AWS Database – Specialty · earned 2023.04 · expired 2026.04",
+        "Google Cloud Professional Cloud Architect · earned 2020.09 · expired 2022.09",
       ],
     },
     {
@@ -668,9 +666,7 @@ const koreanProjects: Record<
         ],
       },
       currentStatus: {
-        paragraphs: [
-          "아직 계획 단계입니다. Kubernetes 실습을 진행한 뒤 구현 결과를 추가하겠습니다.",
-        ],
+        paragraphs: ["현재 계획 단계이며, Kubernetes 실습부터 진행할 예정입니다."],
       },
     },
   },
@@ -700,7 +696,7 @@ const koreanProjects: Record<
         ],
       },
       currentStatus: {
-        paragraphs: ["예정 단계입니다. 아직 구현, 벤치마크 또는 측정 결과가 없습니다."],
+        paragraphs: ["예정 단계입니다. 구현은 아직 시작하지 않았습니다."],
       },
     },
   },
@@ -716,7 +712,9 @@ const koreanProjects: Record<
         ],
       },
       currentStatus: {
-        paragraphs: ["계속 정리 중입니다. 완성한 글은 경험 페이지에 추가하겠습니다."],
+        paragraphs: [
+          "경력 페이지에서 클라우드 이관, 네트워크 분석과 시스템 운영을 다룬 6개 사례를 볼 수 있습니다.",
+        ],
       },
     },
   },
@@ -885,7 +883,7 @@ export const mentoringCopy = {
     period: "2026.03–현재",
     description:
       "윈터뷰에서는 이력서를 함께 검토하고, DevOps를 준비하는 분들과 커리어 방향을 이야기하고 있습니다. 경력을 STAR 방식으로 정리하는 것도 돕고 있습니다.",
-    reviews: "평점 5.0/5.0 · 후기 3건 (2026년 10월 확인 기준)",
+    reviews: "평점 5.0/5.0 · 후기 3건 (2026년 10월 기준)",
     link: "윈터뷰 플랫폼 보기",
     imageAlt: "윈터뷰 멘토링 후기 3건과 평점 5.0/5. 작성자 닉네임은 가렸습니다.",
     imageCaption: "윈터뷰 멘토링 후기 · 2026년 10월",

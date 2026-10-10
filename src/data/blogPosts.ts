@@ -19,7 +19,6 @@ export const blogPosts: BlogPost[] = [
     englishAbstract: [
       "Across public-sector Solaris performance work, I used a recurring sequence: CPU, run queue, processes, memory, paging, swap, disk, filesystem capacity and network signals, compared by date, weekday and hour.",
       "I checked whether each signal persisted, compared it with related signals and narrowed down the likely failure point. After a change, I checked the same metrics again.",
-      "The public version leaves out server names, process details, hardware specifications, capacities, timestamps and measured values while keeping the diagnostic order.",
     ],
     client: "경기도청 외 공공기관",
     project: "공공기관 UNIX 시스템 성능분석",
@@ -38,10 +37,6 @@ export const blogPosts: BlogPost[] = [
           {
             kind: "paragraph",
             text: "증상이 보이는 곳과 원인이 있는 곳은 다를 수 있습니다. 애플리케이션이 느리다고 CPU를 늘리거나 프로세스를 재시작하기 전에, I/O 대기나 메모리 부족이 있는지 함께 확인해야 합니다.",
-          },
-          {
-            kind: "paragraph",
-            text: "공개 글에서는 서버명, 프로세스명, 사양, 용량, 날짜와 측정값을 제외하고 실제로 사용한 분석 순서만 설명합니다.",
           },
         ],
       },
@@ -140,12 +135,12 @@ export const blogPosts: BlogPost[] = [
         blocks: [
           {
             kind: "paragraph",
-            text: "보고서는 같은 지표를 날짜별, 요일별, 시간대별로 반복했습니다. 평균값 하나는 짧은 장애를 숨기고, 최대값 하나는 정상 배치 작업을 장애처럼 보이게 만들 수 있기 때문입니다. 업무 시간, 야간 배치, 백업 시간처럼 운영 이벤트와 지표의 모양을 연결해야 원인을 설명할 수 있었습니다.",
+            text: "같은 지표를 날짜별, 요일별, 시간대별로 비교했습니다. 평균값 하나는 짧은 장애를 숨기고, 최대값 하나는 정상 배치 작업을 장애처럼 보이게 만들 수 있기 때문입니다. 업무 시간, 야간 배치, 백업 시간처럼 운영 이벤트와 지표의 모양을 연결해야 원인을 설명할 수 있었습니다.",
           },
           {
             kind: "code",
             language: "text",
-            caption: "한 시간축으로 맞춘 공개용 분석 메모 예시",
+            caption: "장애 시간대별 분석 예시",
             code: "T0      사용자 응답 지연 시작\nT+2m    CPU wio 상승, total은 안정\nT+3m    특정 volume의 wait 상승\nT+4m    page scan과 swap 활동은 변화 없음\nT+6m    배치 I/O 종료 후 응답 정상화\n판단    계산 자원이나 메모리보다 I/O 경로를 우선 조사",
           },
           {
@@ -212,7 +207,6 @@ export const blogPosts: BlogPost[] = [
     englishAbstract: [
       "During enterprise server migrations, recurring maintenance and Oracle RAC work on virtualised x86 infrastructure, I saw the operator's fault-isolation boundary expand across more replaceable layers.",
       "An integrated UNIX platform offered a relatively compact support matrix. x86 introduced more replaceable layers: system firmware, management controller, BIOS settings, HBA and NIC firmware, drivers, hypervisor and guest OS. The operational gain came with a larger compatibility and ownership surface.",
-      "The public examples omit hardware models, host names, firmware versions, adapter identifiers, capacities and network values and focus on the change and verification method.",
     ],
     client: "기업·금융·공공기관",
     project: "UNIX/x86 서버 구축·이전·운영",
@@ -304,11 +298,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         id: "change-and-rollback",
-        title: "변경 계획에는 실패 방법을 먼저 적었습니다",
+        title: "변경 계획에는 실패 시 복구 방법을 먼저 적었습니다",
         blocks: [
           {
             kind: "paragraph",
-            text: "서버 이전과 정기점검 자료에서 반복되는 핵심은 작업 순서, 담당 경계, 연결 확인, 복귀 조건이었습니다. x86에서는 선택 가능한 계층이 늘어난 만큼 한 번에 여러 펌웨어와 드라이버를 바꾸면 결과를 해석하기 어려웠습니다. 따라서 변경 단위를 장애 도메인에 맞춰 작게 유지했습니다.",
+            text: "서버를 이전하거나 정기점검할 때는 작업 순서, 담당 범위, 연결 확인 방법과 복귀 조건을 먼저 정했습니다. x86에서는 선택 가능한 계층이 늘어난 만큼 한 번에 여러 펌웨어와 드라이버를 바꾸면 결과를 해석하기 어려웠습니다. 따라서 변경 단위를 장애 도메인에 맞춰 작게 유지했습니다.",
           },
           {
             kind: "bullets",
@@ -356,7 +350,6 @@ export const blogPosts: BlogPost[] = [
     englishAbstract: [
       "While operating Fibre Channel storage, tape libraries, Veritas Volume Manager and NetBackup, I treated the filesystem, volume, path, fabric, array and backup layers as one recoverable data path.",
       "The method separates service symptoms from host, path, fabric, array and data-protection layers. A healthy filesystem does not prove that every path is healthy, and a successful backup job does not prove that the required recovery sequence works.",
-      "The public examples leave out WWNs, LUN identifiers, zoning, path counts, capacities, policy names, schedules and device models.",
     ],
     client: "해군 C4I(KNCCS) 외 기업 고객",
     project: "SAN Storage·Veritas·NetBackup 운영",
@@ -510,7 +503,6 @@ export const blogPosts: BlogPost[] = [
     englishAbstract: [
       "My direct work includes maintaining Oracle single-instance and RAC environments, performing database migrations, and providing technical support and pre-sales engineering for Oracle Zero Data Loss Recovery Appliance. In that work, I treated a successful backup job and a recoverable database as separate operational checks.",
       "The central distinction is between backup completion and recoverability. A usable recovery plan defines the failure scenario, target recovery point, required control and data files, dependency order, validation queries, business checks and a rollback or isolation decision.",
-      "Public examples exclude database names, SIDs, service names, accounts, schemas, tables, SCNs, timestamps, backup paths, retention values and performance figures.",
     ],
     client: "금융·공공·기업 고객",
     project: "Oracle RAC 유지보수·DB Migration·복구 아키텍처",
@@ -528,7 +520,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             kind: "paragraph",
-            text: "복구 runbook에는 장애 범위, 복구 시점, 필요한 파일, restore·recover 순서, 데이터 정합성 확인과 롤백 기준이 함께 있어야 합니다. 이 글은 그 판단 순서를 정리한 것이며 고객 DB명, schema, SCN, 백업 경로와 시간값은 사용하지 않았습니다.",
+            text: "복구 runbook에는 장애 범위, 복구 시점, 필요한 파일, restore·recover 순서, 데이터 정합성 확인과 롤백 기준이 함께 있어야 합니다.",
           },
         ],
       },
@@ -564,7 +556,7 @@ export const blogPosts: BlogPost[] = [
             kind: "code",
             language: "text",
             code: "Scenario       Preserve first        Recovery target        Validation\nPhysical loss  logs and metadata     selected recovery point DB + business checks\nLogical error  current evidence      isolated earlier copy   row/object comparison\nNode loss      surviving services    restore node capability cluster + service checks\nSite loss      latest remote copy    alternate site          end-to-end transaction",
-            caption: "실제 DB와 시간값을 제거한 복구 시나리오 분류",
+            caption: "복구 시나리오 분류",
           },
           {
             kind: "paragraph",
@@ -667,7 +659,6 @@ export const blogPosts: BlogPost[] = [
     englishAbstract: [
       "In the IBK NCP project, COMVPC, DEVVPC, DMZVPC and PRDVPC separated VPC, subnet, network-interface, server, storage, load-balancing and managed-data resources into distinct change areas.",
       "The directory split also raises questions about provider access, backend and state ownership, approvals and deployment order. Those need separate verification; directories alone do not establish isolation.",
-      "The examples are newly written and exclude credentials, keys, state data, CIDRs, instance specifications, resource identifiers and actual names.",
     ],
     client: "기업은행",
     project: "NCP 기반 CBDC 활용성 테스트 인프라",
@@ -820,7 +811,6 @@ export const blogPosts: BlogPost[] = [
     englishAbstract: [
       "In the NCP CBDC infrastructure work, I separated transit, security inspection, load balancing, service and managed-data concerns so each failure domain had an observable boundary and an owner.",
       "The generic figure explains where traffic is decrypted, inspected, routed, observed and recovered without reproducing the production topology.",
-      "Public examples exclude regions, zones, CIDRs, domains, source identities, certificates, policies, capacities, product settings and resource identifiers.",
     ],
     client: "기업은행·한국은행",
     project: "CBDC 활용성 테스트 NCP 클라우드 인프라",
@@ -843,7 +833,7 @@ export const blogPosts: BlogPost[] = [
           {
             kind: "figure",
             src: "/blog/cloud-operations-principles/boundary-map.svg",
-            alt: "외부 사용자와 기관 연계가 ingress, 보안 검사, service, data 경계를 지나고 operations plane이 각 계층을 관측하는 공개용 Cloud 장애 도메인 그림",
+            alt: "외부 사용자와 기관 연계가 ingress, 보안 검사, service, data 경계를 지나고 operations plane이 각 계층을 관측하는 Cloud 장애 도메인 개념도",
             caption: "Cloud 운영 책임 경계 개념도",
           },
         ],
@@ -897,7 +887,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             kind: "paragraph",
-            text: "따라서 SSL offloading은 로드 밸런서 설정 하나가 아니라 보안 검사 성능, 종단 간 암호화 요구, 원래 요청자 정보, certificate rotation과 장애 도메인을 묶은 설계 결정으로 다뤘습니다. 실제 인증서명, domain과 cipher 정책은 공개 범위에서 제외했습니다.",
+            text: "따라서 SSL offloading은 로드 밸런서 설정 하나가 아니라 보안 검사 성능, 종단 간 암호화 요구, 원래 요청자 정보, certificate rotation과 장애 도메인을 묶은 설계 결정으로 다뤘습니다.",
           },
         ],
       },
