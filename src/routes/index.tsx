@@ -9,6 +9,7 @@ import { featuredProjects, platformProjects, getProject } from "@/data/projects"
 import { architectureAreas } from "@/data/architecture";
 import { productionExperienceHighlights, siteConfig } from "@/data/site";
 import {
+  bookCopy,
   commonCopy,
   homeCopy,
   koreanProductionExperienceHighlights,
@@ -42,6 +43,7 @@ function Home() {
       : "Financial NCP infrastructure, AWS migration, Terraform delivery and operations. Projects and technical writing by Sang jun (David) park, Cloud & Infrastructure Architect.",
   );
   const copy = homeCopy[language];
+  const book = bookCopy[language];
   const common = commonCopy[language];
   const projects = featuredProjects.map((project) => localizeProject(project, language));
   const highlights =
@@ -197,6 +199,48 @@ function Home() {
               />
             ))}
         </div>
+      </Section>
+
+      <Section id="book" eyebrow={book.section} title={book.title}>
+        <article className="grid gap-7 rounded-lg border border-border bg-card p-6 sm:grid-cols-[180px_1fr] sm:items-center">
+          <img
+            src="/images/vibe-coding-textbook-cover.png"
+            alt={book.coverAlt}
+            width={1000}
+            height={1300}
+            loading="lazy"
+            className="mx-auto h-auto w-full max-w-[180px] rounded-md border border-border"
+          />
+          <div>
+            <p className="text-sm font-medium text-foreground">{book.author}</p>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+              {book.description}
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{book.detail}</p>
+            <nav aria-label={book.stores} className="mt-5 flex flex-wrap gap-3">
+              {[
+                { label: "YES24", href: "https://www.yes24.com/product/goods/197778543" },
+                {
+                  label: language === "ko" ? "교보문고" : "Kyobo",
+                  href: "https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013676647",
+                },
+                { label: "WikiDocs", href: "https://wikidocs.net/book/21513" },
+              ].map((store) => (
+                <a
+                  key={store.href}
+                  href={store.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label={`${store.label} · ${book.newTab}`}
+                  className="inline-flex min-h-11 items-center gap-2 rounded-md border border-border bg-surface/40 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary hover:bg-surface/70"
+                >
+                  {store.label}
+                  <ExternalLink aria-hidden="true" className="size-4" />
+                </a>
+              ))}
+            </nav>
+          </div>
+        </article>
       </Section>
 
       <Section id="contact" eyebrow={copy.contactEyebrow} title={copy.contactTitle}>

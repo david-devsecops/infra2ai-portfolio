@@ -906,3 +906,28 @@ export const mentoringCopy = {
     imageLink: "Open full-size reviews (new tab)",
   },
 } as const satisfies Record<Language, object>;
+
+export const bookCopy = {
+  ko: {
+    section: "저서",
+    title: "바이브 코딩 교과서",
+    author: "박상준 지음",
+    description:
+      "『바이브 코딩 교과서』를 집필했습니다. Claude Code를 중심으로 AI 코딩 에이전트에 작업을 요청하고 결과를 검증하는 방법을 다룹니다. 컨텍스트 설계, 테스트·코드 리뷰·보안부터 웹앱 실습과 배포·운영까지 담았습니다.",
+    detail: "위키독스 · 2026.10.08 출간",
+    coverAlt: "박상준 저서 바이브 코딩 교과서 실제 표지",
+    stores: "책 소개와 판매처",
+    newTab: "새 탭에서 열기",
+  },
+  en: {
+    section: "Book",
+    title: "바이브 코딩 교과서",
+    author: "By Sangjun Park · Korean edition",
+    description:
+      "I am the author of 바이브 코딩 교과서 (Vibe Coding Textbook). The book uses Claude Code to teach practical AI-assisted development, covering context design, testing, code review, security, web-app projects, deployment and operations.",
+    detail: "Published by WikiDocs · October 8, 2026",
+    coverAlt: "Cover of 바이브 코딩 교과서 by Sangjun Park",
+    stores: "Book details and stores",
+    newTab: "Open in a new tab",
+  },
+} as const satisfies Record<Language, object>;
