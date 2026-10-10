@@ -7,7 +7,7 @@ import { useDocumentTitle, useLanguage } from "@/lib/language";
 
 const title = "프로필 — 박상준 | 클라우드·인프라 아키텍트";
 const description =
-  "클라우드·인프라 아키텍트 박상준입니다. NCP 인프라, AWS 전환, Terraform 구축과 운영 경험, 윈터뷰 멘토링 활동을 소개합니다.";
+  "클라우드·인프라 아키텍트 박상준의 경력, 자격 취득과 교육 수료 이력, 강의·심사·발표 및 윈터뷰 멘토링 활동을 소개합니다.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -29,7 +29,7 @@ function AboutPage() {
       : "Profile — Sang jun (David) park | Cloud & Infrastructure Architect",
     language === "ko"
       ? description
-      : "I am Sang jun (David) park, a cloud and infrastructure architect. Read about my NCP, AWS and Terraform work and Winterview mentoring.",
+      : "I am Sang jun (David) park, a cloud and infrastructure architect. Read about my career, certification and course completion history, teaching, judging, speaking and Winterview mentoring.",
   );
   const copy = pageCopy[language].about;
   const mentoring = mentoringCopy[language];

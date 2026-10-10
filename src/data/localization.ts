@@ -463,15 +463,40 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
       ],
     },
     {
-      title: "학력과 자격 취득 이력",
+      title: "학력",
       paragraphs: [
         "2024.03 서울과학종합대학원대학교 AI빅데이터학과 석사과정에 입학했습니다. 현재 휴학 중입니다.",
-        "주요 자격 취득 이력입니다.",
       ],
+      bullets: [],
+    },
+    {
+      title: "자격 취득 이력",
+      paragraphs: [],
       bullets: [
-        "AWS Solutions Architect – Associate · 2023.05 취득 · 만료 2026.05",
-        "AWS Database – Specialty · 2023.04 취득 · 만료 2026.04",
-        "Google Cloud Professional Cloud Architect · 2020.09 취득 · 만료 2022.09",
+        "AWS Solutions Architect – Associate · AWS · 2023.05 취득",
+        "AWS Database – Specialty · AWS · 2023.04 취득",
+        "Google Cloud Professional Cloud Architect · Google · 2020.09 취득",
+        "Oracle Cloud Infrastructure 2018 Architect Associate · Oracle · 2019.04 취득",
+        "OCP · Oracle · 2010.05 취득",
+        "SCSECA · Sun · 2009.08 취득",
+        "SCNA · Sun · 2009.07 취득",
+        "CSA · Sun · 2009.06 취득",
+      ],
+    },
+    {
+      title: "교육 수료 이력",
+      paragraphs: [],
+      bullets: ["Claude Code in Action · Anthropic · 2025.08 수료"],
+    },
+    {
+      title: "강의·심사·발표 활동",
+      paragraphs: [],
+      bullets: [
+        "2026.07 · 스팩스페이스 IT/개발자(클라우드) 부트캠프 취업특강 — 취업준비생의 질문에 현업 엔지니어 관점에서 답하며 취업 준비에 관해 이야기했습니다.",
+        "2026.06 · 스팩스페이스 IT/개발자(클라우드) 부트캠프 취업특강 — 취업준비생을 대상으로 현업 엔지니어 관점의 취업 질의응답을 진행했습니다.",
+        "2026.04 · 스팩스페이스 카카오 AIaaS 3기 프로젝트 중간 발표 심사위원 — 팀별 중간 산출물을 평가하고 프로젝트 질의응답과 멘토링에 참여했습니다.",
+        "2026.02 · 스팩스페이스 카카오 AIaaS 2기 최종 성과발표회 심사위원 — 결과보고서 PPT, 시연영상, 소스코드, 데이터, 접속 링크와 팀별 GitHub·Notion 자료를 살펴보고 평가했습니다.",
+        "2018.11.08 · Oracle GroundBreakers (Oracle APAC Developer Tour) 2018 in KOREA — 경기창조경제혁신센터 9층 세미나실에서 첫 세션의 Oracle Solaris 11.4 가상화·ZFS 발표를 맡았습니다.",
       ],
     },
     {
@@ -560,15 +585,40 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
       ],
     },
     {
-      title: "Education and certification history",
+      title: "Education",
       paragraphs: [
         "I enrolled in the AI and Big Data master's program at 서울과학종합대학원대학교 in 2024.03. I am currently on leave.",
-        "These are the main certifications I have earned.",
       ],
+      bullets: [],
+    },
+    {
+      title: "Certification history",
+      paragraphs: [],
       bullets: [
-        "AWS Solutions Architect – Associate · earned 2023.05 · expired 2026.05",
-        "AWS Database – Specialty · earned 2023.04 · expired 2026.04",
-        "Google Cloud Professional Cloud Architect · earned 2020.09 · expired 2022.09",
+        "AWS Solutions Architect – Associate · AWS · earned 2023.05",
+        "AWS Database – Specialty · AWS · earned 2023.04",
+        "Google Cloud Professional Cloud Architect · Google · earned 2020.09",
+        "Oracle Cloud Infrastructure 2018 Architect Associate · Oracle · earned 2019.04",
+        "OCP · Oracle · earned 2010.05",
+        "SCSECA · Sun · earned 2009.08",
+        "SCNA · Sun · earned 2009.07",
+        "CSA · Sun · earned 2009.06",
+      ],
+    },
+    {
+      title: "Course completion history",
+      paragraphs: [],
+      bullets: ["Claude Code in Action · Anthropic · completed 2025.08"],
+    },
+    {
+      title: "Teaching, judging and speaking",
+      paragraphs: [],
+      bullets: [
+        "2026.07 · 스팩스페이스 IT/developer (cloud) bootcamp career talk — I answered job seekers' questions about preparing for work from a practising engineer's perspective.",
+        "2026.06 · 스팩스페이스 IT/developer (cloud) bootcamp career talk — I held a career Q&A for job seekers, sharing a practising engineer's perspective.",
+        "2026.04 · 스팩스페이스 Kakao AIaaS cohort 3 mid-project presentation judge — I assessed each team's interim deliverables and took part in project Q&A and mentoring.",
+        "2026.02 · 스팩스페이스 Kakao AIaaS cohort 2 final presentation judge — I assessed the teams' report slides, demo videos, source code, data, access links, and GitHub and Notion materials.",
+        "2018.11.08 · Oracle GroundBreakers (Oracle APAC Developer Tour) 2018 in KOREA — I presented the virtualization and ZFS features of Oracle Solaris 11.4 in the opening session at the 9th-floor seminar room of the Gyeonggi Center for Creative Economy and Innovation.",
       ],
     },
     {
