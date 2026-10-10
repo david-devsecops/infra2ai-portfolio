@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { PageHeader } from "@/components/site/Layout";
 import { BulletList } from "@/components/site/Cards";
-import { aboutSections, pageCopy } from "@/data/localization";
+import { aboutSections, mentoringCopy, pageCopy } from "@/data/localization";
 import { useDocumentTitle, useLanguage } from "@/lib/language";
 
 const title = "소개 — 박상준 | 클라우드·인프라 아키텍트";
@@ -30,6 +30,7 @@ function AboutPage() {
       : "Financial NCP infrastructure, AWS migration, Terraform delivery and operations. Projects and technical writing by Sang jun (David) park, Cloud & Infrastructure Architect.",
   );
   const copy = pageCopy[language].about;
+  const mentoring = mentoringCopy[language];
 
   return (
     <>
@@ -59,6 +60,32 @@ function AboutPage() {
             ) : null}
           </Block>
         ))}
+        <section id="mentoring" aria-labelledby="mentoring-heading" className="scroll-mt-24">
+          <h2
+            id="mentoring-heading"
+            className="border-b border-border pb-2 text-lg font-semibold text-foreground"
+          >
+            {mentoring.section}
+          </h2>
+          <article className="mt-4 rounded-lg border border-border bg-card p-6">
+            <p className="text-sm text-muted-foreground">
+              {mentoring.relationship} · {mentoring.period}
+            </p>
+            <h3 className="mt-2 text-lg font-semibold text-card-foreground">{mentoring.title}</h3>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+              {mentoring.description}
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-foreground">{mentoring.reviews}</p>
+            <a
+              href="https://winterview.io/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mt-4 inline-flex min-h-11 items-center text-sm font-medium text-primary underline underline-offset-4 hover:decoration-2"
+            >
+              {mentoring.link}
+            </a>
+          </article>
+        </section>
       </div>
     </>
   );

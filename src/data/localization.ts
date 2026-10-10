@@ -885,3 +885,26 @@ export function localizeCaseStudy(study: CaseStudy, language: Language): CaseStu
   const localized = koreanCaseStudies[study.slug];
   return localized ? { ...study, ...localized } : study;
 }
+
+export const mentoringCopy = {
+  ko: {
+    section: "멘토링·대외활동",
+    title: "윈터뷰 멘토",
+    relationship: "플랫폼 멘토 활동",
+    period: "2026.03–현재",
+    description:
+      "윈터뷰에서 이력서 리뷰와 커리어 커피챗을 진행하며, DevOps 진로 상담과 STAR 방식 경력기술서 피드백을 제공합니다.",
+    reviews: "평점 5.0/5.0 · 후기 3건 (2026년 10월 확인 기준)",
+    link: "윈터뷰 플랫폼 보기",
+  },
+  en: {
+    section: "Mentoring and community activities",
+    title: "Winterview mentor",
+    relationship: "Platform mentoring activity",
+    period: "Mar 2026–Present",
+    description:
+      "Mentor on Winterview, providing resume reviews, career conversations, DevOps career guidance, and feedback on structuring experience using the STAR method.",
+    reviews: "5.0/5.0 across 3 reviews (as of October 2026).",
+    link: "Visit Winterview",
+  },
+} as const satisfies Record<Language, object>;
