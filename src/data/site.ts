@@ -23,11 +23,11 @@ export const siteConfig = {
 
 export const nav = [
   { label: "Home", to: "/" },
-  { label: "Projects", to: "/projects" },
+  { label: "Profile", to: "/about" },
   { label: "Experience", to: "/experience" },
-  { label: "Blog", to: "/blog" },
+  { label: "Projects", to: "/projects" },
   { label: "Architecture", to: "/architecture" },
-  { label: "About", to: "/about" },
+  { label: "Blog", to: "/blog" },
 ] as const;
 
 export const careerTransition = [
