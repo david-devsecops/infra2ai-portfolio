@@ -87,19 +87,6 @@ function Home() {
       </section>
 
       <Section
-        id="selected-projects"
-        eyebrow={copy.projectsEyebrow}
-        title={copy.projectsTitle}
-        description={copy.projectsDescription}
-      >
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {projects.map((project) => (
-            <ProjectCard key={project.slug} project={project} language={language} />
-          ))}
-        </div>
-      </Section>
-
-      <Section
         eyebrow={language === "ko" ? "진행 중" : "In progress"}
         title={
           language === "ko" ? "현재 CBDC 인프라 프로젝트" : "Current CBDC infrastructure project"
@@ -120,6 +107,19 @@ function Home() {
             ? "기술 글: NCP VPC별 Terraform 변경 범위와 운영 기준"
             : "Technical article: Terraform change boundaries across NCP VPCs (Korean)"}
         </Link>
+      </Section>
+
+      <Section
+        id="selected-projects"
+        eyebrow={copy.projectsEyebrow}
+        title={copy.projectsTitle}
+        description={copy.projectsDescription}
+      >
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {projects.map((project) => (
+            <ProjectCard key={project.slug} project={project} language={language} />
+          ))}
+        </div>
       </Section>
 
       <Section
