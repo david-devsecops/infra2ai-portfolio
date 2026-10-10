@@ -374,7 +374,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             kind: "paragraph",
-            text: "스토리지 장애의 어려움은 애플리케이션이 보는 하나의 파일 경로 아래에 여러 계층이 있다는 점입니다. 파일시스템이 mount되어 있어도 일부 경로는 이미 손실됐을 수 있고, 경로가 모두 online이어도 스토리지 장비 내부 지연으로 서비스가 느릴 수 있습니다. 그래서 ‘보인다’와 ‘정상적으로 처리한다’를 분리했습니다. 공개 글에는 실제 WWN, LUN, zoning, 용량과 장비 식별자를 사용하지 않습니다.",
+            text: "스토리지 장애의 어려움은 애플리케이션이 보는 하나의 파일 경로 아래에 여러 계층이 있다는 점입니다. 파일시스템이 mount되어 있어도 일부 경로는 이미 손실됐을 수 있고, 경로가 모두 online이어도 스토리지 장비 내부 지연으로 서비스가 느릴 수 있습니다. 그래서 ‘보인다’와 ‘정상적으로 처리한다’를 분리했습니다.",
           },
         ],
       },
@@ -432,7 +432,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             kind: "paragraph",
-            text: "변경 작업에서도 호스트와 fabric을 따로 승인하지 않았습니다. zoning이나 HBA 교체 전 영향받는 경로를 식별하고, 대체 경로에서 실제 I/O가 유지되는지 확인한 뒤 한 경로씩 변경했습니다. WWN과 실제 zone 이름은 작업 기록에만 남기고 공개 글에는 사용하지 않습니다.",
+            text: "변경 작업에서도 호스트와 fabric을 따로 승인하지 않았습니다. zoning이나 HBA 교체 전 영향받는 경로를 식별하고, 대체 경로에서 실제 I/O가 유지되는지 확인한 뒤 한 경로씩 변경했습니다.",
           },
         ],
       },
@@ -625,7 +625,7 @@ export const blogPosts: BlogPost[] = [
             language: "sql",
             code: "select status from v$instance;\nselect open_mode from v$database;\nselect status from v$datafile;",
             caption:
-              "공개용 최소 예시입니다. 실제 환경에서는 복구 시나리오별 검증 항목을 추가합니다.",
+              "인스턴스와 데이터파일 상태를 확인하는 기본 예제입니다. 복구 시나리오에 따라 검증 항목을 추가해야 합니다.",
           },
           {
             kind: "paragraph",
@@ -685,7 +685,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             kind: "paragraph",
-            text: "VPC별로 나누면 변경이 어느 환경에 영향을 주는지 살펴보기 쉽습니다. 다만 provider 권한, backend와 state, 실행 승인과 배포 순서도 함께 확인해야 합니다. 아래 예제는 설명을 위해 새로 작성했으며 실제 자격증명, 키, 네트워크 값이나 운영 코드는 포함하지 않았습니다.",
+            text: "VPC별로 나누면 변경이 어느 환경에 영향을 주는지 살펴보기 쉽습니다. 다만 provider 권한, backend와 state, 실행 승인과 배포 순서도 함께 확인해야 합니다. 아래는 VPC별 구성 방식을 설명하기 위한 예제입니다.",
           },
         ],
       },
@@ -754,7 +754,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         id: "state-isolation",
-        title: "State가 실제 운영 경계인지 확인했습니다",
+        title: "State와 backend는 별도로 확인해야 합니다",
         blocks: [
           {
             kind: "paragraph",
@@ -762,7 +762,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             kind: "paragraph",
-            text: "state를 나눌 때는 VPC와 운영 담당 범위를 기준으로 검토할 수 있습니다. 공통 의존성은 버전을 관리하는 output이나 승인된 참조로 전달하는 방법이 있습니다. 이 글에서 확인한 것은 디렉터리 분리이며, backend 격리 여부는 별도 확인이 필요합니다. 잠금, 암호화, 접근 로그와 복구 절차도 함께 점검해야 합니다.",
+            text: "state를 나눌 때는 VPC와 운영 담당 범위를 기준으로 검토할 수 있습니다. 공통 의존성은 버전을 관리하는 output이나 승인된 참조로 전달하는 방법이 있습니다. 여기서 다루는 구성은 디렉터리를 VPC별로 나눈 구조입니다. 디렉터리 분리만으로 backend와 state까지 격리되지는 않습니다. 저장 위치와 접근 권한 설정, 잠금·암호화·접근 로그·복구 절차는 별도로 확인해야 합니다.",
           },
         ],
       },
@@ -838,7 +838,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             kind: "paragraph",
-            text: "아래는 외부 진입, 보안 검사, 서비스, 데이터와 운영 영역의 관계를 설명하는 개념도입니다. 실제 구성도와는 다르며 운영 환경의 주소나 정책값은 포함하지 않았습니다.",
+            text: "아래 개념도는 외부 진입, 보안 검사, 서비스, 데이터와 운영 영역의 관계를 설명합니다. 운영 환경의 실제 구성도는 아닙니다.",
           },
           {
             kind: "figure",
@@ -913,11 +913,11 @@ export const blogPosts: BlogPost[] = [
             kind: "code",
             language: "text",
             code: "Edge       -> reachability and TLS handshake\nInspection -> policy decision and processing health\nService    -> target health and representative request\nDatabase   -> connection, transaction and replication state\nCache      -> availability, eviction and fallback behaviour\nStreaming  -> producer success, consumer lag and replay path",
-            caption: "실제 metric·threshold를 제거한 계층별 검증 계약",
+            caption: "계층별로 확인할 상태와 동작",
           },
           {
             kind: "paragraph",
-            text: "metric threshold는 정상 기준선과 워크로드 특성을 근거로 별도 관리해야 합니다. 이 글에는 실제 처리량, connection 수, lag과 timeout 값을 포함하지 않았습니다.",
+            text: "처리량, 연결 수, lag과 timeout의 임계값은 평소 측정값과 워크로드 특성에 맞춰 정해야 합니다.",
           },
         ],
       },

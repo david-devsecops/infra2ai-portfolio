@@ -5,9 +5,6 @@ import { TagList } from "./Badges";
 import type { BlogBlock, BlogPost } from "@/data/types";
 import type { Language } from "@/lib/language";
 
-const disclosure =
-  "고객사와 프로젝트명은 공개 승인을 기준으로 표시했습니다. 인명, 네트워크, 계정, 호스트, 용량과 세부 구성값은 공개용 예시로 재구성했으며 비밀정보는 포함하지 않습니다.";
-
 export function BlogCard({ post, language }: { post: BlogPost; language: Language }) {
   const publishedAt = new Intl.DateTimeFormat(language === "ko" ? "ko-KR" : "en-US", {
     dateStyle: "medium",
@@ -169,10 +166,6 @@ export function BlogArticle({ post, language }: { post: BlogPost; language: Lang
               </section>
             ))}
           </article>
-
-          <footer className="mt-16 border-t border-border pt-6 text-xs leading-6 text-muted-foreground">
-            {disclosure}
-          </footer>
         </main>
 
         <aside className="hidden lg:block lg:self-stretch">

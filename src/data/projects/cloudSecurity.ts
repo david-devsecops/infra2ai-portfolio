@@ -79,21 +79,21 @@ const cbdcInfrastructure = deepCareerProject({
     designDecisions: {
       en: [
         "Keep policy ownership and traffic ownership separate so an approval does not become an implicit routing change.",
-        "Use one sanitized boundary map and one interface checklist as the hand-off contract between infrastructure and security teams.",
+        "Use a shared architecture map and interface checklist when handing work between infrastructure and security teams.",
       ],
       ko: [
         "정책 소유권과 트래픽 경로 소유권을 구분해 정책 승인이 암묵적인 라우팅 변경이 되지 않게 합니다.",
-        "공개 가능한 영역별 구성도와 연계 점검표를 인프라·보안 조직 사이의 인계 계약으로 사용합니다.",
+        "인프라·보안 팀이 업무를 주고받을 때 같은 구성도와 연계 점검표를 사용합니다.",
       ],
     },
     implementation: {
       en: [
         "Coordinate NCP network/security, third-party security controls, DaaS, institution VPN and operating runbook workstreams.",
-        "Describe each interface by source role, destination role, protocol purpose, inspection point and expected evidence without publishing real values.",
+        "Describe each interface by its source and destination roles, protocol purpose, inspection point and expected evidence.",
       ],
       ko: [
         "NCP 네트워크·보안, 3rd-party 보안 통제, DaaS, 기관 VPN과 운영 Runbook 작업을 하나의 변경 흐름으로 조정합니다.",
-        "각 연계는 실제 값을 공개하지 않고 출발지 역할, 목적지 역할, 프로토콜 목적, 보안 검사 지점과 예상 증거로 설명합니다.",
+        "각 연계의 출발지와 목적지 역할, 프로토콜 용도, 보안 검사 지점과 확인할 내용을 정리합니다.",
       ],
     },
     deployment: {
@@ -131,21 +131,19 @@ const cbdcInfrastructure = deepCareerProject({
     troubleshooting: {
       en: [
         "Start with the failed user path and move boundary by boundary rather than beginning with a product restart.",
-        "Compare ingress and return evidence, then change only the smallest boundary supported by the evidence.",
+        "Compare the logs and packet captures for incoming requests and returning responses, then limit changes to the affected component or path.",
       ],
       ko: [
         "제품 재시작보다 실패한 사용자 경로에서 시작해 경계를 한 단계씩 이동합니다.",
-        "진입 경로와 return 증거를 비교한 뒤 근거가 있는 가장 작은 경계만 변경합니다.",
+        "요청이 들어오고 응답이 돌아가는 경로의 로그와 패킷을 비교한 뒤, 문제가 확인된 구간만 변경합니다.",
       ],
     },
     productionConsiderations: {
       en: [
         "Preserve route symmetry, policy review, representative health checks, monitoring continuity and rollback readiness.",
-        "Keep people, addresses, domains, accounts, resource IDs and configuration values out of public artifacts.",
       ],
       ko: [
         "라우팅 대칭성, 정책 검토, 대표 상태 점검, 모니터링 연속성과 롤백 준비 상태를 함께 유지합니다.",
-        "공개 자료에는 인명, 주소, 도메인, 계정, 리소스 ID와 실제 구성값을 사용하지 않습니다.",
       ],
     },
     lessonsLearned: {

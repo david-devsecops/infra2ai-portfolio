@@ -102,7 +102,7 @@ export const platformProjects: Project[] = [
     title: "Production Engineering Case Studies",
     status: "In Progress",
     summary:
-      "실제 Production 환경에서 수행한 Cloud Migration, WAF/Load Balancer 통신 분석, VPN과 Routing 문제 해결 사례를 공개 검토 후 정리한 Case Study 모음.",
+      "클라우드 이관, WAF·로드 밸런서 분석, VPN과 라우팅 문제를 다뤘던 경험을 정리하고 있습니다.",
     technologiesLabel: "Domains",
     technologies: ["AWS", "NCP", "Load Balancer", "WAF", "VPN", "Linux"],
     areas: ["cloud-infrastructure", "network-connectivity"],
@@ -110,7 +110,6 @@ export const platformProjects: Project[] = [
       overview: {
         paragraphs: [
           "I am collecting notes on the checks and changes I made during cloud migrations and network investigations.",
-          "Address examples use documentation ranges such as 192.0.2.0/24. Personal, account and server identifiers and actual configuration values are omitted.",
         ],
       },
       currentStatus: {

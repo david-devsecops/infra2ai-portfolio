@@ -137,19 +137,17 @@ const knccsOperations = deepCareerProject({
     productionConsiderations: {
       en: [
         "Keep console access, spare-path state, backup dependencies and a tested rollback procedure available before maintenance.",
-        "Do not expose host names, device IDs, capacities, topology or customer procedures in public runbooks.",
       ],
       ko: [
         "유지보수 전에 콘솔 접근, 예비 경로 상태, 백업 의존성과 검증된 롤백 절차를 준비했습니다.",
-        "공개 Runbook에는 호스트명, 장비 ID, 용량, 구성도와 고객 절차를 사용하지 않습니다.",
       ],
     },
     lessonsLearned: {
       en: [
-        "The same boundary method still applies to cloud block storage: visibility, redundancy, performance, data protection and recoverability are different claims.",
+        "The same checks apply to cloud block storage. Device visibility, redundancy, performance, data protection and recovery each need to be checked separately.",
       ],
       ko: [
-        "같은 경계 분리 방식은 클라우드 블록 스토리지에도 적용됩니다. 가시성, 이중화, 성능, 데이터 보호와 복구 가능성은 서로 다른 주장입니다.",
+        "같은 방식은 클라우드 블록 스토리지 점검에도 적용할 수 있습니다. 장치가 보이는지, 이중화가 유지되는지, 성능과 데이터 보호·복구가 가능한지를 각각 확인해야 합니다.",
       ],
     },
   },

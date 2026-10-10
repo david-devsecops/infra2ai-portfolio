@@ -90,11 +90,11 @@ export const oracleDataProjects = [
     scope: {
       en: [
         "Build the recovery-appliance foundation for separate database domains.",
-        "Define integration and validation boundaries without exposing database identities.",
+        "Define the scope of integration and validation.",
       ],
       ko: [
         "분리된 DB 영역을 위한 복구 어플라이언스 기반을 구축했습니다.",
-        "DB 식별값을 공개하지 않고 연계와 검증 경계를 정의했습니다.",
+        "연계할 대상과 검증할 범위를 정했습니다.",
       ],
     },
   }),
