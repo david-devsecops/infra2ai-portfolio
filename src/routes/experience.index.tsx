@@ -8,7 +8,7 @@ import { useDocumentTitle, useLanguage } from "@/lib/language";
 
 const title = "경험 — 프로덕션 엔지니어링 사례";
 const description =
-  "Solaris·x86·Storage·Oracle 운영, 클라우드 마이그레이션, 네트워크·트래픽 흐름과 프로덕션 문제 해결 사례를 공개 검토 후 소개합니다.";
+  "서버·스토리지·Oracle 운영, 클라우드 이관과 네트워크 분석에서 만났던 문제와 해결 과정을 정리했습니다.";
 
 export const Route = createFileRoute("/experience/")({
   head: () => ({

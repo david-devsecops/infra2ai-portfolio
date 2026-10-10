@@ -24,11 +24,11 @@ export const architectureAreas: ArchitectureArea[] = [
     title: "Kubernetes Platform",
     status: "Planned",
     description:
-      "A learning and lab track for container orchestration; it is not presented as production build or operations experience.",
+      "I am studying Kubernetes and planning lab exercises for workload deployment and service connectivity.",
     practices: [
-      "Building a lab that keeps implementation evidence separate from production experience",
+      "Recording learning and lab work",
       "Learning workload, service and ingress behaviour through reproducible exercises",
-      "Publishing results only after they are implemented and verified",
+      "Sharing results after completing the exercises",
     ],
     relatedProjects: ["self-service-ai-platform"],
   },
@@ -37,7 +37,7 @@ export const architectureAreas: ArchitectureArea[] = [
     title: "Network and Connectivity",
     status: "Completed",
     description:
-      "Traffic flow across load balancers, WAF, VPN, DNS and routing, analysed as an explicit path rather than a black box.",
+      "I trace requests through load balancers, WAF, VPN, DNS and routing to understand where traffic flows.",
     practices: [
       "Request-path reconstruction with tcpdump, curl, routing tables and logs",
       "Load balancer health state compared against backend readiness",
@@ -80,7 +80,7 @@ export const architectureAreas: ArchitectureArea[] = [
     title: "Observability",
     status: "In Progress",
     description:
-      "Metrics, logs and traces used to answer specific operational questions rather than to fill dashboards.",
+      "I use metrics and logs together to check service health and investigate incidents.",
     practices: [
       "Correlating logs, captures and component state on one timeline",
       "Cross-account CloudWatch delivery experience; Prometheus and Grafana for AI platforms remain research and planned work",
@@ -106,8 +106,7 @@ export const architectureAreas: ArchitectureArea[] = [
     id: "security-access",
     title: "Security and Access Control",
     status: "In Progress",
-    description:
-      "Access boundaries at the network and platform layer: who can reach what, and what the platform proves before allowing a request.",
+    description: "I review which systems can communicate and which policies control access.",
     practices: [
       "WAF and firewall policy analysis against documented flows",
       "Least-privilege access as a design goal for planned platform work",

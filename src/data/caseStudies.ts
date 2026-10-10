@@ -35,7 +35,7 @@ export const caseStudies: CaseStudy[] = [
       "Verified traffic paths after cutover with curl, DNS resolution checks, routing tables and packet capture.",
     ],
     result:
-      "Selected workloads served traffic from the cloud environment with verified request paths and a documented rollback procedure. No performance figures are claimed here.",
+      "I verified that the migrated workloads served requests from the cloud, checked the traffic paths and documented the rollback procedure.",
     technologies: ["AWS", "NCP", "VPC", "Routing", "DNS", "Linux"],
     areas: ["cloud-infrastructure", "network-connectivity"],
   },
@@ -57,7 +57,7 @@ export const caseStudies: CaseStudy[] = [
       "Narrowed the fault domain to one component before proposing a change.",
     ],
     result:
-      "The failing hop was identified with capture and log evidence rather than inference, and the finding was handed to the owning team with the supporting data.",
+      "I identified the failing hop from packet captures and logs and shared the findings and supporting data with the responsible team.",
     technologies: ["tcpdump", "curl", "Routing", "Linux", "Log analysis"],
     areas: ["network-connectivity", "cloud-infrastructure"],
   },
@@ -145,7 +145,7 @@ export const caseStudies: CaseStudy[] = [
       "Separated restoration actions from root-cause actions and recorded both.",
     ],
     result:
-      "Findings were supported by collected evidence, which shortened the argument about ownership and made follow-up actions concrete.",
+      "I used the collected evidence to agree on the failure scope and follow-up actions with the responsible teams.",
     technologies: ["tcpdump", "curl", "Routing", "Log analysis", "Linux"],
     areas: ["network-connectivity", "observability"],
   },

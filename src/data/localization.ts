@@ -35,7 +35,7 @@ export const commonCopy = {
     korean: "한국어",
     english: "영어",
     anonymised:
-      "고객사와 프로젝트명은 검토 후 공개할 수 있습니다. 인명, 네트워크, 계정, 호스트 및 실제 구성값은 공개용 값으로 재구성합니다.",
+      "기술 설명의 네트워크 주소와 구성값은 공개용 예시입니다. 개인·계정·서버 식별정보는 싣지 않았습니다.",
   },
   en: {
     role: "CLOUD & INFRASTRUCTURE ARCHITECT",
@@ -55,7 +55,7 @@ export const commonCopy = {
     links: "Links",
     resume: "Resume",
     resumePdf: "Resume (PDF)",
-    resumePlaceholder: "Resume — link placeholder",
+    resumePlaceholder: "Resume — coming soon",
     resumeNote: "The resume link will be enabled when the PDF is ready.",
     soon: "soon",
     openMenu: "Open menu",
@@ -64,7 +64,7 @@ export const commonCopy = {
     korean: "Korean",
     english: "English",
     anonymised:
-      "Customer and project names may be published after review. People, networks, accounts, hosts and configuration values are reconstructed for publication.",
+      "Network addresses and configuration values are illustrative. Personal, account and server identifiers are omitted.",
   },
 } as const satisfies Record<Language, object>;
 
@@ -75,31 +75,31 @@ export const homeCopy = {
     headline: "클라우드 전환부터 안정적인 운영까지",
     subline: "Solaris · x86 · Storage · Oracle · Terraform · Cloud · 보안 솔루션 운영",
     positioning:
-      "금융권과 기업 서비스의 클라우드 전환, 네트워크·보안 연계, 운영 안정화를 수행합니다. Oracle·Unix·스토리지에서 쌓은 경험을 AWS·NCP와 클라우드 자동화 업무로 넓혀 왔습니다.",
+      "저는 클라우드 전환과 인프라 운영을 해왔습니다. Oracle·Unix·스토리지 운영을 시작으로 AWS·NCP 인프라 구축, 네트워크·보안 연계와 Terraform 자동화를 맡았습니다.",
     viewProjects: "대표 프로젝트 보기",
     viewExperience: "경험 보기",
     careerEyebrow: "경력 확장",
     careerTitle: "인프라 운영에서 클라우드 구축과 자동화까지",
     careerDescription:
-      "서버·데이터베이스·스토리지 운영에서 클라우드 전환과 자동화로 경험을 넓혀 왔습니다. AI 플랫폼은 연구·계획 영역으로 구분합니다.",
+      "서버·데이터베이스·스토리지를 운영하다 클라우드 전환과 자동화 업무를 맡게 됐습니다. 지금은 AI 플랫폼도 공부하고 설계하고 있습니다.",
     projectsEyebrow: "주요 프로젝트",
     projectsTitle: "완료한 대표 프로젝트",
     projectsDescription:
-      "금융권 NCP 인프라, AWS 이관, Terraform 구축과 모니터링에서 직접 맡은 범위를 소개합니다.",
+      "CBDC 활용성 테스트, 아모레퍼시픽 AWS 이관, SKT Tdeal에서 제가 맡았던 일입니다.",
     experienceEyebrow: "프로덕션 엔지니어링 경험",
     experienceTitle: "시스템과 클라우드를 함께 다룬 경험",
     experienceDescription:
-      "서버·스토리지·데이터베이스부터 클라우드 네트워크까지, 서비스 경로와 복구 기준을 함께 다룹니다.",
+      "서버, 스토리지, 데이터베이스와 네트워크를 운영하며 장애를 분석하고 복구한 경험을 정리했습니다.",
     readCaseStudies: "사례 보기",
     areasEyebrow: "핵심 엔지니어링 영역",
     areasTitle: "실무로 연결되는 핵심 역량",
     areasDescription:
-      "클라우드 구축, 네트워크·보안 연계, 자동화와 운영 경험을 관련 사례로 확인하세요. 연구·계획 영역은 상태를 구분해 표시합니다.",
+      "클라우드 구축과 운영에서 다뤘던 기술을 모았습니다. Kubernetes와 AI 플랫폼은 현재 학습·계획 중입니다.",
     viewArchitecture: "아키텍처 및 플랫폼 영역 보기",
     contactEyebrow: "연락처",
     contactTitle: "클라우드 전환과 인프라 구축·운영 협업",
     contactDescription:
-      "채용은 역할과 근무 형태를, 프로젝트는 현재 환경·해결할 문제·희망 일정을 LinkedIn으로 알려주세요. 초기 문의에는 계정 정보나 내부 구성 자료를 포함하지 않아도 됩니다.",
+      "채용이나 프로젝트 협업은 LinkedIn으로 연락 주세요. 맡길 역할이나 해결하고 싶은 문제, 희망 일정을 함께 알려주시면 좋겠습니다.",
     about: "소개",
   },
   en: {
@@ -108,31 +108,31 @@ export const homeCopy = {
     headline: "From cloud migration to reliable operations",
     subline: "Solaris · x86 · Storage · Oracle · Terraform · Cloud · Security Solution Operations",
     positioning:
-      "I work on cloud migration, network and security integration, and reliable operations for financial institutions and enterprise services. My work has grown from Oracle, Unix and storage into AWS, NCP and cloud automation.",
+      "I work on cloud migration and infrastructure operations. I started with Oracle, Unix and storage, then moved into AWS and NCP infrastructure, network and security integration, and Terraform automation.",
     viewProjects: "View selected projects",
     viewExperience: "View Experience",
     careerEyebrow: "Career transition",
     careerTitle: "From infrastructure operations to cloud delivery and automation",
     careerDescription:
-      "My experience spans servers, databases and storage through cloud migration and automation. AI platform work remains a separate research and planning track.",
+      "My work grew from server, database and storage operations into cloud migration and automation. I am now also studying and designing AI platforms.",
     projectsEyebrow: "Featured projects",
     projectsTitle: "Selected completed projects",
     projectsDescription:
-      "My delivery scope across financial NCP infrastructure, AWS migration, Terraform provisioning and monitoring.",
+      "My work on the CBDC usability test, Amorepacific AWS migration and SKT Tdeal infrastructure.",
     experienceEyebrow: "Production engineering experience",
     experienceTitle: "Experience across systems and cloud",
     experienceDescription:
-      "From servers, storage and databases to cloud networks, I work with service paths and recovery requirements together.",
+      "These cases cover my work operating servers, storage, databases and networks, including incident analysis and recovery.",
     readCaseStudies: "Read the case studies",
     areasEyebrow: "Core engineering areas",
     areasTitle: "Capabilities grounded in practice",
     areasDescription:
-      "Explore the projects behind my cloud delivery, network and security integration, automation and operations work. Research and planned areas are clearly labelled.",
+      "These are the technologies I have worked with in cloud infrastructure and operations. Kubernetes and AI platforms are currently learning and planned work.",
     viewArchitecture: "Architecture and platform areas",
     contactEyebrow: "Contact",
     contactTitle: "Cloud migration, infrastructure and operations",
     contactDescription:
-      "For a role, share the responsibilities and working arrangements. For a project, share your current environment, the problem to solve and your preferred timeline on LinkedIn. Account details and internal configuration documents are not needed for an initial conversation.",
+      "You can reach me on LinkedIn about a role or project. Please share the responsibilities or problem you have in mind, along with your preferred timeline.",
     about: "About",
   },
 } as const satisfies Record<Language, object>;
@@ -214,17 +214,16 @@ export const koreanArchitectureAreas: Record<
   "kubernetes-platform": {
     title: "Kubernetes 플랫폼 — 학습·계획",
     description:
-      "프로덕션 구축·운영 경력으로 표시하지 않는 학습 영역이며, 실습 결과는 구현과 검증 후 공개합니다.",
+      "Kubernetes는 현재 공부하고 있습니다. 워크로드 배포와 서비스 연결을 실습할 계획입니다.",
     practices: [
-      "프로덕션 경험과 실습 근거를 분리해 기록",
+      "학습·실습 내용 기록",
       "재현 가능한 실습으로 워크로드·Service·Ingress 동작 학습",
-      "직접 구현하고 검증한 결과만 공개",
+      "실습을 마치면 결과 공유",
     ],
   },
   "network-connectivity": {
     title: "네트워크 및 연결성",
-    description:
-      "로드 밸런서, WAF, VPN, DNS 및 라우팅을 블랙박스가 아닌 명확한 통신 경로로 분석합니다.",
+    description: "로드 밸런서, WAF, VPN과 DNS를 거쳐 요청이 어디로 흐르는지 분석합니다.",
     practices: [
       "tcpdump, curl, 라우팅 테이블 및 로그를 활용한 요청 경로 재구성",
       "로드 밸런서 상태와 실제 백엔드 준비 상태 비교",
@@ -252,8 +251,7 @@ export const koreanArchitectureAreas: Record<
   },
   observability: {
     title: "관측성",
-    description:
-      "대시보드를 채우는 것이 아니라 구체적인 운영 질문에 답하기 위한 메트릭, 로그 및 추적.",
+    description: "메트릭과 로그를 함께 보고 서비스 상태와 장애 원인을 확인합니다.",
     practices: [
       "로그, 패킷 캡처 및 컴포넌트 상태를 하나의 타임라인으로 연결",
       "교차 계정 CloudWatch 모니터링 구축 경험; AI 플랫폼용 Prometheus·Grafana는 연구·계획",
@@ -282,11 +280,11 @@ export const koreanArchitectureAreas: Record<
 
 export const englishProjectSummaries: Record<string, string> = {
   "self-service-ai-platform":
-    "A Kubernetes-based AI platform that enables data scientists to register, deploy, inspect and roll back model versions without an infrastructure engineer handling every step.",
+    "I am planning a Kubernetes-based platform where data scientists can register, deploy, inspect and roll back model versions themselves.",
   "llm-inference-platform":
-    "An inference platform for serving LLMs as APIs with authentication, request control, model routing, performance monitoring and GPU resource management.",
+    "I am planning an LLM API platform with authentication, request limits, model routing, monitoring and GPU resource management.",
   "production-engineering-case-studies":
-    "A reviewed collection of production case studies covering cloud migration, WAF and load balancer traffic analysis, VPN and routing incidents.",
+    "Notes from my cloud migration, WAF and load balancer analysis, VPN and routing work.",
 };
 
 export const pageCopy = {
@@ -294,8 +292,7 @@ export const pageCopy = {
     projects: {
       eyebrow: "프로젝트",
       title: "경력 프로젝트와 플랫폼 랩",
-      description:
-        "완료한 고객 프로젝트는 분야별로 정리하고, 학습·계획 프로젝트는 Platform Lab으로 분리합니다.",
+      description: "제가 맡았던 고객 프로젝트와 현재 공부하거나 계획 중인 프로젝트를 모았습니다.",
       all: "전체 프로젝트",
       stack: "기술 스택",
     },
@@ -303,7 +300,7 @@ export const pageCopy = {
       eyebrow: "경험",
       title: "프로덕션 엔지니어링 사례",
       description:
-        "연도 대신 엔지니어링 영역별로 구성했습니다. 각 사례는 검증할 수 없는 수치 없이 배경, 역할, 제약 사항, 수행 내용과 결과를 설명하며 모든 식별 정보는 제거했습니다.",
+        "클라우드 이관, 네트워크 분석과 시스템 운영 중에 만났던 문제를 정리했습니다. 당시 상황과 제가 맡은 일, 해결 과정을 소개합니다.",
       all: "전체 사례",
       technologies: "기술",
       context: "배경",
@@ -311,15 +308,14 @@ export const pageCopy = {
       constraints: "제약 사항",
       keyActions: "주요 수행 내용",
       result: "결과",
-      deeper:
-        "아키텍처, 분석 단계 및 회고를 포함한 상세 내용은 사례의 익명화 검토가 완료되는 대로 추가합니다.",
+      deeper: "관련 구성과 분석 과정은 정리를 마치는 대로 추가하겠습니다.",
       detail: "사례 상세",
     },
     architecture: {
       eyebrow: "아키텍처",
       title: "플랫폼 영역과 연결 관계",
       description:
-        "로고 목록이나 역량 점수 대신 각 영역의 실제 업무, 현재 상태, 근거가 되는 프로젝트와 사례를 설명합니다.",
+        "실무에서 다룬 기술과 앞으로 공부할 기술입니다. 각 영역에서 관련 프로젝트와 글을 볼 수 있습니다.",
       practice: "주요 실무",
       relatedProjects: "관련 프로젝트",
       relatedCaseStudies: "관련 사례",
@@ -327,7 +323,7 @@ export const pageCopy = {
     about: {
       eyebrow: "소개",
       title: "박상준 | 클라우드·인프라 아키텍트",
-      description: "금융권과 기업 서비스의 클라우드 전환, 인프라 구축, 운영 안정화를 수행합니다.",
+      description: "금융권과 기업 서비스의 클라우드 전환과 인프라 운영을 해왔습니다.",
     },
     details: {
       sections: "섹션",
@@ -348,7 +344,7 @@ export const pageCopy = {
       eyebrow: "Projects",
       title: "Career projects and platform lab",
       description:
-        "Delivered customer work is grouped by engineering domain; learning and planned work remains in Platform Lab.",
+        "Customer projects I have worked on, alongside projects I am studying or planning.",
       all: "All projects",
       stack: "Stack",
     },
@@ -356,7 +352,7 @@ export const pageCopy = {
       eyebrow: "Experience",
       title: "Production engineering case studies",
       description:
-        "Organised by engineering domain rather than by year. Each case study states context, role, constraints, actions taken and outcome — without performance numbers that cannot be evidenced. All identifying details are removed.",
+        "Problems I worked on during cloud migrations, network analysis and system operations: the situation, my role and how I approached it.",
       all: "All case studies",
       technologies: "Technologies",
       context: "Context",
@@ -364,15 +360,14 @@ export const pageCopy = {
       constraints: "Constraints",
       keyActions: "Key actions",
       result: "Result",
-      deeper:
-        "A deeper write-up (architecture, analysis steps and lessons learned) will be added as the case study is reviewed for anonymisation.",
+      deeper: "I will add more detail on the architecture and analysis as I finish the write-ups.",
       detail: "Case study detail",
     },
     architecture: {
       eyebrow: "Architecture",
       title: "Platform areas and how they connect",
       description:
-        "No logo wall, no skill bars, no self-rated percentages. Each area describes what the work involves, its current status, and which project or case study it is backed by.",
+        "Technologies I have worked with and areas I am studying, with links to related projects and articles.",
       practice: "Practice",
       relatedProjects: "Related projects",
       relatedCaseStudies: "Related case studies",
@@ -381,7 +376,7 @@ export const pageCopy = {
       eyebrow: "About",
       title: "Sang jun (David) park | Cloud & Infrastructure Architect",
       description:
-        "Cloud migration, infrastructure delivery and operations for financial institutions and enterprise services.",
+        "I work on cloud migration and infrastructure operations for financial institutions and enterprise services.",
     },
     details: {
       sections: "Sections",
@@ -435,9 +430,9 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     {
       title: "소개",
       paragraphs: [
-        "박상준입니다. 서버와 데이터베이스 운영을 기반으로 클라우드 인프라의 구축과 운영을 담당해 왔습니다. 서비스가 사용하는 네트워크, 보안 솔루션, 데이터베이스와 인프라를 함께 이해하며 업무를 수행합니다.",
+        "박상준입니다. 서버와 데이터베이스를 운영하다 클라우드 구축과 운영까지 맡게 됐습니다. 네트워크, 보안 솔루션, 데이터베이스가 서비스와 어떻게 연결되는지 함께 살펴봅니다.",
         "한국은행 CBDC 프로젝트의 NCP 인프라, 아모레퍼시픽 AWS 전환, SKT Tdeal의 Terraform 구축과 모니터링이 주요 경험입니다. 초기 경력에서는 Oracle RAC, Solaris, 스토리지, 백업과 DR 환경을 다뤘습니다.",
-        "이 사이트에는 프로젝트별 소속과 역할, 구현한 내용을 정리합니다. 현재는 운영 기록과 Runbook을 활용한 지식화 체계를 설계하며, AI·빅데이터 학습을 바탕으로 AI 업무 도구의 활용 가능성을 탐구하고 있습니다.",
+        "현재는 장애 대응 기록과 Runbook을 연결해 운영 지식을 정리하는 체계를 설계하고 있습니다. AI·빅데이터를 공부하며 업무에 AI 도구를 어떻게 활용할지도 살펴보고 있습니다.",
       ],
       bullets: [],
     },
@@ -455,7 +450,7 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     {
       title: "소속·계약 관계와 경력",
       paragraphs: [
-        "고객 프로젝트 기간과 소속·계약 기간을 구분합니다. 우나프론트 전체 참여기간은 초기 근무와 이후 개인사업자 프리랜서 용역계약을 포함하며, 전환 월은 확정하지 않습니다.",
+        "우나프론트에서는 처음에 직원으로 일했고, 이후 개인사업자·프리랜서 용역계약으로 업무를 이어갔습니다. 아래는 각 회사에서 근무하거나 계약을 맺고 참여한 기간입니다.",
       ],
       bullets: [
         "엘퍼스트 · 프리랜서 TA · 2026.04–현재 (현재 CBDC 프로젝트 예정 범위 2026.04–2026.12)",
@@ -472,8 +467,8 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     {
       title: "학력과 자격 취득 이력",
       paragraphs: [
-        "서울과학종합대학원대학교 AI빅데이터학과 석사과정 · 2024.03 입학 · 휴학 중. 학위 취득 또는 졸업 예정일을 의미하지 않습니다.",
-        "아래 자격은 취득 이력입니다. 표시된 만료일 이후 갱신은 확인되지 않았습니다.",
+        "2024.03 서울과학종합대학원대학교 AI빅데이터학과 석사과정에 입학했습니다. 현재 휴학 중입니다.",
+        "그동안 취득한 자격입니다. 취득일과 표시된 만료일을 함께 적었습니다. 갱신 여부는 아직 확인 전입니다.",
       ],
       bullets: [
         "AWS Solutions Architect – Associate · 2023.05 취득 · 표시 만료 2026.05",
@@ -484,21 +479,21 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     {
       title: "엔터프라이즈 프로덕션 환경",
       paragraphs: [
-        "Solaris·Linux·AIX·x86 시스템과 Storage·Oracle을 사용하는 엔터프라이즈 프로덕션 환경에서 업무를 시작했습니다. 모든 변경이 검토되고 롤백 경로를 가지며 사후 검증되는 환경이었습니다. 이 경험은 인프라를 설계할 때 단순히 동작 여부뿐 아니라 일부가 실패했을 때의 동작과 복구 방법까지 고려하게 합니다.",
+        "처음에는 Solaris·Linux·AIX·x86 서버와 스토리지, Oracle을 운영했습니다. 변경 전에 작업 내용과 롤백 절차를 검토하고, 작업 뒤에는 서비스가 정상인지 확인했습니다.",
       ],
       bullets: [],
     },
     {
       title: "Terraform과 클라우드로의 확장",
       paragraphs: [
-        "이후 AWS와 NCP 클라우드 인프라, Terraform 기반 인프라 코드화, 온프레미스·IDC 시스템의 클라우드 마이그레이션으로 영역을 확장했습니다. 이는 직무를 바꾼 것이 아니라 같은 운영 책임을 더 넓은 환경에서 이어가는 과정입니다.",
+        "이후 AWS·NCP 인프라를 구축하고, 온프레미스·IDC 시스템을 클라우드로 옮겼습니다. Terraform으로 인프라를 코드화하는 일도 맡았습니다.",
       ],
       bullets: [],
     },
     {
       title: "시스템 간 실제 통신 흐름 분석",
       paragraphs: [
-        "대부분의 프로덕션 문제는 하나의 컴포넌트 안이 아니라 컴포넌트 사이의 경로에서 발생합니다. 클라이언트, 로드 밸런서, WAF, 웹·미들웨어, 데이터베이스와 스토리지로 이어지는 실제 요청 경로를 재구성하고 각 홉의 예상 동작을 정의한 뒤 검증합니다.",
+        "통신 문제를 분석할 때는 요청이 지나가는 경로를 먼저 확인합니다. 클라이언트부터 로드 밸런서, WAF, 웹·미들웨어, 데이터베이스와 스토리지까지 각 구간의 동작을 점검합니다.",
       ],
       bullets: [],
     },
@@ -515,14 +510,14 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     {
       title: "엔지니어링 업무에서 AI를 사용하는 방식",
       paragraphs: [
-        "AI가 생성한 코드를 그대로 배포하지 않습니다. 탐색 속도를 높이는 데 AI를 사용하고, 구조와 배치 위치는 직접 설계하며 실제 시스템 동작을 기준으로 결과를 검증합니다. 플랫폼에서 검증되지 않은 결과는 미래의 장애가 될 수 있습니다.",
+        "AI를 활용해 자료와 구현 방법을 찾아봅니다. 코드의 구조와 적용 위치는 직접 판단하고, 실제 시스템에서 의도한 대로 동작하는지 확인합니다.",
       ],
       bullets: [],
     },
     {
       title: "지향하는 방향",
       paragraphs: [
-        "장기 목표는 AI 플랫폼 엔지니어링입니다. Kubernetes 기반 ML·AI 워크로드, 모델 레지스트리와 서빙, MLOps와 LLM 추론은 현재 프로덕션 경력이 아닌 학습·계획 영역입니다. 직접 구현하고 검증한 내용만 진행 또는 완료 상태로 전환합니다.",
+        "앞으로는 AI 플랫폼을 만드는 일도 해보고 싶습니다. Kubernetes, 모델 레지스트리와 서빙, MLOps, LLM 추론을 공부하고 있습니다. 관련 프로젝트는 아직 학습·계획 단계입니다.",
       ],
       bullets: [],
       links: { projects: "프로젝트 보기", connector: "또는", experience: "프로덕션 사례 보기" },
@@ -532,9 +527,9 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     {
       title: "About me",
       paragraphs: [
-        "I am Sang jun (David) park, a cloud and infrastructure architect with a background in server and database operations. I work across the networks, security solutions, databases and infrastructure that support a service.",
+        "I am Sang jun (David) park. I started in server and database operations and later moved into cloud infrastructure. My work covers how networks, security solutions and databases connect to a service.",
         "My main projects include NCP infrastructure for Bank of Korea CBDC projects, Amorepacific's AWS migration, and Terraform provisioning and monitoring for SKT Tdeal. Earlier work covered Oracle RAC, Solaris, storage, backup and disaster recovery.",
-        "This site records my affiliation, role and implementation scope for each project. I am currently designing an operational knowledge structure around incident records and runbooks, and exploring AI workflow tools through AI and big data studies.",
+        "I am currently designing a way to connect incident records and runbooks into an operational knowledge base. Alongside my AI and big data studies, I am exploring how AI tools could help with this work.",
       ],
       bullets: [],
     },
@@ -552,7 +547,7 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     {
       title: "Affiliations and engagements",
       paragraphs: [
-        "Customer project dates are distinct from employment and contract dates. The overall 우나프론트 engagement includes initial employment followed by a freelance services contract as a sole proprietor; the transition month is unconfirmed.",
+        "I initially worked as an employee of 우나프론트, then continued under a freelance services contract as a sole proprietor. The dates below cover my employment or contract with each company.",
       ],
       bullets: [
         "엘퍼스트 · Freelance TA · 2026.04–present (current CBDC project planned scope: 2026.04–2026.12)",
@@ -569,8 +564,8 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     {
       title: "Education and certification history",
       paragraphs: [
-        "서울과학종합대학원대학교 · AI and Big Data master's program · enrolled 2024.03 · on leave. No completed degree or confirmed graduation date is claimed.",
-        "These are previously earned certifications. Renewal after the listed expiry dates has not been confirmed.",
+        "I enrolled in the AI and Big Data master's program at 서울과학종합대학원대학교 in 2024.03. I am currently on leave.",
+        "These are certifications I have earned, with their issue and listed expiry dates. Renewal status has not yet been confirmed.",
       ],
       bullets: [
         "AWS Solutions Architect – Associate · earned 2023.05 · listed expiry 2026.05",
@@ -581,21 +576,21 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     {
       title: "Enterprise production environments",
       paragraphs: [
-        "My work started in enterprise production across Solaris, Linux, AIX and x86 systems, storage and Oracle. Every change was reviewed, had a rollback path and was verified afterwards. That context shapes how I design infrastructure — not only whether it works, but how it fails and how it is restored.",
+        "I started by operating Solaris, Linux, AIX and x86 servers, storage and Oracle. I reviewed changes and rollback procedures before the work and checked service behaviour afterwards.",
       ],
       bullets: [],
     },
     {
       title: "Expanding into Terraform and cloud",
       paragraphs: [
-        "From there I moved into AWS and NCP cloud infrastructure, Terraform-based infrastructure delivery, and migration of on-premises and IDC systems to cloud environments. This is an extension of the same operational responsibility, not a change of profession.",
+        "I later built AWS and NCP infrastructure and migrated on-premises and IDC systems to the cloud. I also used Terraform to manage infrastructure as code.",
       ],
       bullets: [],
     },
     {
       title: "Analysing real communication flow between systems",
       paragraphs: [
-        "Most production problems are not inside one component; they are on the path between components. I reconstruct the actual request path across client, load balancer, WAF, web and middleware tiers, databases and storage, state the expected behaviour at each hop, and then verify it.",
+        "When investigating connectivity problems, I first trace the request path. I check each step from the client through the load balancer, WAF, web and middleware tiers to the database and storage.",
       ],
       bullets: [],
     },
@@ -612,14 +607,14 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     {
       title: "How I use AI in engineering work",
       paragraphs: [
-        "I do not ship AI-generated code as-is. I use AI to accelerate exploration, then design the structure myself, decide what belongs where, and verify the result against how the system actually behaves. On a platform, unverified output is a future incident.",
+        "I use AI to explore information and implementation options. I decide how the code should be structured and where it belongs, then check its behaviour in the actual system.",
       ],
       bullets: [],
     },
     {
       title: "Where I am heading",
       paragraphs: [
-        "My long-term goal is AI Platform Engineering. Kubernetes-based ML and AI workloads, model serving, MLOps and LLM inference are learning and planned work rather than production experience. A project moves to in-progress or completed only after I implement and verify it.",
+        "I would like to work on AI platforms. I am studying Kubernetes, model registries and serving, MLOps and LLM inference. These projects are still in the learning and planning stage.",
       ],
       bullets: [],
       links: {
@@ -638,13 +633,13 @@ const koreanProjects: Record<
   "self-service-ai-platform": {
     title: "셀프서비스 AI 플랫폼",
     summary:
-      "Kubernetes 기반 AI 플랫폼입니다. 데이터 사이언티스트가 인프라 엔지니어에게 매번 요청하지 않고 모델을 등록·배포하고 상태를 확인하며 이전 버전으로 롤백할 수 있도록 하는 것이 목표입니다.",
+      "데이터 사이언티스트가 직접 모델을 등록·배포하고 상태를 확인하며 이전 버전으로 되돌릴 수 있는 Kubernetes 기반 플랫폼을 계획하고 있습니다.",
     technologiesLabel: "예정 기술",
     sections: {
       overview: {
         paragraphs: [
-          "데이터 사이언티스트가 각 단계마다 인프라 엔지니어에게 요청하지 않고 모델을 등록하고 배포하며 실행 상태를 확인하고 이전 버전으로 롤백할 수 있게 하는 플랫폼 프로젝트입니다.",
-          "현재 계획 단계이며 직접 구현하고 검증한 내용만 아래 영역에 기록합니다.",
+          "모델 등록부터 배포, 상태 확인과 롤백까지 데이터 사이언티스트가 직접 할 수 있는 플랫폼을 구상하고 있습니다.",
+          "현재는 요구사항과 구조를 정리하는 계획 단계입니다.",
         ],
       },
       problem: {
@@ -674,7 +669,7 @@ const koreanProjects: Record<
       },
       currentStatus: {
         paragraphs: [
-          "계획 단계입니다. Kubernetes 구축·운영 경력으로 표시하지 않으며, 실습 결과는 직접 구현하고 검증한 뒤 추가합니다.",
+          "아직 계획 단계입니다. Kubernetes 실습을 진행한 뒤 구현 결과를 추가하겠습니다.",
         ],
       },
     },
@@ -682,13 +677,13 @@ const koreanProjects: Record<
   "llm-inference-platform": {
     title: "LLM 추론 플랫폼",
     summary:
-      "LLM을 API로 제공하고 인증, 요청 제어, 모델 라우팅, 성능 모니터링 및 GPU 자원 관리를 수행하는 추론 플랫폼입니다.",
+      "LLM을 API로 제공하는 플랫폼을 계획하고 있습니다. 인증, 요청 제한, 모델 라우팅, 모니터링과 GPU 자원 관리를 다룰 예정입니다.",
     technologiesLabel: "예정 기술",
     sections: {
       overview: {
         paragraphs: [
-          "인증, 요청 제어, 모델 라우팅, 성능 모니터링 및 GPU 자원 관리를 포함해 LLM을 API 뒤에서 제공하는 프로젝트입니다.",
-          "아직 구현 전이며 이 페이지는 결과가 아니라 범위와 미결정 사항을 기록합니다.",
+          "LLM API에 인증과 요청 제한을 붙이고, 모델 라우팅과 GPU 자원을 관리하는 플랫폼을 구상하고 있습니다.",
+          "아직 구현 전입니다. 필요한 기능과 설계에서 결정할 사항을 정리하고 있습니다.",
         ],
       },
       problem: {
@@ -712,19 +707,17 @@ const koreanProjects: Record<
   "production-engineering-case-studies": {
     title: "프로덕션 엔지니어링 사례",
     summary:
-      "실제 프로덕션 환경에서 수행한 클라우드 마이그레이션, WAF·로드 밸런서 통신 분석, VPN 및 라우팅 문제 해결 사례를 공개 검토 후 정리한 모음입니다.",
+      "클라우드 이관, WAF·로드 밸런서 분석, VPN과 라우팅 문제를 다뤘던 경험을 정리하고 있습니다.",
     technologiesLabel: "분야",
     sections: {
       overview: {
         paragraphs: [
-          "클라우드 마이그레이션, WAF·로드 밸런서 트래픽 분석, VPN 및 라우팅 문제를 구조화해 정리합니다.",
-          "고객사와 프로젝트명은 검토 후 공개할 수 있습니다. 인명, 실제 네트워크·계정·호스트·구성값은 치환하며 주소 예시는 192.0.2.0/24 같은 문서용 대역만 사용합니다.",
+          "클라우드 이관과 네트워크 문제를 다루며 제가 확인하고 조치했던 내용을 모았습니다.",
+          "설명에 필요한 주소는 192.0.2.0/24 같은 문서용 대역을 사용했습니다. 개인·계정·서버 식별정보와 실제 구성값은 싣지 않았습니다.",
         ],
       },
       currentStatus: {
-        paragraphs: [
-          "진행 중입니다. 익명화 검토가 끝나는 대로 경험 페이지에 각 사례를 공개합니다.",
-        ],
+        paragraphs: ["계속 정리 중입니다. 완성한 글은 경험 페이지에 추가하겠습니다."],
       },
     },
   },
@@ -789,7 +782,7 @@ const koreanCaseStudies: Record<
       "전환 후 curl, DNS 해석, 라우팅 테이블 및 패킷 캡처로 트래픽 경로를 검증했습니다.",
     ],
     result:
-      "선정한 워크로드가 검증된 요청 경로와 문서화된 롤백 절차를 기반으로 클라우드 환경에서 트래픽을 처리했습니다. 검증되지 않은 성능 수치는 제시하지 않습니다.",
+      "이전한 워크로드가 클라우드에서 요청을 처리하는 것을 확인했습니다. 통신 경로를 검증하고 롤백 절차를 문서로 남겼습니다.",
   },
   "traffic-path-analysis": {
     category: "네트워크 및 트래픽 흐름",
@@ -806,8 +799,7 @@ const koreanCaseStudies: Record<
       "동일한 요청 시간대를 기준으로 tcpdump, curl, 라우팅 테이블 및 애플리케이션 로그를 연결했습니다.",
       "변경을 제안하기 전에 장애 범위를 하나의 컴포넌트로 좁혔습니다.",
     ],
-    result:
-      "추측이 아니라 패킷 캡처와 로그 근거로 장애 홉을 확인하고 관련 데이터를 담당 팀에 전달했습니다.",
+    result: "패킷 캡처와 로그로 장애 구간을 확인하고, 담당 팀에 분석 결과와 자료를 전달했습니다.",
   },
   "waf-load-balancer-behaviour": {
     category: "로드 밸런서 및 WAF",
@@ -875,8 +867,7 @@ const koreanCaseStudies: Record<
       "홉별로 패킷 캡처, 로드 밸런서 상태, 라우팅, DNS 해석 및 로그를 수집했습니다.",
       "복구 조치와 근본 원인 조치를 분리하고 모두 기록했습니다.",
     ],
-    result:
-      "수집한 근거로 결과를 뒷받침해 담당 범위에 대한 논쟁을 줄이고 후속 조치를 구체화했습니다.",
+    result: "수집한 자료를 바탕으로 담당자들과 장애 범위와 후속 조치를 정리했습니다.",
   },
 };
 
@@ -893,9 +884,12 @@ export const mentoringCopy = {
     relationship: "플랫폼 멘토 활동",
     period: "2026.03–현재",
     description:
-      "윈터뷰에서 이력서 리뷰와 커리어 커피챗을 진행하며, DevOps 진로 상담과 STAR 방식 경력기술서 피드백을 제공합니다.",
+      "윈터뷰에서는 이력서를 함께 검토하고, DevOps를 준비하는 분들과 커리어 방향을 이야기하고 있습니다. 경력을 STAR 방식으로 정리하는 것도 돕고 있습니다.",
     reviews: "평점 5.0/5.0 · 후기 3건 (2026년 10월 확인 기준)",
     link: "윈터뷰 플랫폼 보기",
+    imageAlt: "윈터뷰 멘토링 후기 3건과 평점 5.0/5. 작성자 닉네임은 가렸습니다.",
+    imageCaption: "윈터뷰 멘토링 후기 · 2026년 10월",
+    imageLink: "후기 이미지 크게 보기 (새 탭)",
   },
   en: {
     section: "Mentoring and community activities",
@@ -903,8 +897,12 @@ export const mentoringCopy = {
     relationship: "Platform mentoring activity",
     period: "Mar 2026–Present",
     description:
-      "Mentor on Winterview, providing resume reviews, career conversations, DevOps career guidance, and feedback on structuring experience using the STAR method.",
+      "On Winterview, I review resumes and talk about career direction with people preparing for DevOps roles. I also help them describe their experience using the STAR method.",
     reviews: "5.0/5.0 across 3 reviews (as of October 2026).",
     link: "Visit Winterview",
+    imageAlt:
+      "Three Winterview mentoring reviews with a 5.0/5 rating. Reviewer nicknames are redacted. The reviews are in Korean.",
+    imageCaption: "Winterview mentoring reviews · October 2026",
+    imageLink: "Open full-size reviews (new tab)",
   },
 } as const satisfies Record<Language, object>;

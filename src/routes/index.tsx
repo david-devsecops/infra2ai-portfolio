@@ -182,8 +182,8 @@ function Home() {
         title={language === "ko" ? "AI와 플랫폼 연구" : "AI and platform research"}
         description={
           language === "ko"
-            ? "인프라 운영 경험을 바탕으로 AI 업무 도구와 플랫폼 운영을 탐구합니다. 셀프서비스 AI 플랫폼과 LLM 추론 플랫폼은 계획 단계입니다."
-            : "Exploring AI workflow tools and platform operations from an infrastructure background. The self-service AI and LLM inference platforms are planned projects."
+            ? "AI를 업무에 활용하는 방법과 플랫폼 운영을 공부하고 있습니다. 셀프서비스 AI 플랫폼과 LLM 추론 플랫폼은 아직 계획 단계입니다."
+            : "I am studying how to use AI at work and how to operate AI platforms. The self-service AI and LLM inference platforms are still planned projects."
         }
       >
         <div className="grid gap-6 md:grid-cols-2">

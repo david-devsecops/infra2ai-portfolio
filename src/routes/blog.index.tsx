@@ -7,21 +7,21 @@ import { useDocumentTitle, useLanguage } from "@/lib/language";
 
 const title = "Blog — Legacy to Cloud | infra2ai.dev";
 const description =
-  "Solaris·x86·Storage·Oracle 운영 경험을 Terraform과 Cloud 설계 원칙으로 연결하는 심층 기술 기록입니다.";
+  "Solaris·x86·스토리지·Oracle을 운영하며 배운 것과 Terraform·클라우드 업무에서 확인한 내용을 씁니다.";
 
 const copy = {
   ko: {
     eyebrow: "ENGINEERING BLOG",
     title: "Legacy to Cloud",
     description,
-    empty: "검토를 마친 글부터 공개합니다.",
+    empty: "글을 준비하고 있습니다.",
   },
   en: {
     eyebrow: "ENGINEERING BLOG",
     title: "Legacy to Cloud",
     description:
-      "Deep technical notes connecting Solaris, x86, storage and Oracle operations to Terraform and cloud design principles.",
-    empty: "Articles are published after technical and security review.",
+      "Notes on what I learned operating Solaris, x86, storage and Oracle, and working with Terraform and cloud infrastructure.",
+    empty: "I am preparing new articles.",
   },
 } as const;
 

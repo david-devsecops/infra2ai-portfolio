@@ -7,7 +7,7 @@ import { useDocumentTitle, useLanguage } from "@/lib/language";
 
 const title = "소개 — 박상준 | 클라우드·인프라 아키텍트";
 const description =
-  "금융권 NCP 인프라, AWS 전환, Terraform 구축과 운영 경험을 소개합니다. 클라우드·인프라 아키텍트 박상준의 프로젝트와 기술 기록입니다.";
+  "클라우드·인프라 아키텍트 박상준입니다. NCP 인프라, AWS 전환, Terraform 구축과 운영 경험, 윈터뷰 멘토링 활동을 소개합니다.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -27,7 +27,7 @@ function AboutPage() {
     language === "ko" ? title : "About — Sang jun (David) park | Cloud & Infrastructure Architect",
     language === "ko"
       ? description
-      : "Financial NCP infrastructure, AWS migration, Terraform delivery and operations. Projects and technical writing by Sang jun (David) park, Cloud & Infrastructure Architect.",
+      : "I am Sang jun (David) park, a cloud and infrastructure architect. Read about my NCP, AWS and Terraform work and Winterview mentoring.",
   );
   const copy = pageCopy[language].about;
   const mentoring = mentoringCopy[language];
@@ -75,6 +75,27 @@ function AboutPage() {
             <p className="mt-3 text-base leading-relaxed text-muted-foreground">
               {mentoring.description}
             </p>
+            <figure className="mt-6">
+              <a
+                href="/images/winterview-reviews-2026-10.png"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label={mentoring.imageLink}
+                className="block rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+              >
+                <img
+                  src="/images/winterview-reviews-2026-10.png"
+                  alt={mentoring.imageAlt}
+                  width={987}
+                  height={718}
+                  loading="lazy"
+                  className="h-auto w-full rounded-lg border border-border"
+                />
+              </a>
+              <figcaption className="mt-3 text-sm text-muted-foreground">
+                {mentoring.imageCaption} · {mentoring.imageLink}
+              </figcaption>
+            </figure>
             <p className="mt-4 text-sm leading-relaxed text-foreground">{mentoring.reviews}</p>
             <a
               href="https://winterview.io/"

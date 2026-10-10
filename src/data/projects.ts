@@ -23,8 +23,8 @@ export const platformProjects: Project[] = [
     sections: {
       overview: {
         paragraphs: [
-          "A platform project whose goal is to let data scientists register a model, deploy it, check its runtime state and roll back to a previous version without asking an infrastructure engineer for each step.",
-          "This is a planned learning project. Sections are filled in only after each part is implemented and verified.",
+          "I am planning a platform where data scientists can register and deploy models, check their runtime state and roll back versions themselves.",
+          "I am currently defining the requirements and structure for this learning project.",
         ],
       },
       problem: {
@@ -54,7 +54,7 @@ export const platformProjects: Project[] = [
       },
       currentStatus: {
         paragraphs: [
-          "Planned. No cluster implementation or production operation is claimed; evidence will be added only after lab work is completed and verified.",
+          "Still planned. I will add implementation results after completing the Kubernetes lab work.",
         ],
       },
     },
@@ -74,7 +74,7 @@ export const platformProjects: Project[] = [
       overview: {
         paragraphs: [
           "Planned project: serve LLM models behind an API with authentication, request control, model routing, performance monitoring and GPU resource management.",
-          "Nothing has been built yet. This page exists to record scope and open questions, not results.",
+          "I have not started implementation yet. I am defining the features and open design questions.",
         ],
       },
       problem: {
@@ -109,13 +109,13 @@ export const platformProjects: Project[] = [
     sections: {
       overview: {
         paragraphs: [
-          "A structured write-up of production work: cloud migration, WAF and load balancer traffic analysis, and VPN and routing problems.",
-          "Customer and project names may be published after review. People, network values, accounts, hosts and configuration values are replaced; examples use documentation ranges such as 192.0.2.0/24.",
+          "I am collecting notes on the checks and changes I made during cloud migrations and network investigations.",
+          "Address examples use documentation ranges such as 192.0.2.0/24. Personal, account and server identifiers and actual configuration values are omitted.",
         ],
       },
       currentStatus: {
         paragraphs: [
-          "In Progress. Case studies are published on the Experience page as each write-up is reviewed for anonymisation.",
+          "I am still writing these up and adding finished articles to the Experience page.",
         ],
       },
     },

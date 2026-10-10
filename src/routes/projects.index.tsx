@@ -8,7 +8,7 @@ import { useDocumentTitle, useLanguage } from "@/lib/language";
 
 const title = "프로젝트 — 클라우드·인프라 아키텍트";
 const description =
-  "Terraform·Cloud 프로젝트, 검토가 끝난 프로덕션 사례와 계획 단계의 AI 플랫폼 학습 프로젝트를 실제 상태와 함께 소개합니다.";
+  "제가 맡았던 클라우드·인프라 프로젝트와 현재 공부하거나 계획 중인 AI 플랫폼 프로젝트를 모았습니다.";
 
 export const Route = createFileRoute("/projects/")({
   head: () => ({

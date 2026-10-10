@@ -7,9 +7,9 @@ const oracleChecks = {
     "Keep isolation and rollback criteria explicit before migration or recovery work.",
   ],
   ko: [
-    "변경 전 instance·cluster 상태와 storage·ASM 가시성을 확인합니다.",
-    "Backup 의존성과 대표 업무 검증 단계를 함께 검토합니다.",
-    "Migration·복구 전에 격리와 rollback 판단 기준을 명시합니다.",
+    "변경 전 인스턴스·클러스터 상태와 스토리지·ASM 가시성을 확인합니다.",
+    "백업 의존성과 대표 업무 검증 단계를 함께 검토합니다.",
+    "이관·복구 전에 격리와 롤백 판단 기준을 명시합니다.",
   ],
 };
 
@@ -93,7 +93,7 @@ export const oracleDataProjects = [
         "Define integration and validation boundaries without exposing database identities.",
       ],
       ko: [
-        "분리된 DB 영역을 위한 recovery appliance 기반을 구축했습니다.",
+        "분리된 DB 영역을 위한 복구 어플라이언스 기반을 구축했습니다.",
         "DB 식별값을 공개하지 않고 연계와 검증 경계를 정의했습니다.",
       ],
     },
@@ -121,7 +121,7 @@ export const oracleDataProjects = [
       ],
       ko: [
         "Appliance와 보호 흐름의 유지보수를 지원했습니다.",
-        "Backup 수집 상태와 복구 가능성 점검을 구분했습니다.",
+        "백업 수집 상태와 복구 가능성 점검을 구분했습니다.",
       ],
     },
   }),
@@ -147,7 +147,7 @@ export const oracleDataProjects = [
         "Carry the build validation model into maintenance checks.",
       ],
       ko: [
-        "ZDLRA 플랫폼과 보호 DB interface를 구축했습니다.",
+        "ZDLRA 플랫폼과 보호 DB 인터페이스를 구축했습니다.",
         "구축 검증 기준을 유지보수 점검으로 이어갔습니다.",
       ],
     },
@@ -250,7 +250,7 @@ export const oracleDataProjects = [
       ],
       ko: [
         "Oracle DB 서비스와 OGG 의존성을 유지보수했습니다.",
-        "Source, replication process와 target 상태를 별도 경계로 확인했습니다.",
+        "원본, 복제 프로세스와 대상 상태를 별도 경계로 확인했습니다.",
       ],
     },
   }),
@@ -259,7 +259,7 @@ export const oracleDataProjects = [
     title: { en: "Sahmyook Registration Tuning", ko: "삼육대학교 수강신청 Tuning·Monitoring" },
     summary: {
       en: "Performed Oracle tuning and monitoring for the course-registration workload.",
-      ko: "수강신청 workload의 Oracle tuning과 monitoring을 수행했습니다.",
+      ko: "수강신청 워크로드의 Oracle 튜닝과 모니터링을 수행했습니다.",
     },
     client: "삼육대학교",
     period: "2015.01–2015.12",
@@ -273,8 +273,8 @@ export const oracleDataProjects = [
         "Link SQL and instance observations to the affected business path.",
       ],
       ko: [
-        "수강신청 workload 시간대의 DB 신호를 관측했습니다.",
-        "SQL·instance 관측값을 영향받는 업무 경로와 연결했습니다.",
+        "수강신청 워크로드 시간대의 DB 신호를 관측했습니다.",
+        "SQL·인스턴스 관측값을 영향받는 업무 경로와 연결했습니다.",
       ],
     },
   }),
@@ -297,8 +297,8 @@ export const oracleDataProjects = [
         "Verify node, listener, service and shared-storage visibility.",
       ],
       ko: [
-        "RAC cluster와 DB service 경계를 구축했습니다.",
-        "Node, listener, service와 shared storage 가시성을 확인했습니다.",
+        "RAC 클러스터와 DB 서비스 경계를 구축했습니다.",
+        "Node, listener, 서비스와 공유 스토리지 가시성을 확인했습니다.",
       ],
     },
   }),
@@ -322,7 +322,7 @@ export const oracleDataProjects = [
       ],
       ko: [
         "VM과 DB 경계를 연결해 RAC를 구축했습니다.",
-        "가상 네트워크, shared storage, cluster와 service 상태를 구분해 확인했습니다.",
+        "가상 네트워크, 공유 스토리지, 클러스터와 서비스 상태를 구분해 확인했습니다.",
       ],
     },
   }),
@@ -334,7 +334,7 @@ export const oracleDataProjects = [
     },
     summary: {
       en: "Performed an Oracle database migration and registered the migrated service with the cluster.",
-      ko: "Oracle DB migration과 migration 대상의 cluster 등록을 수행했습니다.",
+      ko: "Oracle DB 이관과 이관 대상의 클러스터 등록을 수행했습니다.",
     },
     client: "LSG",
     period: "2015.01–2015.12",
@@ -348,8 +348,8 @@ export const oracleDataProjects = [
         "Verify database state, cluster resource and representative service connectivity.",
       ],
       ko: [
-        "DB migration과 cluster 등록 순서를 구성했습니다.",
-        "DB 상태, cluster resource와 대표 서비스 연결을 확인했습니다.",
+        "DB 이관과 클러스터 등록 순서를 구성했습니다.",
+        "DB 상태, 클러스터 리소스와 대표 서비스 연결을 확인했습니다.",
       ],
     },
   }),
@@ -373,7 +373,7 @@ export const oracleDataProjects = [
       ],
       ko: [
         "RAC와 ASM 계층을 통제된 순서로 재구축했습니다.",
-        "Disk group 가시성, cluster 상태와 DB service readiness를 확인했습니다.",
+        "디스크 그룹 가시성, 클러스터 상태와 DB 서비스 준비 상태를 확인했습니다.",
       ],
     },
   }),
@@ -382,7 +382,7 @@ export const oracleDataProjects = [
     title: { en: "Lina Life Oracle 12c ASM Build", ko: "라이나생명 Oracle 12c·ASM 구축" },
     summary: {
       en: "Built an Oracle 12c single-instance database with ASM for the next-generation program.",
-      ko: "차세대 사업에서 Oracle 12c single instance와 ASM 환경을 구축했습니다.",
+      ko: "차세대 사업에서 Oracle 12c 단일 인스턴스와 ASM 환경을 구축했습니다.",
     },
     client: "라이나생명",
     period: "2015.01–2015.12",
@@ -396,8 +396,8 @@ export const oracleDataProjects = [
         "Verify disk-group, listener, database and representative service state.",
       ],
       ko: [
-        "Oracle 12c instance와 ASM storage 경계를 구축했습니다.",
-        "Disk group, listener, DB와 대표 service 상태를 확인했습니다.",
+        "Oracle 12c 인스턴스와 ASM 스토리지 경계를 구축했습니다.",
+        "디스크 그룹, listener, DB와 대표 서비스 상태를 확인했습니다.",
       ],
     },
   }),
