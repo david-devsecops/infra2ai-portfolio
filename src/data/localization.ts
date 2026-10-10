@@ -447,9 +447,7 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     },
     {
       title: "소속·계약 관계와 경력",
-      paragraphs: [
-        "우나프론트에서는 처음에 직원으로 일했고, 이후 개인사업자·프리랜서 용역계약으로 업무를 이어갔습니다. 아래는 각 회사에서 근무하거나 계약을 맺고 참여한 기간입니다.",
-      ],
+      paragraphs: ["아래는 각 회사에서 근무하거나 계약을 맺고 참여한 기간입니다."],
       bullets: [
         "엘퍼스트 · 프리랜서 TA · 2026.04–현재 (현재 CBDC 프로젝트 예정 범위 2026.04–2026.12)",
         "엘퍼스트 · 프리랜서 TA · 2024.09–2025.07 (CBDC 활용성 테스트 프로젝트 2024.08–2025.07)",
@@ -569,9 +567,7 @@ export const aboutSections: Record<Language, AboutSectionCopy[]> = {
     },
     {
       title: "Affiliations and engagements",
-      paragraphs: [
-        "I initially worked as an employee of 우나프론트, then continued under a freelance services contract as a sole proprietor. The dates below cover my employment or contract with each company.",
-      ],
+      paragraphs: ["The dates below cover my employment or contract with each company."],
       bullets: [
         "엘퍼스트 · Freelance TA · 2026.04–present (current CBDC project planned scope: 2026.04–2026.12)",
         "엘퍼스트 · Freelance TA · 2024.09–2025.07 (CBDC usability-test project: 2024.08–2025.07)",
